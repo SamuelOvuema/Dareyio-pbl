@@ -17,3 +17,18 @@ If it is green and running, then you did everything correctly – you have just 
 To test how our Nginx server can respond to requests from the Internet. Open a web browser of your choice and copy and paste the public Ipv4 DNS
 to the page below.
 ![Welcome to nginx page](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/8a836c5a-eb45-4442-8c6b-faaedc25e392)
+
+**Step 2 — installing mysql**
+Now that you have a web server up and running, you need to install a Database Management System (DBMS) to be able to store and manage data for your site in a relational database. MySQL is a popular relational database management system used within PHP environments, so we will use it in our project.
+Again, we will use 'apt' to acquire and install this software.
+Run the following commands
+1. sudo apt install mysql-server
+2. sudo mysql
+t’s recommended that you run a security script that comes pre-installed with MySQL. This script will remove some insecure default settings and lock down access to your database system. Before running the script you will set a password for the root user, using mysql_native_password as default authentication method. We’re defining this user’s password as PassWord.1.
+3. ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'PassWord.1';
+Exit the Mysql shell with the command 4.
+4. mysql> exit
+To access your mysql you have to make use of your new generated password, else you will not be able to gain access into your 'mysql'. If you run the coommand "sudo mysql" it will deny you accesss and sho this message  "Access denied for user 'root'@'localhost' (using password: NO)" This lead us to our next command.
+5. sudo mysql -p
+It will request for your password, you should enter the new genarated password and whola! you are in!
+
