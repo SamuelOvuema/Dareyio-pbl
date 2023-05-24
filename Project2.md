@@ -13,3 +13,4 @@ Run the following command:
 2. sudo apt install nginx
 3. sudo systemctl status nginx
 If it is green and running, then you did everything correctly – you have just launched nginx Web Server in the Clouds!
+![nginx active and running](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/654c61d0-a6dd-4e18-a01c-51f1b62cdf04)
