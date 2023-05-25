@@ -149,11 +149,12 @@ You can do this by creating a test PHP file in your document root. Open a new fi
 Type or paste the following lines into the new file. This is valid PHP code that will return information about your server:
 
 > <?php
-phpinfo();
+>phpinfo();
 
 You can now access this page in your web browser by visiting the domain name or public IP address you’ve set up in your Nginx configuration file, followed by /info.php:
 
 > http://`server_domain_or_IP`/info.php
+
 You will see a web page containing detailed information about your server:
 
   
