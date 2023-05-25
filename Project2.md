@@ -58,6 +58,6 @@ When prompted, type Y and press ENTER to confirm installation.
 
 check the version by running: php -v.
 
-
+![checking php version](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/024bd8b0-2e48-46f4-9f77-eb313d3b8586)
 
 You now have your PHP components installed. Next, you will configure Nginx to use them.
