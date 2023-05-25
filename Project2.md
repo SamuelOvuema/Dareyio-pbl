@@ -72,10 +72,14 @@ Create the root web directory for your_domain as follows:
 > sudo mkdir /var/www/projectLEMP
 
 Next, assign ownership of the directory with the $USER environment variable, which will reference your current system user:
+
 > sudo chown -R $USER:$USER /var/www/projectLEMP
+
 Then, open a new configuration file in Nginx’s sites-available directory using your preferred command-line editor. Here, we’ll use nano:
 > sudo nano /etc/nginx/sites-available/projectLEMP
+
 This will create a new blank file. Paste in the following bare-bones configuration:
+
 > #/etc/nginx/sites-available/projectLEMP
 
 server {
@@ -103,17 +107,25 @@ server {
 When you’re done editing, save and close the file. If you’re using nano, you can do so by typing CTRL+X and then y and ENTER to confirm.
 
 Activate your configuration by linking to the config file from Nginx’s sites-enabled directory:
+
 > sudo ln -s /etc/nginx/sites-available/projectLEMP /etc/nginx/sites-enabled/
 
-This will tell Nginx to use the configuration next time it is reloaded. You can test your configuration for syntax errors by typing:
+This will tell Nginx to use the configuration next time it is reloaded. You can test your configuration for syntax errors by typing:.
+
 > sudo nginx -t
-You shall see following message:
+You shall see following message:.
+
 > nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
 >nginx: configuration file /etc/nginx/nginx.conf test is successful
+
 We also need to disable default Nginx host that is currently configured to listen on port 80, for this run:
+
 > sudo unlink /etc/nginx/sites-enabled/default
+
 When you are ready, reload Nginx to apply the changes:
+
 > sudo systemctl reload nginx
+
 Your new website is now active, but the web root /var/www/projectLEMP is still empty. Create an index.html file in that location so that we can test that your new server block works as expected:
 
 >sudo echo 'Hello LEMP from hostname' $(curl -s http://169.254.169.254/latest/meta-data/public-hostname) 'with public IP' $(curl -s http://169.254.169.254/latest/meta-data/public-ipv4) > /var/www/projectLEMP/index.html
