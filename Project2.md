@@ -10,8 +10,10 @@ In order to display web pages to our site visitors, we are going to employ Nginx
 Since this is our first time using apt for this session, start off by updating your server’s package index. Following that, you can use apt install to get Nginx installed:
 Run the following command:
 1. sudo apt update
+
+
 2. sudo apt install nginx
-3. sudo systemctl status nginx
+4. sudo systemctl status nginx
 If it is green and running, then you did everything correctly – you have just launched nginx Web Server in the Clouds!
 ![nginx active and running](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/654c61d0-a6dd-4e18-a01c-51f1b62cdf04)
 To test how our Nginx server can respond to requests from the Internet. Open a web browser of your choice and copy and paste the public Ipv4 DNS
