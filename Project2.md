@@ -24,11 +24,14 @@ Again, we will use 'apt' to acquire and install this software.
 Run the following commands
 1. sudo apt install mysql-server
 2. sudo mysql
-t’s recommended that you run a security script that comes pre-installed with MySQL. This script will remove some insecure default settings and lock down access to your database system. Before running the script you will set a password for the root user, using mysql_native_password as default authentication method. We’re defining this user’s password as PassWord.1.
+It’s recommended that you run a security script that comes pre-installed with MySQL. This script will remove some insecure default settings and lock down access to your database system. Before running the script you will set a password for the root user, using mysql_native_password as default authentication method. We’re defining this user’s password as PassWord.1.
 3. ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'PassWord.1';
 Exit the Mysql shell with the command 4.
 4. mysql> exit
 To access your mysql you have to make use of your new generated password, else you will not be able to gain access into your 'mysql'. If you run the coommand "sudo mysql" it will deny you accesss and sho this message  "Access denied for user 'root'@'localhost' (using password: NO)" This lead us to our next command.
 5. sudo mysql -p
 It will request for your password, you should enter the new genarated password and whola! you are in!
+To exit the MySQL console, type:
 
+
+MySQL server is now installed and secured. Next, we will install PHP, the final component in the LEMP stack.
