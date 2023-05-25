@@ -101,7 +101,7 @@ server {
         deny all;
     }
 
-}
+> }
 
 When you’re done editing, save and close the file. If you’re using nano, you can do so by typing CTRL+X and then y and ENTER to confirm.
 
