@@ -157,7 +157,8 @@ You can now access this page in your web browser by visiting the domain name or 
 
 You will see a web page containing detailed information about your server:
 
-  
+ ![php info page](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/15521212-fec1-4f09-a475-8cd76dc8314b)
+ 
 After checking the relevant information about your PHP server through that page, it’s best to remove the file you created as it contains sensitive information about your PHP environment and your Ubuntu server. You can use rm to remove that file:  
 
 > sudo rm /var/www/your_domain/info.php
