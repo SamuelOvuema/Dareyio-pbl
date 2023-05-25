@@ -11,7 +11,7 @@ Since this is our first time using apt for this session, start off by updating y
 Run the following command:
 1. sudo apt update
 
-
+![Installing mysql -server](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/ff126a48-fa85-450e-b9cd-f87440c2e2e1)
 2. sudo apt install nginx
 4. sudo systemctl status nginx
 If it is green and running, then you did everything correctly – you have just launched nginx Web Server in the Clouds!
