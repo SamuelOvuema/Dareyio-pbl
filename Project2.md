@@ -123,12 +123,16 @@ Now go to your browser and try to open your website URL using IP address:
 > http://<Public-IP-Address>:80
 
 If you see the text from ‘echo’ command you wrote to index.html file, then it means your Nginx site is working as expected.
-In the output you will see your server’s public hostname (DNS name) and public IP address. You can also access your website in your browser by public DNS name, not only by IP – try it out, the result must be the same (port is optional)
+In the output you will see your server’s public hostname (DNS name) and public IP address. You can also access your website in your browser 
+by public DNS name, not only by IP – try it out, the result must be the same (port is optional)
 
 > http://<Public-DNS-Name>:80
 You can leave this file in place as a temporary landing page for your application until you set up an index.php file to replace it. Once you do that, remember to remove or rename the index.html file from your document root, as it would take precedence over an index.php file by default.
 
-Your LEMP stack is now fully configured. In the next step, we’ll create a PHP script to test that Nginx is in fact able to handle .php files within your newly configured website.
+Your LEMP stack is now fully configured. 
+
+
+In the next step, we’ll create a PHP script to test that Nginx is in fact able to handle .php files within your newly configured website.
 
 
 
