@@ -33,5 +33,5 @@ To access your mysql you have to make use of your new generated password, else y
 It will request for your password, you should enter the new genarated password and whola! you are in!
 To exit the MySQL console, type:
 
-
+![Creating password for mysql server](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/80a4b81a-2615-4c11-94e1-573d9e6fbe2c)
 MySQL server is now installed and secured. Next, we will install PHP, the final component in the LEMP stack.
