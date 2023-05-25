@@ -13,8 +13,10 @@ Run the following command:.
 1. sudo apt update.
 
 ![Installing mysql -server](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/ff126a48-fa85-450e-b9cd-f87440c2e2e1)
+
 2. sudo apt install nginx.
-4. sudo systemctl status nginx.
+3. sudo systemctl status nginx.
+
 If it is green and running, then you did everything correctly – you have just launched nginx Web Server in the Clouds!
 ![nginx active and running](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/654c61d0-a6dd-4e18-a01c-51f1b62cdf04)
 To test how our Nginx server can respond to requests from the Internet. Open a web browser of your choice and copy and paste the public Ipv4 DNS
