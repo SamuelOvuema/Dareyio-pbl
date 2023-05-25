@@ -18,9 +18,12 @@ Run the following command:.
 3. sudo systemctl status nginx.
 
 If it is green and running, then you did everything correctly – you have just launched nginx Web Server in the Clouds!
+
 ![nginx active and running](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/654c61d0-a6dd-4e18-a01c-51f1b62cdf04)
+
 To test how our Nginx server can respond to requests from the Internet. Open a web browser of your choice and copy and paste the public Ipv4 DNS
 to the page below.
+
 ![Welcome to nginx page](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/8a836c5a-eb45-4442-8c6b-faaedc25e392)
 
 **Step 2 — installing mysql**
@@ -41,3 +44,14 @@ To exit the MySQL console, type: exit.
 ![Creating password for mysql server](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/80a4b81a-2615-4c11-94e1-573d9e6fbe2c)
 MySQL server is now installed and secured. Next, we will install PHP, the final component in the LEMP stack.
 
+__Step 3 — installing php__
+You have Nginx installed to serve your content and MySQL installed to store and manage your data. Now you can install PHP to process code and generate dynamic content for the web server.
+
+You’ll need to install php-fpm, which stands for “PHP fastCGI process manager”, and tell Nginx to pass PHP requests to this software for processing. Additionally, you’ll need php-mysql, a PHP module that allows PHP to communicate with MySQL-based databases. Core PHP packages will automatically be installed as dependencies.
+
+To install these 2 packages at once, run:.
+sudo apt install php-fpm php-mysql
+
+When prompted, type Y and press ENTER to confirm installation.
+
+You now have your PHP components installed. Next, you will configure Nginx to use them.
