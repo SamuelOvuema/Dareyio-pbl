@@ -131,7 +131,7 @@ You can leave this file in place as a temporary landing page for your applicatio
 
 Your LEMP stack is now fully configured. 
 
-
+![configure Nginx to use php processor](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/fee3e9be-ec23-4cdd-be2a-684e9cd89f26)
 In the next step, we’ll create a PHP script to test that Nginx is in fact able to handle .php files within your newly configured website.
 
 
