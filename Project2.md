@@ -271,24 +271,8 @@ The following PHP script connects to the MySQL database and queries for the cont
 
 Copy this content into your todo_list.php script:
 
-> <?php
-$user = "example_user";
-$password = "password";
-$database = "example_database";
-$table = "todo_list";
+ 
 
-try {
-  $db = new PDO("mysql:host=localhost;dbname=$database", $user, $password);
-  echo "<h2>TODO</h2><ol>";
-  foreach($db->query("SELECT content FROM $table") as $row) {
-    echo "<li>" . $row['content'] . "</li>";
-  }
-  echo "</ol>";
-} catch (PDOException $e) {
-    print "Error!: " . $e->getMessage() . "<br/>";
-    die();
-}
-...
 You can now access this page in your web browser by visiting the domain name or public IP address configured for your website, followed by /todo_list.php:
 
 > http://<Public_domain_or_IP>/todo_list.php
