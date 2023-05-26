@@ -129,19 +129,20 @@ Your new website is now active, but the web root /var/www/projectLEMP is still e
 
 Now go to your browser and try to open your website URL using IP address:
 
-> http://<Public-IP-Address>:80
+> http://<Public-IP-Address>:80.
 
 If you see the text from ‘echo’ command you wrote to index.html file, then it means your Nginx site is working as expected.
 In the output you will see your server’s public hostname (DNS name) and public IP address. You can also access your website in your browser 
-by public DNS name, not only by IP – try it out, the result must be the same (port is optional)
+by public DNS name, not only by IP – try it out, the result must be the same (port is optional).
 
-> http://<Public-DNS-Name>:80
+> http://<Public-DNS-Name>:80.
+    
 You can leave this file in place as a temporary landing page for your application until you set up an index.php file to replace it. Once you do that, remember to remove or rename the index.html file from your document root, as it would take precedence over an index.php file by default.
 
 Your LEMP stack is now fully configured. 
 
 ![configure Nginx to use php processor](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/fee3e9be-ec23-4cdd-be2a-684e9cd89f26)
-    
+
 In the next step, we’ll create a PHP script to test that Nginx is in fact able to handle .php files within your newly configured website.
 
 __Step 5 – Testing PHP with Nginx__
@@ -154,11 +155,12 @@ You can test it to validate that Nginx can correctly hand .php files off to your
 
 You can do this by creating a test PHP file in your document root. Open a new file called info.php within your document root in your text editor:
     
-> sudo nano /var/www/projectLEMP/info.php
+> sudo nano /var/www/projectLEMP/info.php.
+    
 Type or paste the following lines into the new file. This is valid PHP code that will return information about your server:
 
 > <?php
->phpinfo();
+>phpinfo();.
 
 You can now access this page in your web browser by visiting the domain name or public IP address you’ve set up in your Nginx configuration file, followed by /info.php:
 
@@ -166,8 +168,8 @@ You can now access this page in your web browser by visiting the domain name or 
 
 You will see a web page containing detailed information about your server:
 
- ![php info page](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/15521212-fec1-4f09-a475-8cd76dc8314b)
- 
+![php info page](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/15521212-fec1-4f09-a475-8cd76dc8314b)
+
 After checking the relevant information about your PHP server through that page, it’s best to remove the file you created as it contains sensitive information about your PHP environment and your Ubuntu server. You can use rm to remove that file:  
 
 > sudo rm /var/www/your_domain/info.php
