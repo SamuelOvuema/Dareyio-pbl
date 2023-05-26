@@ -277,7 +277,7 @@ $password = "password";
 $database = "example_database";
 $table = "todo_list";
 
->try {
+try {
   $db = new PDO("mysql:host=localhost;dbname=$database", $user, 
 $password);
   echo "<h2>TODO</h2><ol>";
