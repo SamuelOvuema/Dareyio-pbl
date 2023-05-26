@@ -99,9 +99,7 @@ server {
 
     location ~ /\.ht {
         deny all;
-    }
-
-> }
+    } }
 
 When you’re done editing, save and close the file. If you’re using nano, you can do so by typing CTRL+X and then y and ENTER to confirm.
 
@@ -115,7 +113,7 @@ This will tell Nginx to use the configuration next time it is reloaded. You can 
 You shall see following message:.
 
 > nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
->nginx: configuration file /etc/nginx/nginx.conf test is successful
+> nginx: configuration file /etc/nginx/nginx.conf test is successful
 
 We also need to disable default Nginx host that is currently configured to listen on port 80, for this run:
 
