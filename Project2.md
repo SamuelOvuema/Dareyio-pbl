@@ -76,6 +76,7 @@ Next, assign ownership of the directory with the $USER environment variable, whi
 > sudo chown -R $USER:$USER /var/www/projectLEMP
 
 Then, open a new configuration file in Nginx’s sites-available directory using your preferred command-line editor. Here, we’ll use nano:
+
 > sudo nano /etc/nginx/sites-available/projectLEMP
 
 This will create a new blank file. Paste in the following bare-bones configuration:
@@ -99,7 +100,8 @@ server {
 
     location ~ /\.ht {
         deny all;
-    } }
+    } 
+}
 
 When you’re done editing, save and close the file. If you’re using nano, you can do so by typing CTRL+X and then y and ENTER to confirm.
 
@@ -193,14 +195,56 @@ First, connect to the MySQL console using the root account:
 
 To create a new database, run the following command from your MySQL console:
 
-mysql> CREATE DATABASE `example_database`;
+> mysql> CREATE DATABASE `example_database`;
 
+Now you can create a new user and grant him full privileges on the database you have just created.
 
+The following command creates a new user named example_user, using mysql_native_password as default authentication method. We’re defining this user’s password as password, but you should replace this value with a secure password of your own choosing.
 
+> mysql>  CREATE USER 'example_user'@'%' IDENTIFIED WITH mysql_native_password BY 'password';
 
+Now we need to give this user permission over the example_database database:
 
+> mysql> GRANT ALL ON example_database.* TO 'example_user'@'%';
+
+This will give the example_user user full privileges over the example_database database, while preventing this user from creating or modifying other databases on your server.
+
+Now exit the MySQL shell with:
+
+> mysql> exit
+
+You can test if the new user has the proper permissions by logging in to the MySQL console again, this time using the custom user credentials:
+
+> mysql -u example_user -p
+Notice the -p flag in this command, which will prompt you for the password used when creating the example_user user. After logging in to the MySQL console, confirm that you have access to the example_database database:
+
+> mysql> SHOW DATABASES;
+
+This will give you the following output:  
   
-  
-  
+>Output
++--------------------+
+| Database           |
++--------------------+
+| example_database   |
+| information_schema |
++--------------------+
+2 rows in set (0.000 sec)
+
+Next, we’ll create a test table named todo_list. From the MySQL console, run the following statement:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
