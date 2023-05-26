@@ -271,7 +271,7 @@ The following PHP script connects to the MySQL database and queries for the cont
 
 Copy this content into your todo_list.php script:
 
->  <?php
+> ?php
 $user = "example_user";
 $password = "password";
 $database = "example_database";
