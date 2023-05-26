@@ -270,7 +270,7 @@ You can now access this page in your web browser by visiting the domain name or 
 
 > http://<Public_domain_or_IP>/todo_list.php
 
-
+![php todoscript](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/6c33c9de-3026-42af-a360-dee46f29f7f5)
 
 You should see a page like this, showing the content you’ve inserted in your test table:
 
