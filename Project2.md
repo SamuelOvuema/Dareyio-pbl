@@ -271,8 +271,9 @@ The following PHP script connects to the MySQL database and queries for the cont
 
 Copy this content into your todo_list.php script:
 
+![php todolist](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/40ebf155-d9c4-4522-ab08-0e44efe474fc)
 
-
+Save and close the file when you are done editing.
 
 You can now access this page in your web browser by visiting the domain name or public IP address configured for your website, followed by /todo_list.php:
 
