@@ -218,6 +218,7 @@ You can test if the new user has the proper permissions by logging in to the MyS
 
 > mysql -u example_user -p
 
+![mysql user psswd](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/87e0426e-0105-4712-8a0e-f87122d9f870)
 
 
 Notice the -p flag in this command, which will prompt you for the password used when creating the example_user user. After logging in to the MySQL console, confirm that you have access to the example_database database:
