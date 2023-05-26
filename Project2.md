@@ -180,7 +180,26 @@ After checking the relevant information about your PHP server through that page,
 
 You can always regenerate this file if you need it later.
 
-  
+__Step 6 — Retrieving data from MySQL database with PHP__
+
+In this step you will create a test database (DB) with simple “To do list” and configure access to it, so the Nginx website would be able to query data from the DB and display it.
+
+At the time of this writing, the native MySQL PHP library mysqlnd doesn’t support caching_sha2_authentication, the default authentication method for MySQL 8. We’ll need to create a new user with the mysql_native_password authentication method in order to be able to connect to the MySQL database from PHP.
+
+We will create a database named **example_database** and a user named **example_user**, but you can replace these names with different values.
+
+First, connect to the MySQL console using the root account:
+
+> sudo mysql
+
+To create a new database, run the following command from your MySQL console:
+
+mysql> CREATE DATABASE `example_database`;
+
+
+
+
+
   
   
   
