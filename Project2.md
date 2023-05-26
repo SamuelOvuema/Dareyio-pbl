@@ -174,6 +174,7 @@ After checking the relevant information about your PHP server through that page,
 
 > sudo rm /var/www/your_domain/info.php
 
+![removal of file](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/5e70acb8-0da8-42d0-b700-a15586576d45)
 
 
 
