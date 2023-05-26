@@ -248,7 +248,7 @@ To confirm that the data was successfully saved to your table, run:
 
 You’ll see the following output:
 
-
+![output pic2](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/c3bcdcf8-f8a8-4e7c-8712-63daab854ad7)
 
 After confirming that you have valid data in your test table, you can exit the MySQL console:
 
