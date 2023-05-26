@@ -295,7 +295,7 @@ You can now access this page in your web browser by visiting the domain name or 
 
 You should see a page like this, showing the content you’ve inserted in your test table:
 
-
+![php interaction with Mysql](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/eaec7e19-b54a-4d3f-a116-bccebc909b05)
 
 That means your PHP environment is ready to connect and interact with your MySQL server.
 
