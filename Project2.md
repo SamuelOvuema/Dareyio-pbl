@@ -270,6 +270,8 @@ You can now access this page in your web browser by visiting the domain name or 
 
 > http://<Public_domain_or_IP>/todo_list.php
 
+
+
 You should see a page like this, showing the content you’ve inserted in your test table:
 
 ![php interaction with Mysql](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/eaec7e19-b54a-4d3f-a116-bccebc909b05)
