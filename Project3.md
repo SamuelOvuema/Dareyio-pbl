@@ -37,10 +37,16 @@ Verify the npm installation with the command below
 
 > npm -v 
 
+![verify node v](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/b5f95ca1-ed13-4c69-9722-fac202d450a6)
 
+Application Code Setup
+Create a new directory for your To-Do project:
 
+> mkdir Todo
 
+Run the command below to verify that the Todo directory is created with ls command
 
+> ls
 
 
 
