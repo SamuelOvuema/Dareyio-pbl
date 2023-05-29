@@ -133,10 +133,39 @@ Open up your browser and try to access your server’s Public IP or Public DNS n
 
 ![Welcome to Express](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/9c4d50f4-7700-4a2b-b331-97ea5da89b43)
 
+Routes
+There are three actions that our To-Do application needs to be able to do:
+
+1. Create a new task
+2. Display list of all tasks
+3. Delete a completed task
+Each task will be associated with some particular endpoint and will use different standard HTTP request methods: POST, GET, DELETE.
+
+For each task, we need to create routes that will define various endpoints that the To-do app will depend on. So let us create a folder routes
+
+> mkdir routes
+
+Tip: You can open multiple shells in Putty or Linux/Mac to connect to the same EC2
+
+Change directory to routes folder.
+
+> cd routes
+
+Now, create a file api.js with the command below
+
+> touch api.js
+
+Open the file with the command below
+
+> vim api.js
 
 
 
 
-
-
-
+  
+  
+  
+  
+  
+  
+  
