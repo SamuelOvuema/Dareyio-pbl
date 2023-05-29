@@ -18,9 +18,12 @@ Lets get the location of Node.js software from Ubuntu repositories.
 
 curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
 
-
+![node js 4rm ubuntu](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/79e92344-cc35-4ed3-9a42-fabb648dfdb1)
 
 Install Node.js on the server
 Install Node.js with the command below
+
+
+
 
 
