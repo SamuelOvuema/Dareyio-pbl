@@ -89,7 +89,7 @@ Install the dotenv module
 
 Open the index.js file with the command below
 
-vim index.js
+> vim index.js
 
 
 
