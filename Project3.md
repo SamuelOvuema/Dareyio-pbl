@@ -131,7 +131,7 @@ Open up your browser and try to access your server’s Public IP or Public DNS n
 
 > http://<PublicIP-or-PublicDNS>:5000
 
-
+![Welcome to Express](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/9c4d50f4-7700-4a2b-b331-97ea5da89b43)
 
 
 
