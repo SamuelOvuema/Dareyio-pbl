@@ -180,3 +180,6 @@ router.delete('/todos/:id', (req, res, next) => {
 
 module.exports = router;  
 
+![create routes](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/7b6fe72b-0774-4ab4-b653-be3d670f81c2)
+
+Moving forward let create Models directory.
