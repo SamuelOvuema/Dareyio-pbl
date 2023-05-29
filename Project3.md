@@ -93,7 +93,7 @@ Open the index.js file with the command below
 
 simply paste the code below into the file.
 
-const express = require('express');
+> const express = require('express');
 require('dotenv').config();
 
 const app = express();
