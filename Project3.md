@@ -67,6 +67,23 @@ Run the command ls to confirm that you have package.json file created.
 Next, we will Install ExpressJs and create the Routes directory.
 
 
+## Install ExpressJS
+Remember that Express is a framework for Node.js, therefore a lot of things developers would have programmed is already taken care of out of the box. Therefore it simplifies development, and abstracts a lot of low level details. For example, Express helps to define routes of your application based on HTTP methods and URLs.
+
+To use express, install it using npm:
+
+> npm install express
+
+Now create a file index.js with the command below
+
+> touch index.js
+
+Run ls to confirm that your index.js file is successfully created
+
+
+
+
+
 
 
 
