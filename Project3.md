@@ -80,11 +80,16 @@ Now create a file index.js with the command below
 
 Run ls to confirm that your index.js file is successfully created
 
+![install express](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/90838384-b8a1-4210-9ed5-4adf207bb9e5)
+
+Install the dotenv module
+
+> npm install dotenv
 
 
+Open the index.js file with the command below
 
-
-
+vim index.js
 
 
 
