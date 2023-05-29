@@ -62,7 +62,7 @@ Next, you will use the command npm init to initialise your project, so that a ne
 
 Run the command ls to confirm that you have package.json file created.
 
-
+![confirmed package json](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/19b63756-9798-4506-b243-980363ace0b6)
 
 Next, we will Install ExpressJs and create the Routes directory.
 
