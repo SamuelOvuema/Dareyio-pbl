@@ -159,13 +159,24 @@ Open the file with the command below
 
 > vim api.js
 
+![api js](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/8ed24794-3e76-41e4-8cef-a7d26c515b34)
 
+Copy below code in the file. (Do not be overwhelmed with the code)
 
+const express = require ('express');
+const router = express.Router();
 
-  
-  
-  
-  
-  
-  
-  
+router.get('/todos', (req, res, next) => {
+
+});
+
+router.post('/todos', (req, res, next) => {
+
+});
+
+router.delete('/todos/:id', (req, res, next) => {
+
+})
+
+module.exports = router;  
+
