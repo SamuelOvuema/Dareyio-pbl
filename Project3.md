@@ -114,7 +114,7 @@ app.listen(port, () => {
 console.log(`Server running on port ${port}`)
 });
 
-
+![todo index js](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/d44ed8ff-50a8-45fc-9487-cedf27aad862)
 
 Notice that we have specified to use port 5000 in the code. This will be required later when we go on the browser.
 
