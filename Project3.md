@@ -48,5 +48,25 @@ Run the command below to verify that the Todo directory is created with ls comma
 
 > ls
 
+![create todo folder](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/3a6cd372-1114-4e57-aa67-395a0283287c)
+
+Now change your current directory to the newly created one:
+
+> cd Todo
+
+Next, you will use the command npm init to initialise your project, so that a new file named package.json will be created. This file will normally contain information about your application and the dependencies that it needs to run. Follow the prompts after running the command. You can press Enter several times to accept default values, then accept to write out the package.json file by typing yes.
+
+> npm init
+
+
+Run the command ls to confirm that you have package.json file created.
+
+Next, we will Install ExpressJs and create the Routes directory.
+
+
+
+
+
+
 
 
