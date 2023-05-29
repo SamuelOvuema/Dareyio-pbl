@@ -121,9 +121,9 @@ node index.js
 
 If every thing goes well, you should see Server running on port 5000 in your terminal.
 
+![create index js Install dotenv](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/2e956a81-8fb6-4580-9db2-161e7fe125d0)
 
-
-
+Now we need to open this port in EC2 Security Groups and create an inbound rule to open TCP port 5000, like this:
 
 
 
