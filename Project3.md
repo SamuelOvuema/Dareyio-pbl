@@ -125,9 +125,11 @@ If every thing goes well, you should see Server running on port 5000 in your ter
 
 Now we need to open this port in EC2 Security Groups and create an inbound rule to open TCP port 5000, like this:
 
+![inbound rules](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/40dd534d-2c30-412d-8461-93c18dc44d65)
 
+Open up your browser and try to access your server’s Public IP or Public DNS name followed by port 5000:
 
-
+> http://<PublicIP-or-PublicDNS>:5000
 
 
 
