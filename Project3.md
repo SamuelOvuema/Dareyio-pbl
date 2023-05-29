@@ -91,6 +91,54 @@ Open the index.js file with the command below
 
 > vim index.js
 
+simply paste the code below into the file.
+
+const express = require('express');
+require('dotenv').config();
+
+const app = express();
+
+const port = process.env.PORT || 5000;
+
+app.use((req, res, next) => {
+res.header("Access-Control-Allow-Origin", "\*");
+res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+next();
+});
+
+app.use((req, res, next) => {
+res.send('Welcome to Express');
+});
+
+app.listen(port, () => {
+console.log(`Server running on port ${port}`)
+});
+
+
+
+Notice that we have specified to use port 5000 in the code. This will be required later when we go on the browser.
+
+Use :w to save in vim and use :qa to exit vim
+
+Now it is time to start our server to see if it works. Open your terminal in the same directory as your index.js file and type:
+
+node index.js
+
+If every thing goes well, you should see Server running on port 5000 in your terminal.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
