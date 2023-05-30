@@ -227,7 +227,7 @@ required: [true, 'The todo text field is required']
 const Todo = mongoose.model('todo', TodoSchema);
 module.exports = Todo;  
 
-
+![mongoose todo](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/05187399-93fe-4c05-925a-0224e1bdc8b8)
 
 Now we need to update our routes from the file api.js in ‘routes’ directory to make use of the new model.
 
