@@ -199,6 +199,9 @@ Create a new folder models :
 Change directory into the newly created ‘models’ folder with
 
 > cd models
+
+
+
 Inside the models folder, create a file and name it todo.js
 
 > touch todo.js
@@ -253,7 +256,7 @@ Todo.findOneAndDelete({"_id": req.params.id})
 })
 module.exports = router;  
 
-  
+![api in routes dir](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/3963d987-e41b-4ea0-a860-dc5b52324947)  
 
 The next piece of our application will be the MongoDB Database  
   
