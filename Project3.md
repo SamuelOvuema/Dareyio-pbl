@@ -212,7 +212,7 @@ Tip: All three commands above can be defined in one line to be executed conseque
 
 Open the file created with vim todo.js then paste the code below in the file:  
 
-
+![vim todo js](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/00fcb41f-1fbb-4889-8090-5efe8113c4c1)
 
 > const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
@@ -226,6 +226,8 @@ required: [true, 'The todo text field is required']
 //create model for todo
 const Todo = mongoose.model('todo', TodoSchema);
 module.exports = Todo;  
+
+
 
 Now we need to update our routes from the file api.js in ‘routes’ directory to make use of the new model.
 
