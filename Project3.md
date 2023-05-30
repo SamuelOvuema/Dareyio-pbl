@@ -200,7 +200,7 @@ Change directory into the newly created ‘models’ folder with
 
 > cd models
 
-
+![install mongoose](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/7136745f-40f2-4999-9dbe-393e3f53fcf8)
 
 Inside the models folder, create a file and name it todo.js
 
@@ -209,8 +209,10 @@ Inside the models folder, create a file and name it todo.js
 Tip: All three commands above can be defined in one line to be executed consequently with help of && operator, like this:  
   
 > mkdir models && cd models && touch todo.js  
-  
+
 Open the file created with vim todo.js then paste the code below in the file:  
+
+
 
 > const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
