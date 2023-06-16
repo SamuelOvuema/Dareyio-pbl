@@ -273,20 +273,23 @@ Complete a get-started checklist as shown in the image below
   
 Allow access to the MongoDB database from anywhere (Not secure, but it is ideal for testing)
 
+![mongodb first connectn](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/c782bf4a-20f4-47f8-b5d0-a34e96310aae)
 
+In the index.js file, we specified process.env to access environment variables, but we have not yet created this file. So we need to do that now.
+
+Create a file in your Todo directory and name it .env.
+
+> touch .env
+> vi .env
+Add the connection string to access the database in it, just as below:  
+
+> DB = 'mongodb+srv://<username>:<password>@<network-address>/<dbname>?retryWrites=true&w=majority'
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+Ensure to update <username>, <password>, <network-address> and <database> according to your setup  
+
+Here is how to get your connection string
+
+
   
   
   
