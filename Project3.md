@@ -289,7 +289,7 @@ Ensure to update <username>, <password>, <network-address> and <database> accord
 
 Here is how to get your connection string
 
-
+![connectn mongodb](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/e43bad86-8aef-47e4-bdb2-dbabc54ac7fc)
   
   
   
