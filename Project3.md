@@ -369,7 +369,16 @@ You shall see a message ‘Database connected successfully’, if so – we have
 So far we have written the backend part of our To-Do application and configured a database, but we do not have a frontend UI yet. We need ReactJS code to achieve that. But during development, we will need a way to test our code using RESTful API. Therefore, we will need to make use of some API development client to test our code.  
   
   
-  
+In this project, we will use Postman to test our API.
+Click [Install Postman](https://www.getpostman.com/downloads/) to download and install postman on your machine.
+
+Click HERE to learn how perform CRUD operations on Postman
+
+You should test all the API endpoints and make sure they are working. For the endpoints that require body, you should send JSON back with the necessary fields since it’s what we setup in our code.
+
+Now open your Postman, create a POST request to the API http://<PublicIP-or-PublicDNS>:5000/api/todos. This request sends a new task to our To-Do list so the application could store it in the database.
+
+Note: make sure your set header key Content-Type as application/json  
   
   
   
