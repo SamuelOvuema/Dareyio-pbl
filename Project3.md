@@ -269,7 +269,7 @@ We need a database where we will store our data. For this, we will make use of m
 
 Complete a get-started checklist as shown in the image below  
   
-  
+ ![mongodb reg](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/015cd98c-b57b-4af9-bdfd-32ccfe80f900) 
   
   
   
