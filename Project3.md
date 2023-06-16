@@ -293,11 +293,25 @@ Here is how to get your connection string
   
 ![mongodb setup](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/62c28e89-ee4a-4284-8eb4-ed4b2aaaffb0)  
   
+![mongodb nodes js conectn mthd](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/36588fc1-b914-40a0-8693-51101737d2d9)  
   
   
   
-  
-  
+Now we need to update the index.js to reflect the use of .env so that Node.js can connect to the database.
+
+Simply delete existing content in the file, and update it with the entire code below.
+
+To do that using vim, follow below steps
+
+Open the file with vim index.js
+Press esc
+Type :
+Type %d
+Hit ‘Enter’
+The entire content will be deleted, then,
+
+Press i to enter the insert mode in vim
+Now, paste the entire code below in the file.  
   
   
   
