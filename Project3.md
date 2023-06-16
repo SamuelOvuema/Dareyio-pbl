@@ -351,6 +351,7 @@ The entire content will be deleted, then,
 > console.log(`Server running on port ${port}`)
 > }); 
 
+![index js](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/2b835297-ac9f-4813-9eed-2a5f31ce060a)
 
 
 Using environment variables to store information is considered more secure and best practice to separate configuration and secret data from the application, instead of writing connection strings directly inside the index.js application file.
