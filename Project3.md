@@ -376,7 +376,8 @@ Click [HERE](https://www.youtube.com/watch?v=FjgYtQK_zLE) to learn how perform [
 
 You should test all the API endpoints and make sure they are working. For the endpoints that require body, you should send JSON back with the necessary fields since it’s what we setup in our code.
 
-Now open your Postman, create a POST request to the API http://<PublicIP-or-PublicDNS>:5000/api/todos. This request sends a new task to our To-Do list so the application could store it in the database.
+Now open your Postman, create a POST request to the API http://<PublicIP-or-PublicDNS>:5000/api/todos. 
+This request sends a new task to our To-Do list so the application could store it in the database.
 
 Note: make sure your set header key Content-Type as application/json  
   
