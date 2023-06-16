@@ -387,9 +387,9 @@ Create a GET request to your API on http://<PublicIP-or-PublicDNS>:5000/api/todo
 
 ![postman GET](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/fcd9441b-221c-486a-b216-0179c7e96dd2)  
   
-*Optional task:* Try to figure out how to send a DELETE request to delete a task from out To-Do list.
+**Optional task:** Try to figure out how to send a DELETE request to delete a task from out To-Do list.
 
-*Hint:* To delete a task – you need to send its ID as a part of DELETE request.
+**Hint:** To delete a task – you need to send its ID as a part of DELETE request.
 
 By now you have tested backend part of our To-Do application and have made sure that it supports all three operations we wanted:
 
