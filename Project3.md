@@ -303,23 +303,63 @@ Simply delete existing content in the file, and update it with the entire code b
 
 To do that using vim, follow below steps
 
-Open the file with vim index.js
-Press esc
-Type :
-Type %d
-Hit ‘Enter’
+1. Open the file with vim index.js
+2. Press esc
+3. Type :
+4. Type %d
+5. Hit ‘Enter’
 The entire content will be deleted, then,
 
-Press i to enter the insert mode in vim
-Now, paste the entire code below in the file.  
+6. Press i to enter the insert mode in vim
+7. Now, paste the entire code below in the file.  
   
+> const express = require('express');
+> const bodyParser = require('body-parser');
+> const mongoose = require('mongoose');
+> const routes = require('./routes/api');
+> const path = require('path');
+> require('dotenv').config();
+>
+> const app = express();
+> 
+> const port = process.env.PORT || 5000;
+> 
+> //connect to the database
+> mongoose.connect(process.env.DB, { useNewUrlParser: true, useUnifiedTopology: true })
+> .then(() => console.log(`Database connected successfully`))
+> .catch(err => console.log(err));
+< 
+> //since mongoose promise is depreciated, we overide it with node's promise
+> mongoose.Promise = global.Promise;
+> 
+> app.use((req, res, next) => {
+> res.header("Access-Control-Allow-Origin", "\*");
+> res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+> next();
+> });
+> 
+> app.use(bodyParser.json());
+> 
+> app.use('/api', routes);
+> 
+> app.use((err, req, res, next) => {
+> console.log(err);
+> next();
+> });
+> 
+> app.listen(port, () => {
+> console.log(`Server running on port ${port}`)
+> }); 
+
+
+
+Using environment variables to store information is considered more secure and best practice to separate configuration and secret data from the application, instead of writing connection strings directly inside the index.js application file.
+
+Start your server using the command:  
   
+> node index.js  
   
-  
-  
-  
-  
-  
+
   
   
   
