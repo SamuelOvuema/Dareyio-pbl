@@ -381,8 +381,10 @@ This request sends a new task to our To-Do list so the application could store i
 
 Note: make sure your set header key Content-Type as application/json  
   
+![postman POST](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/9f10c950-f4d9-4dad-9e0b-d982a42b9100)  
   
-  
+Create a GET request to your API on http://<PublicIP-or-PublicDNS>:5000/api/todos. This request retrieves all existing records from out To-do application (backend requests these records from the database and sends it us back as a response to GET request).
+
   
   
   
