@@ -291,7 +291,7 @@ Here is how to get your connection string
 
 ![connectn mongodb](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/e43bad86-8aef-47e4-bdb2-dbabc54ac7fc)
   
-  
+![mongodb setup](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/62c28e89-ee4a-4284-8eb4-ed4b2aaaffb0)  
   
   
   
