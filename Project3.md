@@ -359,10 +359,14 @@ Using environment variables to store information is considered more secure and b
 Start your server using the command:  
   
 > node index.js  
-  
 
+You shall see a message ‘Database connected successfully’, if so – we have our backend configured. Now we are going to test it.
+
+
+![node index js](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/e9643468-1629-4e5f-bed9-4c02bde4ea67)
   
-  
+## Testing Backend Code without Frontend using RESTful API
+So far we have written the backend part of our To-Do application and configured a database, but we do not have a frontend UI yet. We need ReactJS code to achieve that. But during development, we will need a way to test our code using RESTful API. Therefore, we will need to make use of some API development client to test our code.  
   
   
   
