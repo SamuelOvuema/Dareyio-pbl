@@ -385,9 +385,18 @@ Note: make sure your set header key Content-Type as application/json
   
 Create a GET request to your API on http://<PublicIP-or-PublicDNS>:5000/api/todos. This request retrieves all existing records from out To-do application (backend requests these records from the database and sends it us back as a response to GET request).
 
+![postman GET](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/fcd9441b-221c-486a-b216-0179c7e96dd2)  
   
-  
-  
+*Optional task:* Try to figure out how to send a DELETE request to delete a task from out To-Do list.
+
+*Hint:* To delete a task – you need to send its ID as a part of DELETE request.
+
+By now you have tested backend part of our To-Do application and have made sure that it supports all three operations we wanted:
+
+Display a list of tasks – HTTP GET request
+Add a new task to the list – HTTP POST request
+Delete an existing task from the list – HTTP DELETE request
+We have successfully created our Backend, now let go create the Frontend. 
   
   
   
