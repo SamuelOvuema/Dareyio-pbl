@@ -119,7 +119,7 @@ Now it is time to start our server to see if it works. Open your terminal in the
 
 node index.js
 
-If every thing goes well, you should see Server running on port 5000 in your terminal.
+If everything goes well, you should see the Server running on port 5000 in your terminal.
 
 ![create index js Install dotenv](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/2e956a81-8fb6-4580-9db2-161e7fe125d0)
 
@@ -137,7 +137,7 @@ Routes
 There are three actions that our To-Do application needs to be able to do:
 
 1. Create a new task
-2. Display list of all tasks
+2. Display a list of all tasks
 3. Delete a completed task
 Each task will be associated with some particular endpoint and will use different standard HTTP request methods: POST, GET, DELETE.
 
@@ -264,7 +264,10 @@ module.exports = router;
 
 The next piece of our application will be the MongoDB Database  
   
-  
+MongoDB Database
+We need a database where we will store our data. For this, we will make use of mLab. mLab provides MongoDB database as a service solution (DBaaS), so to make life easy, you will need to sign up for a shared clusters free account, which is ideal for our use case. Sign up here. Follow the sign-up process, select AWS as the cloud provider, and choose a region near you.
+
+Complete a get-started checklist as shown in the image below  
   
   
   
