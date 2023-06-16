@@ -372,7 +372,7 @@ So far we have written the backend part of our To-Do application and configured 
 In this project, we will use Postman to test our API.
 Click [Install Postman](https://www.getpostman.com/downloads/) to download and install postman on your machine.
 
-Click HERE to learn how perform CRUD operations on Postman
+Click [HERE](https://www.youtube.com/watch?v=FjgYtQK_zLE) to learn how perform CRUD operations on Postman
 
 You should test all the API endpoints and make sure they are working. For the endpoints that require body, you should send JSON back with the necessary fields since it’s what we setup in our code.
 
