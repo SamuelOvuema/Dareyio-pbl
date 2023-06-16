@@ -394,8 +394,11 @@ Create a GET request to your API on http://<PublicIP-or-PublicDNS>:5000/api/todo
 By now you have tested backend part of our To-Do application and have made sure that it supports all three operations we wanted:
 
 *Display a list of tasks – HTTP GET request
+
 *Add a new task to the list – HTTP POST request
+
 *Delete an existing task from the list – HTTP DELETE request
+
 We have successfully created our Backend, now let go create the Frontend. 
   
   
