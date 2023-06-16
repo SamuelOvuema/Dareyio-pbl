@@ -295,7 +295,7 @@ Here is how to get your connection string
   
 ![mongodb nodes js conectn mthd](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/36588fc1-b914-40a0-8693-51101737d2d9)  
   
-  
+![mongodb conctn string](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/4fad65f0-639f-469b-bf6c-980c862f9297)  
   
 Now we need to update the index.js to reflect the use of .env so that Node.js can connect to the database.
 
