@@ -429,24 +429,24 @@ Before testing the react app, there are some dependencies that need to be instal
 > "start-watch": "nodemon index.js",
 > "dev": "concurrently \"npm run start-watch\" \"cd client && npm start\""
 > },  
+
+![package json script](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/6dcf4382-6c22-449a-8034-3872f2236c59)
   
-  ![package json script](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/6dcf4382-6c22-449a-8034-3872f2236c59)
+Below is the new Package.json file. 
   
- Below is the new Package.json file. 
+![New package json file](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/0fae1170-af92-4e21-ba33-415d037f84a3) 
   
+Configure Proxy in package.json 
   
+1.  Change directory to ‘client’
   
+> cd client 
   
+2. Open the package.json file
   
+> vi package.json  
   
-  
-  
-  
-  
-  
-  
-  
-  
+3. Add the key-value pair in the package.json file "proxy": "http://localhost:5000".  
   
   
   
