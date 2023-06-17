@@ -430,9 +430,9 @@ Before testing the react app, there are some dependencies that need to be instal
 > "dev": "concurrently \"npm run start-watch\" \"cd client && npm start\""
 > },  
   
+  ![package json script](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/6dcf4382-6c22-449a-8034-3872f2236c59)
   
-  
-  
+ Below is the new Package.json file. 
   
   
   
