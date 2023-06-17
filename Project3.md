@@ -402,26 +402,33 @@ By now you have tested backend part of our To-Do application and have made sure 
 We have successfully created our Backend, now let go create the Frontend. 
   
   
+### Step 2 – Frontend creation
+Since we are done with the functionality we want from our backend and API, it is time to create a user interface for a Web client (browser) to interact with the application via API. To start out with the frontend of the To-do app, we will use the create-react-app command to scaffold our app.  
   
+In the same root directory as your backend code, which is the Todo directory, run:  
   
+> npx create-react-app client 
   
+This will create a new folder in your Todo directory called client, where you will add all the react code.  
   
+### Running a React App
+Before testing the react app, there are some dependencies that need to be installed.  
   
+1.   Install concurrently. It is used to run more than one command simultaneously from the same terminal window.
+
+> npm install concurrently --save-dev  
   
+2.  Install nodemon. It is used to run and monitor the server. If there is any change in the server code, nodemon will restart it automatically and load the new changes.  
   
+> npm install nodemon --save-dev  
   
+3. In the Todo folder open the package.json file. Change the highlighted part of the below screenshot and replace it with the code below.  
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+> "scripts": {
+> "start": "node index.js",
+> "start-watch": "nodemon index.js",
+> "dev": "concurrently \"npm run start-watch\" \"cd client && npm start\""
+> },  
   
   
   
