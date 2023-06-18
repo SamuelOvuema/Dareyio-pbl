@@ -424,11 +424,11 @@ Before testing the react app, there are some dependencies that need to be instal
   
 3. In the Todo folder open the package.json file. Change the highlighted part of the below screenshot and replace it with the code below.  
   
-> "scripts": {
-> "start": "node index.js",
-> "start-watch": "nodemon index.js",
-> "dev": "concurrently \"npm run start-watch\" \"cd client && npm start\""
-> },  
+> "scripts": {..
+> "start": "node index.js",..
+> "start-watch": "nodemon index.js",..
+> "dev": "concurrently \"npm run start-watch\" \"cd client && npm start\""..
+> }, .. 
 
 ![package json script](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/6dcf4382-6c22-449a-8034-3872f2236c59)
   
