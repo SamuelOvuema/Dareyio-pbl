@@ -832,7 +832,9 @@ Assuming no errors when saving all these files, our To-Do app should be ready an
 
 ![Final Todo Output](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/45b0b907-f8fd-4f5c-84e5-88ce9ffc0a81)
 
+Congratulations
 
+In this Project #3 you have created a simple To-Do and deployed it to MERN stack. You wrote a frontend application using React.js that communicates with a backend application written using Expressjs. You also created a Mongodb backend for storing tasks in a database.
 
 
 
