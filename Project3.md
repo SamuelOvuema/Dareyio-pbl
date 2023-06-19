@@ -826,9 +826,9 @@ When you are in the Todo directory run:
 
 > npm run dev
 
+![npm run dev output](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/a853b05b-9fa0-472e-aad6-c4c15f325ac7)
 
-
-
+Assuming no errors when saving all these files, our To-Do app should be ready and fully functional with the functionality discussed earlier: creating a task, deleting a task and viewing all your tasks.
 
 
 
