@@ -544,11 +544,21 @@ Copy and paste the following
 > 
 > export default Input
 
+![input js](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/c660ab6a-ec21-4c18-a53f-64bc5639c26a)
 
+To make use of Axios, which is a Promise-based HTTP client for the browser and node.js, you need to cd into your client from your terminal and run yarn add axios or npm install axios.
 
+Move to the src folder
 
+> cd ..
 
+Move to clients folder
 
+> cd ..
+
+Install Axios
+
+> npm install axios
 
 
 
