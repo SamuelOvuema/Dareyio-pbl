@@ -816,9 +816,15 @@ font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
 monospace;
 }
 
+![index css](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/e56b220e-145f-4fec-93a4-da9729129843)
 
+Go to the Todo directory
 
+> cd ../..
 
+When you are in the Todo directory run:
+
+> npm run dev
 
 
 
