@@ -830,6 +830,7 @@ When you are in the Todo directory run:
 
 Assuming no errors when saving all these files, our To-Do app should be ready and fully functional with the functionality discussed earlier: creating a task, deleting a task and viewing all your tasks.
 
+![Final Todo Output](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/45b0b907-f8fd-4f5c-84e5-88ce9ffc0a81)
 
 
 
