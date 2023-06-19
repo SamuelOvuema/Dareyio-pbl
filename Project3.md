@@ -452,15 +452,17 @@ Configure Proxy in package.json
   
 3. Add the key-value pair in the package.json file "proxy": "http://localhost:5000".  
   
+![add proxy 5000](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/7c8f88c8-8dca-4015-90dd-4f9a61579d78)  
   
+The whole purpose of adding the proxy configuration in number 3 above is to make it possible to access the application directly from the browser by simply calling the server URL like http://localhost:5000 rather than always including the entire path like http://localhost:5000/api/todos
+
+Now, ensure you are inside the Todo directory, and simply do:  
   
+> npm run dev  
   
+Your app should open and start running on localhost:3000  
   
-  
-  
-  
-  
-  
+Important note: In order to be able to access the application from the Internet you have to open TCP port 3000 on EC2 by adding a new Security Group rule. You already know how to do it.  
   
   
   
