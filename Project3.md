@@ -464,7 +464,7 @@ Your app should open and start running on localhost:3000
   
 Important note: In order to be able to access the application from the Internet you have to open TCP port 3000 on EC2 by adding a new Security Group rule. You already know how to do it.  
 
-
+![cmd running React](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/5091fbb1-2de6-4431-aa47-cd3c299bd903)
 
 ![React install](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/62b7443b-6a42-4546-9f6b-ae58b18813fc)  
   
@@ -472,6 +472,89 @@ Important note: In order to be able to access the application from the Internet 
 ### Creating your React Components
 One of the advantages of React is that it makes use of components, which are reusable and also makes code modular. For our Todo app, there will be two stateful components and one stateless component.
 From your Todo directory run
+
+> cd client
+
+move to the src directory
+
+> cd src
+
+Inside your src folder create another folder called components
+
+> mkdir components
+
+Move into the components directory with
+
+> cd components
+
+Inside ‘components’ directory create three files Input.js, ListTodo.js and Todo.js.
+
+> touch Input.js ListTodo.js Todo.js
+
+Open Input.js file
+
+> vi Input.js
+
+Copy and paste the following
+
+> import React, { Component } from 'react';
+> import axios from 'axios';
+>
+> class Input extends Component {
+>
+> state = {
+> action: ""
+> }
+>
+> addTodo = () => {
+> const task = {action: this.state.action}
+> 
+>     if(task.action && task.action.length > 0){
+>       axios.post('/api/todos', task)
+>         .then(res => {
+>           if(res.data){
+>             this.props.getTodos();
+>             this.setState({action: ""})
+>           }
+>        })
+>         .catch(err => console.log(err))
+>     }else {
+>
+>       console.log('input field required')
+>     }
+> 
+> }
+> 
+> handleChange = (e) => {
+> this.setState({
+> action: e.target.value
+> })
+> }
+>
+> render() {
+> let { action } = this.state;
+> return (
+> <div>
+> <input type="text" onChange={this.handleChange} value={action} />
+> <button onClick={this.addTodo}>add todo</button>
+> </div>
+> )
+> }
+> }
+> 
+> export default Input
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
