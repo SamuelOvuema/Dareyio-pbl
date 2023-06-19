@@ -560,11 +560,46 @@ Install Axios
 
 > npm install axios
 
+![install axios](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/3e128064-2d12-4771-876b-fc324e4cd4d1)
 
+### FRONTEND CREATION (CONTINUED)
 
+Go to ‘components’ directory
 
+> cd src/components
 
+After that open your ListTodo.js
 
+> vi ListTodo.js
+
+in the ListTodo.js copy and paste the following code
+
+> import React from 'react';
+> 
+> const ListTodo = ({ todos, deleteTodo }) => {
+> 
+> return (
+> <ul>
+> {
+> todos &&
+> todos.length > 0 ?
+> (
+> todos.map(todo => {
+> return (
+> <li key={todo._id} onClick={() => deleteTodo(todo._id)}>{todo.action}</li>
+> )
+> })
+> )
+> :
+> (
+> <li>No todo(s) left</li>
+> )
+> }
+> </ul>
+> )
+> }
+> 
+> export default ListTodo
 
 
 
