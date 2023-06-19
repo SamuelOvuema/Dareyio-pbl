@@ -605,69 +605,90 @@ in the ListTodo.js copy and paste the following code
 
 Then in your Todo.js file you write the following code
 
-import React, {Component} from 'react';
-import axios from 'axios';
+> import React, {Component} from 'react';
+> import axios from 'axios';
+> 
+> import Input from './Input';
+> import ListTodo from './ListTodo';
+> 
+> class Todo extends Component {
+> 
+> state = {
+> todos: []
+> }
+> 
+> componentDidMount(){
+> this.getTodos();
+> }
+> 
+> getTodos = () => {
+> axios.get('/api/todos')
+> .then(res => {
+> if(res.data){
+> this.setState({
+> todos: res.data
+> })
+> }
+> })
+> .catch(err => console.log(err))
+> }
+> 
+> deleteTodo = (id) => {
+> 
+>     axios.delete(`/api/todos/${id}`)
+>       .then(res => {
+>         if(res.data){
+>           this.getTodos()
+>         }
+>       })
+>       .catch(err => console.log(err))
+> 
+> }
+> 
+> render() {
+> let { todos } = this.state;
+> 
+>     return(
+>       <div>
+>         <h1>My Todo(s)</h1>
+>         <Input getTodos={this.getTodos}/>
+>         <ListTodo todos={todos} deleteTodo={this.deleteTodo}/>
+>       </div>
+>     )
+> 
+> }
+> }
+> 
+> export default Todo;
 
-import Input from './Input';
-import ListTodo from './ListTodo';
+![Todo js](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/151daf8c-c88d-434c-8eb5-5eedbf7e3b95)
 
-class Todo extends Component {
+We need to make a little adjustment to our react code. Delete the logo and adjust our App.js to look like this.
 
-state = {
-todos: []
+Move to the src folder
+
+> cd ..
+
+Make sure that you are in the src folder and run
+
+> vi App.js
+
+Copy and paste the code below into it
+
+import React from 'react';
+
+import Todo from './components/Todo';
+import './App.css';
+
+const App = () => {
+return (
+<div className="App">
+<Todo />
+</div>
+);
 }
 
-componentDidMount(){
-this.getTodos();
-}
-
-getTodos = () => {
-axios.get('/api/todos')
-.then(res => {
-if(res.data){
-this.setState({
-todos: res.data
-})
-}
-})
-.catch(err => console.log(err))
-}
-
-deleteTodo = (id) => {
-
-    axios.delete(`/api/todos/${id}`)
-      .then(res => {
-        if(res.data){
-          this.getTodos()
-        }
-      })
-      .catch(err => console.log(err))
-
-}
-
-render() {
-let { todos } = this.state;
-
-    return(
-      <div>
-        <h1>My Todo(s)</h1>
-        <Input getTodos={this.getTodos}/>
-        <ListTodo todos={todos} deleteTodo={this.deleteTodo}/>
-      </div>
-    )
-
-}
-}
-
-export default Todo;
-
-
-
-
-
-
-
-
+export default App;
 
 
 
