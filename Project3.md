@@ -463,8 +463,27 @@ Now, ensure you are inside the Todo directory, and simply do:
 Your app should open and start running on localhost:3000  
   
 Important note: In order to be able to access the application from the Internet you have to open TCP port 3000 on EC2 by adding a new Security Group rule. You already know how to do it.  
+
+
+
+![React install](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/62b7443b-6a42-4546-9f6b-ae58b18813fc)  
   
   
-  
-  
-  
+### Creating your React Components
+One of the advantages of React is that it makes use of components, which are reusable and also makes code modular. For our Todo app, there will be two stateful components and one stateless component.
+From your Todo directory run
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
