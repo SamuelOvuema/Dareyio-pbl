@@ -3,61 +3,61 @@
 ## STEP 1 – BACKEND CONFIGURATION
 
 Update ubuntu
-
-> sudo apt update
-
+```bash
+sudo apt update
+```
 ![apt update pjt3](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/e725ce75-ab2c-4129-81b6-17c1c6799c77)
 
 Upgrade ubuntu
-
-> sudo apt upgrade
-
+```bash
+sudo apt upgrade
+```
 ![pjt3 ubuntu upgrade](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/176f34f8-c44a-4bde-a40d-26104ce10c0e)
 
 Lets get the location of Node.js software from Ubuntu repositories.
-
-> curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
-
+```bash
+curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+```
 ![node js 4rm ubuntu](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/79e92344-cc35-4ed3-9a42-fabb648dfdb1)
 
 Install Node.js on the server
 Install Node.js with the command below
-
-> sudo apt-get install -y nodejs
-
+```bash
+sudo apt-get install -y nodejs
+```
 ![install nodejs](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/cce10203-b7ad-4d2e-b8cf-17cb22af5144)
 
 Note: The command above installs both nodejs and npm. NPM is a package manager for Node like apt for Ubuntu, it is used to install Node modules & packages and to manage dependency conflicts.
 
 Verify the node installation with the command below
-
-> node -v
-
+```bash
+node -v
+```
 Verify the npm installation with the command below
-
-> npm -v 
-
+```bash
+npm -v 
+```
 ![verify node v](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/b5f95ca1-ed13-4c69-9722-fac202d450a6)
 
 Application Code Setup
 Create a new directory for your To-Do project:
-
-> mkdir Todo
-
+```bash
+mkdir Todo
+```
 Run the command below to verify that the Todo directory is created with ls command
-
-> ls
-
+```bash
+ls
+```
 ![create todo folder](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/3a6cd372-1114-4e57-aa67-395a0283287c)
 
 Now change your current directory to the newly created one:
-
-> cd Todo
-
+```bash
+cd Todo
+```
 Next, you will use the command npm init to initialise your project, so that a new file named package.json will be created. This file will normally contain information about your application and the dependencies that it needs to run. Follow the prompts after running the command. You can press Enter several times to accept default values, then accept to write out the package.json file by typing yes.
-
-> npm init
-
+```bash
+npm init
+```
 ![create file package json](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/2c9cf6be-bea9-4890-8738-2dcd13d395fb)
 
 Run the command ls to confirm that you have package.json file created.
@@ -71,29 +71,29 @@ Next, we will Install ExpressJs and create the Routes directory.
 Remember that Express is a framework for Node.js, therefore a lot of things developers would have programmed is already taken care of out of the box. Therefore it simplifies development, and abstracts a lot of low level details. For example, Express helps to define routes of your application based on HTTP methods and URLs.
 
 To use express, install it using npm:
-
-> npm install express
-
+```bash
+npm install express
+```
 Now create a file index.js with the command below
-
-> touch index.js
-
+```bash
+touch index.js
+```
 Run ls to confirm that your index.js file is successfully created
 
 ![install express](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/90838384-b8a1-4210-9ed5-4adf207bb9e5)
 
 Install the dotenv module
-
-> npm install dotenv
-
+```bash
+npm install dotenv
+```
 
 Open the index.js file with the command below
-
-> vim index.js
-
+```bash
+vim index.js
+```
 simply paste the code below into the file.
-
-> const express = require('express');
+```bash
+const express = require('express');
 require('dotenv').config();
 const app = express();
 const port = process.env.PORT || 5000;
@@ -108,7 +108,7 @@ res.send('Welcome to Express');
 app.listen(port, () => {
 console.log(`Server running on port ${port}`)
 });
-
+```
 ![todo index js](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/d44ed8ff-50a8-45fc-9487-cedf27aad862)
 
 Notice that we have specified to use port 5000 in the code. This will be required later when we go on the browser.
@@ -116,9 +116,9 @@ Notice that we have specified to use port 5000 in the code. This will be require
 Use :w to save in vim and use :qa to exit vim
 
 Now it is time to start our server to see if it works. Open your terminal in the same directory as your index.js file and type:
-
+```bash
 node index.js
-
+```
 If everything goes well, you should see the Server running on port 5000 in your terminal.
 
 ![create index js Install dotenv](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/2e956a81-8fb6-4580-9db2-161e7fe125d0)
@@ -128,9 +128,9 @@ Now we need to open this port in EC2 Security Groups and create an inbound rule 
 ![inbound rules](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/40dd534d-2c30-412d-8461-93c18dc44d65)
 
 Open up your browser and try to access your server’s Public IP or Public DNS name followed by port 5000:
-
-> http://<PublicIP-or-PublicDNS>:5000
-
+```bash
+http://<PublicIP-or-PublicDNS>:5000
+```
 ![Welcome to Express](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/9c4d50f4-7700-4a2b-b331-97ea5da89b43)
 
 Routes
@@ -142,28 +142,28 @@ There are three actions that our To-Do application needs to be able to do:
 Each task will be associated with some particular endpoint and will use different standard HTTP request methods: POST, GET, DELETE.
 
 For each task, we need to create routes that will define various endpoints that the To-do app will depend on. So let us create a folder routes
-
-> mkdir routes
-
+```bash
+mkdir routes
+```
 Tip: You can open multiple shells in Putty or Linux/Mac to connect to the same EC2
 
 Change directory to routes folder.
-
-> cd routes
-
+```bash
+cd routes
+```
 Now, create a file api.js with the command below
-
-> touch api.js
-
+```bash
+touch api.js
+```
 Open the file with the command below
-
-> vim api.js
-
+```bash
+vim api.js
+```
 ![api js](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/8ed24794-3e76-41e4-8cef-a7d26c515b34)
 
 Copy below code in the file. (Do not be overwhelmed with the code)
-
-> const express = require ('express');
+```bash
+const express = require ('express');
 const router = express.Router();
 router.get('/todos', (req, res, next) => {
 });
@@ -171,7 +171,7 @@ router.post('/todos', (req, res, next) => {
 });
 router.delete('/todos/:id', (req, res, next) => {
 })
-
+```
 module.exports = router;  
 
 ![create routes](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/7b6fe72b-0774-4ab4-b653-be3d670f81c2)
@@ -191,21 +191,23 @@ In essence, the Schema is a blueprint of how the database will be constructed, i
 To create a Schema and a model, install *mongoose* which is a Node.js package that makes working with mongodb easier.
 
 Change directory back Todo folder with cd .. and install Mongoose
-
-> npm install mongoose
+```bash
+npm install mongoose
+```
 Create a new folder models :
-
-> mkdir models
+```bash
+mkdir models
+```
 Change directory into the newly created ‘models’ folder with
-
-> cd models
-
+```bash
+cd models
+```
 ![install mongoose](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/7136745f-40f2-4999-9dbe-393e3f53fcf8)
 
 Inside the models folder, create a file and name it todo.js
-
-> touch todo.js
-
+```bash
+touch todo.js
+```
 Tip: All three commands above can be defined in one line to be executed consequently with help of && operator, like this:  
   
 ```bash
@@ -215,8 +217,8 @@ mkdir models && cd models && touch todo.js
 Open the file created with vim todo.js then paste the code below in the file:  
 
 ![vim todo js](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/00fcb41f-1fbb-4889-8090-5efe8113c4c1)
-
-> const mongoose = require('mongoose');
+```bash
+const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 //create schema for todo
 const TodoSchema = new Schema({
@@ -228,7 +230,7 @@ required: [true, 'The todo text field is required']
 //create model for todo
 const Todo = mongoose.model('todo', TodoSchema);
 module.exports = Todo;  
-
+```
 ![mongoose todo](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/05187399-93fe-4c05-925a-0224e1bdc8b8)
 
 Now we need to update our routes from the file api.js in ‘routes’ directory to make use of the new model.
