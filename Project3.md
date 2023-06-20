@@ -208,7 +208,9 @@ Inside the models folder, create a file and name it todo.js
 
 Tip: All three commands above can be defined in one line to be executed consequently with help of && operator, like this:  
   
-> mkdir models && cd models && touch todo.js  
+```bash
+mkdir models && cd models && touch todo.js  
+```
 
 Open the file created with vim todo.js then paste the code below in the file:  
 
