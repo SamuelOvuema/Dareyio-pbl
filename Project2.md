@@ -10,13 +10,16 @@ We have to connect to our AWS account and launch and connect to our EC2 instance
 In order to display web pages to our site visitors, we are going to employ Nginx, a high-performance web server. We’ll use the apt package manager to install this package.
 Since this is our first time using apt for this session, start off by updating your server’s package index. Following that, you can use apt install to get Nginx installed.
 Run the following command:.
-1. sudo apt update.
-
+```bash
+sudo apt update.
+```
 ![Installing mysql -server](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/ff126a48-fa85-450e-b9cd-f87440c2e2e1)
-
-2. sudo apt install nginx.
-3. sudo systemctl status nginx.
-
+```bash
+sudo apt install nginx
+```
+```bash
+sudo systemctl status nginx.
+```
 If it is green and running, then you did everything correctly – you have just launched nginx Web Server in the Clouds!
 
 ![nginx active and running](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/654c61d0-a6dd-4e18-a01c-51f1b62cdf04)
@@ -30,28 +33,45 @@ to the page below.
 Now that you have a web server up and running, you need to install a Database Management System (DBMS) to be able to store and manage data for your site in a relational database. MySQL is a popular relational database management system used within PHP environments, so we will use it in our project.
 Again, we will use 'apt' to acquire and install this software.
 Run the following commands:.
-1. sudo apt install mysql-server.
-2. sudo mysql.
+```bash
+sudo apt install mysql-server
+```
+```bash
+2. sudo mysql
+```
+This will connect to the MySQL server as the administrative database user root, which is inferred by the use of sudo when running this command. You should see output like this:
+
+
 It’s recommended that you run a security script that comes pre-installed with MySQL. This script will remove some insecure default settings and lock down access to your database system. Before running the script you will set a password for the root user, using mysql_native_password as default authentication method. We’re defining this user’s password as PassWord.1.
-3. ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'PassWord.1';
-Exit the Mysql shell with the command 4.
-4. mysql> exit.
-To access your mysql you have to make use of your new generated password, else you will not be able to gain access into your 'mysql'. If you run the coommand "sudo mysql" it will deny you accesss and sho this message  "Access denied for user 'root'@'localhost' (using password: NO)" This lead us to our next command.
-5. sudo mysql -p .
+
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'PassWord.1';
+Exit the Mysql shell with:
+
+> mysql> exit
+
+Start the interactive script by running:
+
+To access your mysql you have to make use of your new generated password, else you will not be able to gain access into your 'mysql'. If you run the coommand "sudo mysql" it will deny you accesss and show this message  "Access denied for user 'root'@'localhost' (using password: NO)" This lead us to our next command.
+```bash
+sudo mysql -p 
+```
 It will request for your password, you should enter the new genarated password and whola! you are in!
 To exit the MySQL console, type: exit.
 
 ![Creating password for mysql server](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/80a4b81a-2615-4c11-94e1-573d9e6fbe2c)
+
 MySQL server is now installed and secured. Next, we will install PHP, the final component in the LEMP stack.
 
 __Step 3 — installing php__
+
 You have Nginx installed to serve your content and MySQL installed to store and manage your data. Now you can install PHP to process code and generate dynamic content for the web server.
 
 You’ll need to install php-fpm, which stands for “PHP fastCGI process manager”, and tell Nginx to pass PHP requests to this software for processing. Additionally, you’ll need php-mysql, a PHP module that allows PHP to communicate with MySQL-based databases. Core PHP packages will automatically be installed as dependencies.
 
 To install these 2 packages at once, run:.
+```bash
 sudo apt install php-fpm php-mysql
-
+```
 When prompted, type Y and press ENTER to confirm installation.
 
 ![installing php-fpm   php-mysql](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/3cef93a1-b6d3-4116-a1c7-bcc54913bdc3)
@@ -69,19 +89,20 @@ When using the Nginx web server, we can create server blocks (similar to virtual
 On Ubuntu 20.04, Nginx has one server block enabled by default and is configured to serve documents out of a directory at /var/www/html. While this works well for a single site, it can become difficult to manage if you are hosting multiple sites. Instead of modifying /var/www/html, we’ll create a directory structure within /var/www for the your_domain website, leaving /var/www/html in place as the default directory to be served if a client request does not match any other sites.
 
 Create the root web directory for your_domain as follows:
-> sudo mkdir /var/www/projectLEMP
-
+```bash
+sudo mkdir /var/www/projectLEMP
+```
 Next, assign ownership of the directory with the $USER environment variable, which will reference your current system user:
-
-> sudo chown -R $USER:$USER /var/www/projectLEMP
-
+```bash
+sudo chown -R $USER:$USER /var/www/projectLEMP
+```
 Then, open a new configuration file in Nginx’s sites-available directory using your preferred command-line editor. Here, we’ll use nano:
-
-> sudo nano /etc/nginx/sites-available/projectLEMP
-
+```bash
+sudo nano /etc/nginx/sites-available/projectLEMP
+```
 This will create a new blank file. Paste in the following bare-bones configuration:
-
-> #/etc/nginx/sites-available/projectLEMP
+```bash
+#/etc/nginx/sites-available/projectLEMP
 server {
     listen 80;
     server_name projectLEMP www.projectLEMP;
@@ -102,43 +123,47 @@ server {
         deny all;
     } 
 }
-
+```
 When you’re done editing, save and close the file. If you’re using nano, you can do so by typing CTRL+X and then y and ENTER to confirm.
 
 Activate your configuration by linking to the config file from Nginx’s sites-enabled directory:
-
-> sudo ln -s /etc/nginx/sites-available/projectLEMP /etc/nginx/sites-enabled/
-
+```bash
+sudo ln -s /etc/nginx/sites-available/projectLEMP /etc/nginx/sites-enabled/
+```
 This will tell Nginx to use the configuration next time it is reloaded. You can test your configuration for syntax errors by typing:.
-
-> sudo nginx -t
+```bash
+sudo nginx -t
+```
 You shall see following message:.
-
-> nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
-> nginx: configuration file /etc/nginx/nginx.conf test is successful
-
+```bash
+nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+nginx: configuration file /etc/nginx/nginx.conf test is successful
+```
 We also need to disable default Nginx host that is currently configured to listen on port 80, for this run:
-
-> sudo unlink /etc/nginx/sites-enabled/default
-
+```bash
+sudo unlink /etc/nginx/sites-enabled/default
+```
 When you are ready, reload Nginx to apply the changes:
-
-> sudo systemctl reload nginx
-
+```bash
+sudo systemctl reload nginx
+```
 Your new website is now active, but the web root /var/www/projectLEMP is still empty. Create an index.html file in that location so that we can test that your new server block works as expected:
-
->sudo echo 'Hello LEMP from hostname' $(curl -s http://169.254.169.254/latest/meta-data/public-hostname) 'with public IP' $(curl -s http://169.254.169.254/latest/meta-data/public-ipv4) > /var/www/projectLEMP/index.html
-
+```bash
+sudo echo 'Hello LEMP from hostname' $(curl -s 
+http://169.254.169.254/latest/meta-data/public-hostname) 'with public IP' 
+$(curl -s http://169.254.169.254/latest/meta-data/public-ipv4) >
+/var/www/projectLEMP/index.html
+```
 Now go to your browser and try to open your website URL using IP address:
-
-> http://<Public-IP-Address>:80.
-
+```bash
+http://<Public-IP-Address>:80.
+```
 If you see the text from ‘echo’ command you wrote to index.html file, then it means your Nginx site is working as expected.
 In the output you will see your server’s public hostname (DNS name) and public IP address. You can also access your website in your browser 
 by public DNS name, not only by IP – try it out, the result must be the same (port is optional).
-
-> http://<Public-DNS-Name>:80.
-    
+```bash
+http://<Public-DNS-Name>:80.
+```    
 You can leave this file in place as a temporary landing page for your application until you set up an index.php file to replace it. Once you do that, remember to remove or rename the index.html file from your document root, as it would take precedence over an index.php file by default.
 
 Your LEMP stack is now fully configured. 
@@ -156,29 +181,27 @@ At this point, your LAMP stack is completely installed and fully operational.
 You can test it to validate that Nginx can correctly hand .php files off to your PHP processor.
 
 You can do this by creating a test PHP file in your document root. Open a new file called info.php within your document root in your text editor:
-    
-> sudo nano /var/www/projectLEMP/info.php.
-    
+```bash   
+sudo nano /var/www/projectLEMP/info.php.
+```   
 Type or paste the following lines into the new file. This is valid PHP code that will return information about your server:
-
-> ?php
-> phpinfo();.
-
+```bash
+<?php
+phpinfo();.
+```
 You can now access this page in your web browser by visiting the domain name or public IP address you’ve set up in your Nginx configuration file, followed by /info.php:
-
-> http://`server_domain_or_IP`/info.php
-
+```bash
+http://`server_domain_or_IP`/info.php
+```
 You will see a web page containing detailed information about your server:
 
 ![php info page](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/15521212-fec1-4f09-a475-8cd76dc8314b)
 
 After checking the relevant information about your PHP server through that page, it’s best to remove the file you created as it contains sensitive information about your PHP environment and your Ubuntu server. You can use rm to remove that file:  
-
-> sudo rm /var/www/your_domain/info.php
-
+```bash
+sudo rm /var/www/your_domain/info.php
+```
 ![removal of file](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/5e70acb8-0da8-42d0-b700-a15586576d45)
-
-
 
 You can always regenerate this file if you need it later.
 
@@ -191,40 +214,40 @@ At the time of this writing, the native MySQL PHP library mysqlnd doesn’t supp
 We will create a database named **example_database** and a user named **example_user**, but you can replace these names with different values.
 
 First, connect to the MySQL console using the root account:
-
-> sudo mysql
-
+```bash
+sudo mysql
+```
 To create a new database, run the following command from your MySQL console:
-
-> mysql> CREATE DATABASE `example_database`;
-
+```bash
+mysql> CREATE DATABASE `example_database`;
+```
 Now you can create a new user and grant him full privileges on the database you have just created.
 
 The following command creates a new user named example_user, using mysql_native_password as default authentication method. We’re defining this user’s password as password, but you should replace this value with a secure password of your own choosing.
-
-> mysql>  CREATE USER 'example_user'@'%' IDENTIFIED WITH mysql_native_password BY 'password';
-
+```bash
+mysql>  CREATE USER 'example_user'@'%' IDENTIFIED WITH mysql_native_password BY 'password';
+```
 Now we need to give this user permission over the example_database database:
-
-> mysql> GRANT ALL ON example_database.* TO 'example_user'@'%';
-
+```bash
+mysql> GRANT ALL ON example_database.* TO 'example_user'@'%';
+```
 This will give the example_user user full privileges over the example_database database, while preventing this user from creating or modifying other databases on your server.
 
 Now exit the MySQL shell with:
-
-> mysql> exit
-
+```bash
+mysql> exit
+```
 You can test if the new user has the proper permissions by logging in to the MySQL console again, this time using the custom user credentials:
-
-> mysql -u example_user -p
-
+```bash
+mysql -u example_user -p
+```
 ![mysql user psswd](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/87e0426e-0105-4712-8a0e-f87122d9f870)
 
 
 Notice the -p flag in this command, which will prompt you for the password used when creating the example_user user. After logging in to the MySQL console, confirm that you have access to the example_database database:
-
-> mysql> SHOW DATABASES;
-
+```bash
+mysql> SHOW DATABASES;
+```
 This will give you the following output:  
   
 Output
@@ -239,28 +262,31 @@ Output
 
 Next, we’ll create a test table named todo_list. From the MySQL console, run the following statement:
 
-
-> CREATE TABLE example_database.todo_list (item_id INT AUTO_INCREMENT,content VARCHAR(255),PRIMARY KEY(item_id));
+```bash
+CREATE TABLE example_database.todo_list (item_id INT AUTO_INCREMENT,content
+VARCHAR(255),PRIMARY KEY(item_id));
+```
 Insert a few rows of content in the test table. You might want to repeat the next command a few times, using different VALUES:
-
-> mysql> INSERT INTO example_database.todo_list (content) VALUES ("My first important item");
-
+```bash
+mysql> INSERT INTO example_database.todo_list (content) VALUES ("My first
+important item");
+```
 To confirm that the data was successfully saved to your table, run:
-
-> mysql>  SELECT * FROM example_database.todo_list;
-
+```bash
+mysql>  SELECT * FROM example_database.todo_list;
+```
 You’ll see the following output:
 
 ![output pic2](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/c3bcdcf8-f8a8-4e7c-8712-63daab854ad7)
 
 After confirming that you have valid data in your test table, you can exit the MySQL console:
-
-> mysql> exit
-
+```bash
+mysql> exit
+```
 Now you can create a PHP script that will connect to MySQL and query for your content. Create a new PHP file in your custom web root directory using your preferred editor. We’ll use vi for that:
-
-> nano /var/www/projectLEMP/todo_list.php
-    
+```bash
+nano /var/www/projectLEMP/todo_list.php
+```    
 The following PHP script connects to the MySQL database and queries for the content of the todo_list table, displays the results in a list. If there is a problem with the database connection, it will throw an exception.
 
 Copy this content into your todo_list.php script:
@@ -270,9 +296,9 @@ Copy this content into your todo_list.php script:
 Save and close the file when you are done editing.
 
 You can now access this page in your web browser by visiting the domain name or public IP address configured for your website, followed by /todo_list.php:
-
-> http://<Public_domain_or_IP>/todo_list.php
-
+```bash
+http://<Public_domain_or_IP>/todo_list.php
+```
 ![php todoscript](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/6c33c9de-3026-42af-a360-dee46f29f7f5)
 
 You should see a page like this, showing the content you’ve inserted in your test table:
