@@ -16,7 +16,7 @@ If you do not have an AWS account – go back to Project 1 Step 0 to sign in to 
 
 ![select Ubuntu](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/7b387155-5411-4ec5-8e76-b25d3e498896)
 
-
+![t2nano instance type](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/875e7240-6bdb-4dcf-8b7f-4ab3a8f9fb91)
 
 
 
