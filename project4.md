@@ -20,6 +20,81 @@ If you do not have an AWS account – go back to Project 1 Step 0 to sign in to 
 
 ![launch instance t2nano](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/09fc0b1a-8b4c-4583-bc64-ba9bbe04702c)
 
+Task
+In this assignment, you are going to implement a simple Book Register web form using MEAN stack.
+
+Step 1: Install NodeJs
+Node.js is a JavaScript runtime built on Chrome’s V8 JavaScript engine. Node.js is used in this tutorial to set up the Express routes and AngularJS controllers.
+
+Update ubuntu
+```bash
+sudo apt update
+```
+Upgrade ubuntu
+```bash
+sudo apt upgrade
+```
+Add certificates
+```bash
+sudo apt -y install curl dirmngr apt-transport-https lsb-release ca-certificates
+
+curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
