@@ -37,6 +37,8 @@ Upgrade ubuntu
 ```bash
 sudo apt upgrade
 ```
+![sudo apt upgrade2](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/1b2eb832-4ccc-40e4-bba0-0f0385ad96f1)
+
 Add certificates
 ```bash
 sudo apt -y install curl dirmngr apt-transport-https lsb-release ca-certificates
