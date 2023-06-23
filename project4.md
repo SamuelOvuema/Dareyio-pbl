@@ -30,6 +30,9 @@ Update ubuntu
 ```bash
 sudo apt update
 ```
+
+
+
 Upgrade ubuntu
 ```bash
 sudo apt upgrade
