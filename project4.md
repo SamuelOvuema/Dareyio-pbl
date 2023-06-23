@@ -31,7 +31,7 @@ Update ubuntu
 sudo apt update
 ```
 
-
+![sudo apt upgrade p4](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/bfc3bae2-c34a-47d6-b9ce-fed999c26d30)
 
 Upgrade ubuntu
 ```bash
