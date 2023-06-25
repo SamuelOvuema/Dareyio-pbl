@@ -351,6 +351,9 @@ You can find it in your AWS web console in EC2 details
 
 Run curl -s http://169.254.169.254/latest/meta-data/public-ipv4 for Public IP address or curl -s http://169.254.169.254/latest/meta-data/public-hostname for Public DNS name.
 
+![node server js1](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/7d8535e7-2586-4cc0-8d21-3bd141f00556)
+
+
 This is how your Web Book Register Application will look like in browser:
 
 
