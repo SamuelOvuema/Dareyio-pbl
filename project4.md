@@ -357,7 +357,7 @@ Run curl -s http://169.254.169.254/latest/meta-data/public-ipv4 for Public IP ad
 
 This is how your Web Book Register Application will look like in browser:
 
-
+![webbook register app](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/bdac472d-e888-4035-b4c3-a49da7eb8245)
 
 
 
