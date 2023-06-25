@@ -353,6 +353,7 @@ Run curl -s http://169.254.169.254/latest/meta-data/public-ipv4 for Public IP ad
 
 ![node server js1](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/7d8535e7-2586-4cc0-8d21-3bd141f00556)
 
+![node server js2](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/da3fe8c5-5ef1-4793-85bf-c7ee535932bf)
 
 This is how your Web Book Register Application will look like in browser:
 
