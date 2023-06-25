@@ -202,6 +202,80 @@ var bookSchema = mongoose.Schema( {
 var Book = mongoose.model('Book', bookSchema);
 module.exports = mongoose.model('Book', bookSchema);
 ```
+![book js](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/ac1d50ed-2945-4800-816e-52a8c4129455)
+
+```bash
+Step 4 – Access the routes with AngularJS
+```
+AngularJS provides a web framework for creating dynamic views in your web applications. In this tutorial, we use AngularJS to connect our web page with Express and perform actions on our book register.
+
+Change the directory back to ‘Books’
+```bash
+cd ../..
+```
+Create a folder named public
+```bash
+mkdir public && cd public
+```
+Add a file named script.js
+```bash
+vi script.js
+```
+Copy and paste the Code below (controller configuration defined) into the script.js file.
+
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope, $http) {
+  $http( {
+    method: 'GET',
+    url: '/book'
+  }).then(function successCallback(response) {
+    $scope.books = response.data;
+  }, function errorCallback(response) {
+    console.log('Error: ' + response);
+  });
+  $scope.del_book = function(book) {
+    $http( {
+      method: 'DELETE',
+      url: '/book/:isbn',
+      params: {'isbn': book.isbn}
+    }).then(function successCallback(response) {
+      console.log(response);
+    }, function errorCallback(response) {
+      console.log('Error: ' + response);
+    });
+  };
+  $scope.add_book = function() {
+    var body = '{ "name": "' + $scope.Name + 
+    '", "isbn": "' + $scope.Isbn +
+    '", "author": "' + $scope.Author + 
+    '", "pages": "' + $scope.Pages + '" }';
+    $http({
+      method: 'POST',
+      url: '/book',
+      data: body
+    }).then(function successCallback(response) {
+      console.log(response);
+    }, function errorCallback(response) {
+      console.log('Error: ' + response);
+    });
+  };
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
