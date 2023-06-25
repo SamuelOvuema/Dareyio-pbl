@@ -339,9 +339,19 @@ It shall return an HTML page, it is hardly readable in the CLI, but we can also 
 
 For this – you need to open TCP port 3300 in your AWS Web Console for your EC2 Instance.
 
+Your Security group shall look like this:
 
+![TCP port 3300](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/49d093d3-bdee-4e62-9977-fc01d40d105b)
 
+Now you can access our Book Register web application from the Internet with a browser using Public IP address or Public DNS name.
 
+Quick reminder on how to get your server’s Public IP and public DNS name:
+
+You can find it in your AWS web console in EC2 details
+
+Run curl -s http://169.254.169.254/latest/meta-data/public-ipv4 for Public IP address or curl -s http://169.254.169.254/latest/meta-data/public-hostname for Public DNS name.
+
+This is how your Web Book Register Application will look like in browser:
 
 
 
