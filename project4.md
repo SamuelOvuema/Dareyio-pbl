@@ -176,11 +176,32 @@ module.exports = function(app){
   });
 };
 ```
+![routes js](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/89961bd4-c01b-470f-9897-9dcd6cf9996a)
 
-
-
-
-
+In the ‘apps’ folder, create a folder named models
+```bash
+mkdir models && cd models
+```
+Create a file named book.js
+```bash
+vi book.js
+```
+Copy and paste the code below into ‘book.js’
+```bash
+var mongoose = require('mongoose');
+var dbHost = 'mongodb://localhost:27017/test';
+mongoose.connect(dbHost);
+mongoose.connection;
+mongoose.set('debug', true);
+var bookSchema = mongoose.Schema( {
+  name: String,
+  isbn: {type: String, index: true},
+  author: String,
+  pages: Number
+});
+var Book = mongoose.model('Book', bookSchema);
+module.exports = mongoose.model('Book', bookSchema);
+```
 
 
 
