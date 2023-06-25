@@ -321,10 +321,23 @@ Copy and paste the code below into index.html file.
   </body>
 </html>
 ```
+![vi index html](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/ad8a2919-c33e-45f8-afcf-9c6e7d97dd8f)
 
+Change the directory back up to Books
+```bash
+cd ..
+```
+Start the server by running this command:
+```bash
+node server.js
+```
+The server is now up and running, we can connect it via port 3300. You can launch a separate Putty or SSH console to test what curl command returns locally.
 
+curl -s http://localhost:3300
 
+It shall return an HTML page, it is hardly readable in the CLI, but we can also try and access it from the Internet.
 
+For this – you need to open TCP port 3300 in your AWS Web Console for your EC2 Instance.
 
 
 
