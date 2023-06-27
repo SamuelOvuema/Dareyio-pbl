@@ -42,6 +42,7 @@ sudo mysql
 
 This will connect to the MySQL server as the administrative database user root, which is inferred by the use of sudo when running this command. You should see output like this:
 
+![sudo mysql](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/26687079-9133-4154-8f6b-d2e43db2c246)
 
 It’s recommended that you run a security script that comes pre-installed with MySQL. This script will remove some insecure default settings and lock down access to your database system. Before running the script you will set a password for the root user, using mysql_native_password as default authentication method. We’re defining this user’s password as PassWord.1.
 ```bash
