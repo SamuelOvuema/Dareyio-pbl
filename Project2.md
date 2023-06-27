@@ -56,13 +56,18 @@ Start the interactive script by running:
 ```bash
 sudo mysql_secure_installation
 ```
+![mysql secure installation](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/f378869a-f180-41ea-8d9c-bc245acaab62)
 
 To access your mysql you have to make use of your new generated password, else you will not be able to gain access into your 'mysql'. If you run the coommand "sudo mysql" it will deny you accesss and show this message  "Access denied for user 'root'@'localhost' (using password: NO)" This lead us to our next command.
 ```bash
 sudo mysql -p 
 ```
-It will request for your password, you should enter the new genarated password and whola! you are in!
+It will request for your password, you should enter the new genarated password and you are in!
+
 To exit the MySQL console, type: exit.
+```bash
+mysql> exit
+```
 
 ![Creating password for mysql server](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/80a4b81a-2615-4c11-94e1-573d9e6fbe2c)
 
