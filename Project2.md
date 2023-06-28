@@ -1,7 +1,5 @@
-                                                                                                                                                               
-                                                                                                                                                               
-                                                                                                                                                               
-                                                                                                                 # LEMP STACK IMPLEMENTATION
+                                                                                                                                                                                                                                                                    
+                     # LEMP STACK IM
 
 ## Web stack implementation (lamp stack) in aws
 
@@ -150,7 +148,7 @@ This will tell Nginx to use the configuration next time it is reloaded. You can 
 ```bash
 sudo nginx -t
 ```
-You shall see following message:.
+You shall see following message:
 ```bash
 nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
 nginx: configuration file /etc/nginx/nginx.conf test is successful
