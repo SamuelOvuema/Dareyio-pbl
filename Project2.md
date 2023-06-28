@@ -264,7 +264,7 @@ mysql> SHOW DATABASES;
 ```
 This will give you the following output:  
   
-Output
+
 ![Database](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/806d47c8-5549-45c6-8fe7-3a2b62a58e48)
 
 
@@ -285,7 +285,7 @@ mysql>  SELECT * FROM example_database.todo_list;
 ```
 You’ll see the following output:
 
-![output pic2](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/c3bcdcf8-f8a8-4e7c-8712-63daab854ad7)
+
 
 After confirming that you have valid data in your test table, you can exit the MySQL console:
 ```bash
