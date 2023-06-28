@@ -255,8 +255,8 @@ You can test if the new user has the proper permissions by logging in to the MyS
 ```bash
 mysql -u example_user -p
 ```
-![mysql user psswd](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/87e0426e-0105-4712-8a0e-f87122d9f870)
 
+![mysqluexample](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/fbc50cc2-1f96-46f3-905a-358eefd1a1bf)
 
 Notice the -p flag in this command, which will prompt you for the password used when creating the example_user user. After logging in to the MySQL console, confirm that you have access to the example_database database:
 ```bash
@@ -266,13 +266,7 @@ This will give you the following output:
   
 Output
 
-| Database           |
- --------------------
-| example_database   |
-                    
-| information_schema |
 
-2 rows in set (0.000 sec)
 
 Next, we’ll create a test table named todo_list. From the MySQL console, run the following statement:
 
