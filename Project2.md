@@ -285,7 +285,7 @@ mysql>  SELECT * FROM example_database.todo_list;
 ```
 You’ll see the following output:
 
-
+![Database 2](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/c40012cd-7884-4f99-81d0-2a0e8d4301da)
 
 After confirming that you have valid data in your test table, you can exit the MySQL console:
 ```bash
@@ -298,6 +298,28 @@ nano /var/www/projectLEMP/todo_list.php
 The following PHP script connects to the MySQL database and queries for the content of the todo_list table, displays the results in a list. If there is a problem with the database connection, it will throw an exception.
 
 Copy this content into your todo_list.php script:
+
+```bash
+<?php
+$user = "example_user";
+$password = "password";
+$database = "example_database";
+$table = "todo_list";
+
+try {
+  $db = new PDO("mysql:host=localhost;dbname=$database", $user, $password);
+  echo "<h2>TODO</h2><ol>";
+  foreach($db->query("SELECT content FROM $table") as $row) {
+    echo "<li>" . $row['content'] . "</li>";
+  }
+  echo "</ol>";
+} catch (PDOException $e) {
+    print "Error!: " . $e->getMessage() . "<br/>";
+    die();
+}
+```
+
+
 
 ![php todolist](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/40ebf155-d9c4-4522-ab08-0e44efe474fc)
 
