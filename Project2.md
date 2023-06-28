@@ -1,4 +1,7 @@
-# LEMP STACK IMPLEMENTATION
+                                                                                                                                                               
+                                                                                                                                                               
+                                                                                                                                                               
+                                                                                                                 # LEMP STACK IMPLEMENTATION
 
 ## Web stack implementation (lamp stack) in aws
 
@@ -135,6 +138,8 @@ server {
     } 
 }
 ```
+![sudo nana etcnginx](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/9053dea9-9f03-43ed-83c5-e530dc7b25f2)
+
 When you’re done editing, save and close the file. If you’re using nano, you can do so by typing CTRL+X and then y and ENTER to confirm.
 
 Activate your configuration by linking to the config file from Nginx’s sites-enabled directory:
