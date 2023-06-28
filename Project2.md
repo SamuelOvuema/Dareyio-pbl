@@ -265,7 +265,7 @@ mysql> SHOW DATABASES;
 This will give you the following output:  
   
 Output
-
+![Database](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/806d47c8-5549-45c6-8fe7-3a2b62a58e48)
 
 
 Next, we’ll create a test table named todo_list. From the MySQL console, run the following statement:
