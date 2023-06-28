@@ -327,7 +327,7 @@ http://<Public_domain_or_IP>/todo_list.php
 ```
 You should see a page like this, showing the content you’ve inserted in your test table:
 
-
+![Todo my first important item](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/30f6d418-9cc2-4670-8a8b-b5e722145f7a)
 
 That means your PHP environment is ready to connect and interact with your MySQL server.
 
