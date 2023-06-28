@@ -319,21 +319,15 @@ try {
 }
 ```
 
-
-
-![php todolist](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/40ebf155-d9c4-4522-ab08-0e44efe474fc)
-
 Save and close the file when you are done editing.
 
 You can now access this page in your web browser by visiting the domain name or public IP address configured for your website, followed by /todo_list.php:
 ```bash
 http://<Public_domain_or_IP>/todo_list.php
 ```
-![php todoscript](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/6c33c9de-3026-42af-a360-dee46f29f7f5)
-
 You should see a page like this, showing the content you’ve inserted in your test table:
 
-![php interaction with Mysql](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/eaec7e19-b54a-4d3f-a116-bccebc909b05)
+
 
 That means your PHP environment is ready to connect and interact with your MySQL server.
 
