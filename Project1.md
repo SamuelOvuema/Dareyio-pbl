@@ -57,29 +57,35 @@ http://<Public-IP-Address>:80
 ```
 
 
-Another way to retrieve your Public IP address, other than to check it in AWS Web console, is to use following command:
+Another way to retrieve your Public IP address, other than to check it in the AWS Web console, is to use the following command:
 ```bash
 curl -s http://169.254.169.254/latest/meta-data/public-ipv4
 ```
-The URL in browser shall also work if you do not specify port number since all web browsers use port 80 by default.
+The URL in the browser shall also work if you do not specify a port number since all web browsers use port 80 by default.
 
-If you see following page, then your web server is now correctly installed and accessible through your firewall.
+If you see the following page, then your web server is now correctly installed and accessible through your firewall.
 
 ![Apache2 Default page](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/50d9218b-02fd-4e04-81ae-3a0f499548b3)
 
+In fact, it is the same content you previously got by the ‘curl’ command but represented in nice HTML formatting by your web browser.
 
+## STEP 2 — INSTALLING MYSQL
 
+Now that you have a web server up and running, you need to install a Database Management System (DBMS) to be able to store and manage data for your site in a relational database. MySQL is a popular relational database management system used within PHP environments, so we will use it in our project.
 
+Again, use ‘apt’ to acquire and install this software:
+```bash
+sudo apt install mysql-server
+```
 
+When prompted, confirm installation by typing Y, and then ENTER.
 
+When the installation is finished, log in to the MySQL console by typing:
+```bash
+sudo mysql
+```
 
-
-
-
-
-
-
-
+This will connect to the MySQL server as the administrative database user root, which is inferred by the use of sudo when running this command. You should see output like this:
 
 
 
