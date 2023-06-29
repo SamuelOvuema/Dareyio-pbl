@@ -54,6 +54,8 @@ http://<Public-IP-Address>:80
 ```
 
 
+![Hellp Lamp](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/433c01ed-6398-480c-97bf-5134309d0ef3)
+
 Another way to retrieve your Public IP address, other than to check it in AWS Web console, is to use following command:
 ```bash
 curl -s http://169.254.169.254/latest/meta-data/public-ipv4
