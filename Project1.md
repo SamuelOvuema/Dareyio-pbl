@@ -42,6 +42,9 @@ First, let us try to check how we can access it locally in our Ubuntu shell, run
 or
  curl http://127.0.0.1:80
 ```
+
+![terminal ubuntu works](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/b892e470-4181-4b11-a275-b2ee7e99a78f)
+
 These 2 commands above actually do pretty much the same – they use ‘curl’ command to request our Apache HTTP Server on port 80 (actually you can even try to not specify any port – it will work anyway). The difference is that: in the first case we try to access our server via DNS name and in the second one – by IP address (in this case IP address 127.0.0.1 corresponds to DNS name ‘localhost’ and the process of converting a DNS name to IP address is called “resolution”). We will touch DNS in further lectures and projects.
 
 As an output you can see some strangely formatted test, do not worry, we just made sure that our Apache web service responds to ‘curl’ command with some payload.
