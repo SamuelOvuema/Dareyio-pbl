@@ -52,7 +52,7 @@ Open a web browser of your choice and try to access following url
 ```bash
 http://<Public-IP-Address>:80
 ```
-
+![Command hello lamp](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/a4840292-102a-4c7b-b0d7-e56445db6e08)
 
 ![Hellp Lamp](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/433c01ed-6398-480c-97bf-5134309d0ef3)
 
