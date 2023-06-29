@@ -26,7 +26,7 @@ sudo systemctl status apache2
 ```
 If it is green and running, then you did everything correctly – you have just launched your first Web Server in the Clouds!
 
-
+![sudo systemctl status apache2](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/41cc1cd7-0037-43ca-b739-b32cb0ef6182)
 
 Before we can receive any traffic by our Web Server, we need to open TCP port 80 which is the default port that web browsers use to access web pages on the Internet
 
