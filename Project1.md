@@ -65,7 +65,7 @@ The URL in browser shall also work if you do not specify port number since all w
 
 If you see following page, then your web server is now correctly installed and accessible through your firewall.
 
-
+![Apache2 Default page](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/50d9218b-02fd-4e04-81ae-3a0f499548b3)
 
 
 
