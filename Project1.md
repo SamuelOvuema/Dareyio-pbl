@@ -87,16 +87,26 @@ sudo mysql
 
 This will connect to the MySQL server as the administrative database user root, which is inferred by the use of sudo when running this command. You should see output like this:
 
+![mysql welcome](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/465e4025-15f2-4a44-9aa0-21eb5d13813f)
 
+It’s recommended that you run a security script that comes pre-installed with MySQL. This script will remove some insecure default settings and lock down access to your database system. Before running the script you will set a password for the root user, using mysql_native_password as the default authentication method. We’re defining this user’s password as PassWord.1.
+```bash
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'PassWord.1';
+```
+Exit the MySQL shell with:
 
+mysql> exit
 
+Start the interactive script by running:
+```bash
+sudo mysql_secure_installation
+```
 
+This will ask if you want to configure the VALIDATE PASSWORD PLUGIN.
 
+Note: Enabling this feature is something of a judgment call. If enabled, passwords which don’t match the specified criteria will be rejected by MySQL with an error. It is safe to leave validation disabled, but you should always use strong, unique passwords for database credentials.
 
-
-
-
-
+Answer Y for yes, or anything else to continue without enabling.
 
 
 
