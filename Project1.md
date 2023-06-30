@@ -108,17 +108,23 @@ Note: Enabling this feature is something of a judgment call. If enabled, passwor
 
 Answer Y for yes, or anything else to continue without enabling.
 
+![validate passwd comp](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/5c276244-eb22-4a6d-939e-8823b8c8d18a)
 
+Regardless of whether you chose to set up the VALIDATE PASSWORD PLUGIN, your server will next ask you to select and confirm a password for the MySQL root user. This is not to be confused with the system root. The database root user is an administrative user with full privileges over the database system. Even though the default authentication method for the MySQL root user dispenses the use of a password, even when one is set, you should define a strong password here as an additional safety measure. We’ll talk about this in a moment.
 
+If you enabled password validation, you’ll be shown the password strength for the root password you just entered and your server will ask if you want to continue with that password. If you are happy with your current password, enter Y for “yes” at the prompt:
 
+For the rest of the questions, press Y and hit the ENTER key at each prompt. This will prompt you to change the root password, remove some anonymous users and the test database, disable remote root logins, and load these new rules so that MySQL immediately respects the changes you have made.
 
+When you’re finished, test if you’re able to log in to the MySQL console by typing:
+```bash
+sudo mysql -p
+```
+Notice the -p flag in this command, which will prompt you for the password used after changing the root user password.
 
+To exit the MySQL console, type:
 
-
-
-
-
-
+mysql> exit
 
 
 
