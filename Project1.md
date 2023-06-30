@@ -161,11 +161,26 @@ To test your setup with a PHP script, it’s best to set up a proper Apache Virt
 
 We will configure our first Virtual Host in the next step.
 
+## STEP 4 — CREATING A VIRTUAL HOST FOR YOUR WEBSITE USING APACHE
 
+In this project, you will set up a domain called projectlamp, but you can replace this with any domain of your choice.
 
+Apache on Ubuntu 20.04 has one server block enabled by default that is configured to serve documents from the /var/www/html directory.
+We will leave this configuration as is and will add our own directory next next to the default one.
 
-
-
+Create the directory for projectlamp using ‘mkdir’ command as follows:
+```bash
+sudo mkdir /var/www/projectlamp
+```
+Next, assign ownership of the directory with your current system user:
+```bash
+ sudo chown -R $USER:$USER /var/www/projectlamp
+```
+Then, create and open a new configuration file in Apache’s sites-available directory using your preferred command-line editor. Here, we’ll be using vi or vim (They are the same by the way):
+```bash
+sudo vi /etc/apache2/sites-available/projectlamp.conf
+```
+This will create a new blank file. Paste in the following bare-bones configuration by hitting on i on the keyboard to enter the insert mode, and paste the text:
 
 
 
