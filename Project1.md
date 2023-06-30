@@ -229,16 +229,30 @@ http://<Public-IP-Address>:80
 
 If you see the text from ‘echo’ command you wrote to index.html file, then it means your Apache virtual host is working as expected.
 
-
+![sudo echo Hellolamp](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/67621991-8a99-4002-a4ce-e8900bbeb33f)
 
 In the output you will see your server’s public hostname (DNS name) and public IP address. You can also access your website in your browser by public DNS name, not only by IP – try it out, the result must be the same (port is optional)
-
+```bash
 http://<Public-DNS-Name>:80
-
+```
 You can leave this file in place as a temporary landing page for your application until you set up an index.php file to replace it. Once you do that, remember to remove or rename the index.html file from your document root, as it would take precedence over an index.php file by default.
 
+## STEP 5 — ENABLE PHP ON THE WEBSITE
 
+With the default DirectoryIndex settings on Apache, a file named index.html will always take precedence over an index.php file. This is useful for setting up maintenance pages in PHP applications, by creating a temporary index.html file containing an informative message to visitors. Because this page will take precedence over the index.php page, it will then become the landing page for the application. Once maintenance is over, the index.html is renamed or removed from the document root, bringing back the regular application page.
 
+In case you want to change this behavior, you’ll need to edit the /etc/apache2/mods-enabled/dir.conf file and change the order in which the index.php file is listed within the DirectoryIndex directive:
+```bash
+sudo vim /etc/apache2/mods-enabled/dir.conf
+```
+```bash
+<IfModule mod_dir.c>
+        #Change this:
+        #DirectoryIndex index.html index.cgi index.pl index.php index.xhtml index.htm
+        #To this:
+        DirectoryIndex index.php index.html index.cgi index.pl index.xhtml index.htm
+</IfModule>
+```
 
 
 
