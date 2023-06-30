@@ -182,9 +182,22 @@ sudo vi /etc/apache2/sites-available/projectlamp.conf
 ```
 This will create a new blank file. Paste in the following bare-bones configuration by hitting on i on the keyboard to enter the insert mode, and paste the text:
 
+![virtualHost 80](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/ce84bedf-e6da-4209-a2be-9beda7de3c73)
 
+To save and close the file, simply follow the steps below:
 
+1. Hit the esc button on the keyboard
+2. Type :
+3. Type wq. w for write and q for quit
+4. Hit ENTER to save the file
 
+You can use the ls command to show the new file in the sites-available directory
+
+sudo ls /etc/apache2/sites-available
+
+You will see something like this;
+
+000-default.conf  default-ssl.conf  projectlamp.conf
 
 
 
