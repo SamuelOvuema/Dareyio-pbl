@@ -24,9 +24,14 @@ Replace ‘127.0.0.1’ to ‘0.0.0.0’ like this:
 
 ![replacing 1270001](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/2279b4fd-7be1-453e-8fc3-1cbf8d0feb91)
 
+6. From mysql client Linux Server connect remotely to mysql server Database Engine without using SSH. You must use the mysql utility to perform this action.
+7. Check that you have successfully connected to a remote MySQL server and can perform SQL queries:
+```bash
+Show databases;
+```
 
-
-
+If you see an output similar to the below image, then you have successfully completed this project – you have deployed a fully functional MySQL Client-Server setup.
+Well, Done! You are getting there gradually. You can further play around with this setup and practice creating/dropping databases & tables and inserting/selecting records to and from them.
 
 
 
