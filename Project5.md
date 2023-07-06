@@ -33,7 +33,7 @@ Show databases;
 If you see an output similar to the below image, then you have successfully completed this project – you have deployed a fully functional MySQL Client-Server setup.
 Well, Done! You are getting there gradually. You can further play around with this setup and practice creating/dropping databases & tables and inserting/selecting records to and from them.
 
-
+![show databases](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/fcef1736-96b7-4347-b67b-ee18625efd4f)
 
 
 
