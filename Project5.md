@@ -22,6 +22,7 @@ sudo vi /etc/mysql/mysql.conf.d/mysqld.cnf
 ```
 Replace ‘127.0.0.1’ to ‘0.0.0.0’ like this:
 
+![replacing 1270001](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/2279b4fd-7be1-453e-8fc3-1cbf8d0feb91)
 
 
 
