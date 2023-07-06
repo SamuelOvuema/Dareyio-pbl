@@ -16,9 +16,11 @@ Server B name - `mysql client`
 
 ![Db-server indound rules](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/845282d4-394c-422f-a09e-f9951651ff36)
 
-
-
-
+5. You might need to configure MySQL server to allow connections from remote hosts.
+```bash
+sudo vi /etc/mysql/mysql.conf.d/mysqld.cnf
+```
+Replace ‘127.0.0.1’ to ‘0.0.0.0’ like this:
 
 
 
