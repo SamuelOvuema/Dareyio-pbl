@@ -1,6 +1,6 @@
 # Web Solution With WordPress
 
-## LAUNCH AN EC2 INSTANCE THAT WILL SERVE AS “WEB SERVER”.
+### LAUNCH AN EC2 INSTANCE THAT WILL SERVE AS “WEB SERVER”.
 
 Step 1 — Prepare a Web Server
 
