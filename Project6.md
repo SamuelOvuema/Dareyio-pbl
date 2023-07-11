@@ -18,10 +18,14 @@ Learn How to Add EBS Volume to an EC2 instance [here](https://www.youtube.com/wa
 
 3. Use lsblk command to inspect what block devices are attached to the server. Notice names of your newly created devices. All devices in Linux reside in /dev/ directory. Inspect it with ls /dev/ and make sure you see all 3 newly created block devices there – their names will likely be xvdf, xvdh, xvdg.
 
+![lsblk newly created blocks](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/76ff2854-e291-4124-942e-da1497070bf4)
 
+4. Use df -h command to see all mounts and free space on your server
 
-
-
+5. Use gdisk utility to create a single partition on each of the 3 disks
+```bash
+sudo gdisk /dev/xvdf
+```
 
 
 
