@@ -12,6 +12,54 @@ Learn How to Add EBS Volume to an EC2 instance [here](https://www.youtube.com/wa
 
 ![creating volume2](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/0ffd6156-e45a-45ab-bb0b-11def6457e5b)
 
+![create volume3](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/64fef8d7-c5d7-457c-a00c-9c05a3e4822b)
+
+2. Open up the Linux terminal to begin configuration
+
+3. Use lsblk command to inspect what block devices are attached to the server. Notice names of your newly created devices. All devices in Linux reside in /dev/ directory. Inspect it with ls /dev/ and make sure you see all 3 newly created block devices there – their names will likely be xvdf, xvdh, xvdg.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
