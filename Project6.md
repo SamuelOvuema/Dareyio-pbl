@@ -10,7 +10,7 @@ Learn How to Add EBS Volume to an EC2 instance [here](https://www.youtube.com/wa
 
 ![create volumes](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/94088477-a481-43e8-90cb-198ee6f362c9)
 
-
+![creating volume2](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/0ffd6156-e45a-45ab-bb0b-11def6457e5b)
 
 
 
