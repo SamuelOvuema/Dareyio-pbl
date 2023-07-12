@@ -52,9 +52,9 @@ sudo pvcreate /dev/xvdf1 /dev/xvdg1 /dev/xvdh1
 sudo vgcreate webdata-vg /dev/xvdh1 /dev/xvdg1 /dev/xvdf1
 ```
 
+![sudo vgcreate webdata-vg](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/fe79090e-9294-4d7a-a996-64c5ba9adf8a)
 
-
-
+11. Verify that your VG has been created successfully by running sudo vgs
 
 
 
