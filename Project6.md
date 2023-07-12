@@ -70,5 +70,57 @@ sudo lvcreate -n logs-lv -L 14G webdata-vg
 
 13. Verify that your Logical Volume has been created successfully by running sudo lvs
 
+![sudo lvs](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/4309544b-da85-4ebb-abe0-a8c43af6a317)
+
+14. Verify the entire setup
+```bash
+sudo vgdisplay -v #view complete setup - VG, PV, and LV
+```
+```bash
+sudo lsblk
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
