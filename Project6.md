@@ -2,7 +2,7 @@
 
 ### LAUNCH AN EC2 INSTANCE THAT WILL SERVE AS “WEB SERVER”.
 
-*Step 1 — Prepare a Web Server*
+-Step 1 — Prepare a Web Server-
 
 1. Launch an EC2 instance as a “Web Server”. Create 3 volumes in the same AZ as your Web Server EC2, each of 10 GiB.
 
