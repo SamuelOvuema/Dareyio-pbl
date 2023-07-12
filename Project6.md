@@ -16,7 +16,7 @@ Learn How to Add EBS Volume to an EC2 instance [here](https://www.youtube.com/wa
 
 2. Open up the Linux terminal to begin configuration
 
-3. Use lsblk command to inspect what block devices are attached to the server. Notice names of your newly created devices. All devices in Linux reside in /dev/ directory. Inspect it with ls /dev/ and make sure you see all 3 newly created block devices there – their names will likely be xvdf, xvdh, xvdg.
+3. Use lsblk command to inspect what block devices are attached to the server. Notice the names of your newly created devices. All devices in Linux reside in /dev/ directory. Inspect it with ls /dev/ and make sure you see all 3 newly created block devices there – their names will likely be xvdf, xvdh, xvdg.
 
 ![lsblk newly created blocks](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/76ff2854-e291-4124-942e-da1497070bf4)
 
@@ -92,7 +92,7 @@ sudo mkfs -t ext4 /dev/webdata-vg/logs-lv
 ```bash
 sudo mkdir -p /var/www/html
 ```
-17. Create /home/recovery/logs to store backup of log data
+17. Create /home/recovery/logs to store the backup of log data
 
 ```bash
 sudo mkdir -p /home/recovery/logs
@@ -130,7 +130,7 @@ sudo blkid
 sudo vi /etc/fstab
 ```
 
-23. Update /etc/fstab in this format using your own UUID and rememeber to remove the leading and ending quotes.
+23. Update /etc/fstab in this format using your own UUID and remember to remove the leading and ending quotes.
 
 ![sudo vi etcfstab](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/de0436bd-e674-43d6-9eb7-09c146123ac3)
 
@@ -142,9 +142,9 @@ sudo mount -a
 sudo systemctl daemon-reload
 ```
 
-25. Verify your setup by running df -h, output must look like this:
+25. Verify your setup by running df -h, the output must look like this:
 
-
+![verify setup df h](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/17f4a3a1-5413-4b6d-912b-933c49f95eb9)
 
 
 
