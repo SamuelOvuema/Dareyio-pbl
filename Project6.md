@@ -31,7 +31,7 @@ sudo gdisk /dev/xvdf
 
 6. Use lsblk utility to view the newly configured partition on each of the 3 disks.
 
-
+![lsblk partitioned 3 disks](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/392e838a-2d4c-4d28-ba56-f99c9ed8e705)
 
 
 
