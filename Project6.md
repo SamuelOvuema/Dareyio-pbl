@@ -2,7 +2,7 @@
 
 ### LAUNCH AN EC2 INSTANCE THAT WILL SERVE AS “WEB SERVER”.
 
--Step 1 — Prepare a Web Server-
+**Step 1 — Prepare a Web Server**
 
 1. Launch an EC2 instance as a “Web Server”. Create 3 volumes in the same AZ as your Web Server EC2, each of 10 GiB.
 
@@ -147,7 +147,15 @@ sudo systemctl daemon-reload
 ![verify setup df h](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/17f4a3a1-5413-4b6d-912b-933c49f95eb9)
 
 
+# PREPARE THE DATABASE SERVER
 
+
+**Step 2 — Prepare the Database Server**
+
+Launch a second RedHat EC2 instance that will have a role – 'DB-Server'
+Repeat the same steps as for the Web Server, but instead of apps-lv create db-lv and mount it to /db directory instead of /var/www/html/.
+
+**Step 3 — Install WordPress on your Web Server EC2**
 
 
 
