@@ -45,12 +45,12 @@ sudo pvcreate /dev/xvdf1 /dev/xvdg1 /dev/xvdh1
 
 9. Verify that your Physical volume has been created successfully by running sudo pvs
 
+![sudo pvs](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/96d0ce6e-740d-467e-92fb-db0e65ca0f73)
 
-
-
-
-
-
+10. Use vgcreate utility to add all 3 PVs to a volume group (VG). Name the VG webdata-vg
+```bash
+sudo vgcreate webdata-vg /dev/xvdh1 /dev/xvdg1 /dev/xvdf1
+```
 
 
 
