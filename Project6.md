@@ -41,6 +41,7 @@ Note: Previously, in Ubuntu we used apt command to install packages, in RedHat/C
 ```bash
 sudo pvcreate /dev/xvdf1 /dev/xvdg1 /dev/xvdh1
 ```
+![sudo pvcreat xvdf1xvdg1xvdh1](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/56a96c6c-a4ca-4e28-94b9-05ffd1db9ec9)
 
 9. Verify that your Physical volume has been created successfully by running sudo pvs
 
