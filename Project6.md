@@ -79,16 +79,50 @@ sudo vgdisplay -v #view complete setup - VG, PV, and LV
 ```bash
 sudo lsblk
 ```
+![sudo lsblk lv](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/acebded0-f7a2-4490-a442-7bb1883263de)
 
+15. Use mkfs.ext4 to format the logical volumes with ext4 filesystem
+```bash
+sudo mkfs -t ext4 /dev/webdata-vg/apps-lv
+```
+```bash
+sudo mkfs -t ext4 /dev/webdata-vg/logs-lv
+```
+16. Create /var/www/html directory to store website files
+```bash
+sudo mkdir -p /var/www/html
+```
+17. Create /home/recovery/logs to store backup of log data
 
+```bash
+sudo mkdir -p /home/recovery/logs
+```
+18. Mount /var/www/html on apps-lv logical volume
+```bash
+sudo mount /dev/webdata-vg/apps-lv /var/www/html/
+```
 
+19. Use rsync utility to backup all the files in the log directory /var/log into /home/recovery/logs (This is required before mounting the file system)
+```bash
+sudo rsync -av /var/log/. /home/recovery/logs/
+```
 
+20. Mount /var/log on logs-lv logical volume. (Note that all the existing data on /var/log will be deleted. That is why step 15 above is very important)
+```bash
+sudo mount /dev/webdata-vg/logs-lv /var/log
+```
+21. Restore log files back into /var/log directory
+```bash
+sudo rsync -av /home/recovery/logs/log/. /var/log
+```
 
+22. Update /etc/fstab file so that the mount configuration will persist after restart of the server.
 
+The UUID of the device will be used to update the /etc/fstab file;
 
-
-
-
+```bash
+sudo blkid
+```
 
 
 
