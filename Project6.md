@@ -132,9 +132,17 @@ sudo vi /etc/fstab
 
 23. Update /etc/fstab in this format using your own UUID and rememeber to remove the leading and ending quotes.
 
+![sudo vi etcfstab](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/de0436bd-e674-43d6-9eb7-09c146123ac3)
 
+24. Test the configuration and reload the daemon
+```bash
+sudo mount -a
+```
+```bash
+sudo systemctl daemon-reload
+```
 
-
+25. Verify your setup by running df -h, output must look like this:
 
 
 
