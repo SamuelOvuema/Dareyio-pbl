@@ -124,9 +124,13 @@ The UUID of the device will be used to update the /etc/fstab file;
 sudo blkid
 ```
 
+![sudo blkid](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/63b2c084-d14b-4839-b6ff-eee184e2349d)
 
+```bash
+sudo vi /etc/fstab
+```
 
-
+23. Update /etc/fstab in this format using your own UUID and rememeber to remove the leading and ending quotes.
 
 
 
