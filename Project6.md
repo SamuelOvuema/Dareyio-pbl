@@ -33,16 +33,16 @@ sudo gdisk /dev/xvdf
 
 ![lsblk partitioned 3 disks](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/392e838a-2d4c-4d28-ba56-f99c9ed8e705)
 
+7. Install lvm2 package using sudo yum install lvm2. Run sudo lvmdiskscan command to check for available partitions.
 
+Note: Previously, in Ubuntu we used apt command to install packages, in RedHat/CentOS a different package manager is used, so we shall use yum command instead.
 
+8. Use pvcreate utility to mark each of 3 disks as physical volumes (PVs) to be used by LVM
+```bash
+sudo pvcreate /dev/xvdf1 /dev/xvdg1 /dev/xvdh1
+```
 
-
-
-
-
-
-
-
+9. Verify that your Physical volume has been created successfully by running sudo pvs
 
 
 
