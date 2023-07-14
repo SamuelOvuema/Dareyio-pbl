@@ -157,6 +157,8 @@ Repeat the same steps as for the Web Server, but instead of apps-lv create db-lv
 
 ![dbase-vg lsblk](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/dd38c39b-a737-4500-9846-a296c02a3628)
 
+![dbase-vg dfh](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/98cbc38c-6d0b-4e36-9b1b-be25c49604c5)
+
 
 **Step 3 — Install WordPress on your Web Server EC2**
 
