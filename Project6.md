@@ -155,6 +155,9 @@ sudo systemctl daemon-reload
 Launch a second RedHat EC2 instance that will have a role – 'DB-Server'
 Repeat the same steps as for the Web Server, but instead of apps-lv create db-lv and mount it to /db directory instead of /var/www/html/.
 
+
+
+
 **Step 3 — Install WordPress on your Web Server EC2**
 
 
