@@ -233,8 +233,11 @@ sudo mysql
 ```
 ![setting up Db server](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/da9e91c3-2bc9-4926-9f8f-7e9bf2b0f0a2)
 
+![wordpress show database](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/05b9cf3c-db15-4d17-9be7-b1371c1dfdcc)
 
+**Step 6 — Configure WordPress to connect to remote database.**
 
+Hint: Do not forget to open MySQL port 3306 on DB Server EC2. For extra security, you shall allow access to the DB server ONLY from your Web Server’s IP address, so in the Inbound Rule configuration specify the source as /32
 
 
 
