@@ -225,8 +225,19 @@ sudo systemctl restart mysqld
 sudo systemctl enable mysqld
 ```
 
+![sudo systemctl status mysql](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/7cf6a9be-4085-4c38-9b57-0b7c4a1122a6)
 
+**Step 5 — Configure DB to work with WordPress**
+```bash
+sudo mysql
+```
 
+CREATE DATABASE wordpress;
+CREATE USER `myuser`@`<Web-Server-Private-IP-Address>` IDENTIFIED BY 'mypass';
+GRANT ALL ON wordpress.* TO 'myuser'@'<Web-Server-Private-IP-Address>';
+FLUSH PRIVILEGES;
+SHOW DATABASES;
+exit
 
 
 
