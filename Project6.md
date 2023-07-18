@@ -258,7 +258,7 @@ sudo mysql -u admin -p -h <DB-Server-Private-IP-address>
 
 ![wordpress output](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/fcacafd4-d37d-4d6f-9be0-570fe6e6a93f)
 
-![wordpress real page](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/2f18bad4-1883-4395-825c-63ff80cda813)
+
 
 
 
