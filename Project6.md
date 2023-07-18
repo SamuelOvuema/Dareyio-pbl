@@ -246,6 +246,7 @@ Hint: Do not forget to open MySQL port 3306 on DB Server EC2. For extra security
 sudo yum install mysql
 sudo mysql -u admin -p -h <DB-Server-Private-IP-address>
 ```
+![sudo mysql uhp](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/8e7f0e8b-daf8-4dd0-8871-fd803ee5f96e)
 
 2. Verify if you can successfully execute SHOW DATABASES; command and see a list of existing databases.
 3. Change permissions and configuration so Apache could use WordPress:
