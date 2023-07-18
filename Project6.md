@@ -175,6 +175,8 @@ sudo yum -y install wget httpd php php-mysqlnd php-fpm php-json
 sudo systemctl enable httpd
 sudo systemctl start httpd
 ```
+![sudo systemctl status httpd apache](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/2f5618bd-fc5f-44c8-a8f8-5f834fe71267)
+
 
 4. To install PHP and it’s depemdencies
 ```bash
