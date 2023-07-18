@@ -231,13 +231,9 @@ sudo systemctl enable mysqld
 ```bash
 sudo mysql
 ```
+![setting up Db server](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/da9e91c3-2bc9-4926-9f8f-7e9bf2b0f0a2)
 
-CREATE DATABASE wordpress;
-CREATE USER `myuser`@`<Web-Server-Private-IP-Address>` IDENTIFIED BY 'mypass';
-GRANT ALL ON wordpress.* TO 'myuser'@'<Web-Server-Private-IP-Address>';
-FLUSH PRIVILEGES;
-SHOW DATABASES;
-exit
+
 
 
 
