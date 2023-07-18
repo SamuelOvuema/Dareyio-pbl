@@ -239,9 +239,21 @@ sudo mysql
 
 Hint: Do not forget to open MySQL port 3306 on DB Server EC2. For extra security, you shall allow access to the DB server ONLY from your Web Server’s IP address, so in the Inbound Rule configuration specify the source as /32
 
+![port3306 db server](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/156ff84b-ac63-4421-826b-a8de4cc7112a)
+
+1. Install MySQL client and test that you can connect from your Web Server to your DB server by using mysql-client
+```bash
+sudo yum install mysql
+sudo mysql -u admin -p -h <DB-Server-Private-IP-address>
+```
+
+2. Verify if you can successfully execute SHOW DATABASES; command and see a list of existing databases.
+3. Change permissions and configuration so Apache could use WordPress:
+4. Enable TCP port 80 in Inbound Rules configuration for your Web Server EC2 (enable from everywhere 0.0.0.0/0 or from your workstation’s IP)
 
 
 
+6. Try to access from your browser the link to your WordPress
 
 
 
