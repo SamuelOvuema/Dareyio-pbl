@@ -147,7 +147,7 @@ sudo systemctl daemon-reload
 ![verify setup df h](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/17f4a3a1-5413-4b6d-912b-933c49f95eb9)
 
 
-# PREPARE THE DATABASE SERVER
+## PREPARE THE DATABASE SERVER
 
 
 **Step 2 — Prepare the Database Server**
@@ -194,6 +194,35 @@ setsebool -P httpd_execmem 1
 5. Restart Apache
 ```bash
 sudo systemctl restart httpd
+```
+
+6. Download wordpress and copy wordpress to var/www/html
+```bash
+  mkdir wordpress
+  cd   wordpress
+  sudo wget http://wordpress.org/latest.tar.gz
+  sudo tar xzvf latest.tar.gz
+  sudo rm -rf latest.tar.gz
+  cp wordpress/wp-config-sample.php wordpress/wp-config.php
+  cp -R wordpress /var/www/html
+```
+
+7. Configure SELinux Policies
+```bash
+  sudo chown -R apache:apache /var/www/html/wordpress
+  sudo chcon -t httpd_sys_rw_content_t /var/www/html/wordpress -R
+  sudo setsebool -P httpd_can_network_connect=1
+```
+
+**Step 4 — Install MySQL on your DB Server EC2**
+```bash
+sudo yum update
+sudo yum install mysql-server
+```
+Verify that the service is up and running by using sudo systemctl status mysqld, if it is not running, restart the service and enable it so it will be running even after reboot:
+```bash
+sudo systemctl restart mysqld
+sudo systemctl enable mysqld
 ```
 
 
