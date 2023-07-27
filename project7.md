@@ -65,8 +65,9 @@ sudo exportfs -arv
 rpcinfo -p | grep nfs
 ```
 
+![rpcinfo pgrep nfs](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/05f86367-edcc-4c51-b305-6e7d6ae247eb)
 
-
+**Important note:** In order for NFS server to be accessible from your client, you must also open following ports: TCP 111, UDP 111, UDP 2049
 
 
 
