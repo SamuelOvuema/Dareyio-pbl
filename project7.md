@@ -52,8 +52,7 @@ Configure access to NFS for clients within the same subnet (example of Subnet CI
 
 sudo vi /etc/exports
 
-
-
+![sudo vi ets export](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/de840ff9-db7b-413a-8160-609268b3a728)
 
 Esc + :wq!
 
