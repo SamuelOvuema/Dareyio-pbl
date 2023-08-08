@@ -27,6 +27,10 @@ Mount lv-opt on /mnt/opt – To be used by Jenkins server in Project 8
 
 ![sudo create volume group](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/3baef536-7789-4987-860b-78470c647f47)
 
+![sudo vgdisplay VGPVLV](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/abd6dc66-e139-45af-b379-b64bc0816c7b)
+
+
+
 3. Install NFS server, configure it to start on reboot and make sure it is u and running
 
 ```bash
