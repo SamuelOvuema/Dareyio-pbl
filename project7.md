@@ -11,7 +11,7 @@ Instead of formating the disks as ext4, you will have to format them as xfs
 
 Ensure there are 3 Logical Volumes. lv-opt lv-apps, and lv-logs
 
-
+![sudo yum install lvm2](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/06770ee9-6f5b-48a4-ac04-fcb1ad074482)
 
 Create mount points on /mnt directory for the logical volumes as follow:
 
