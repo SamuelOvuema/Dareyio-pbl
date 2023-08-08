@@ -97,7 +97,7 @@ Create a database user and name it webaccess
 
 Grant permission to webaccess user on tooling database to do anything only from the webservers subnet cidr
 
-
+![sudo mysql](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/56ef15c3-ac78-41ac-b137-70294d2147bd)
 
 Step 3 — Prepare the Web Servers
 We need to make sure that our Web Servers can serve the same content from shared storage solutions, in our case – NFS Server and MySQL database.
