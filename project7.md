@@ -29,6 +29,10 @@ Mount lv-opt on /mnt/opt – To be used by Jenkins server in Project 8
 
 ![sudo vgdisplay VGPVLV](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/abd6dc66-e139-45af-b379-b64bc0816c7b)
 
+
+
+Instead of formating the disks as ext4, you will have to format them as xfs
+
 ![sudo mkfs xfs](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/ae18e370-0c31-4333-9fdc-e46bd414b816)
 
 
