@@ -23,7 +23,7 @@ Mount lv-logs on /mnt/logs – To be used by webserver logs
 
 Mount lv-opt on /mnt/opt – To be used by Jenkins server in Project 8
 
-
+![sudo create logical volumes](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/e7aa750d-4200-4bb1-815a-c184ac61eeb8)
 
 3. Install NFS server, configure it to start on reboot and make sure it is u and running
 
