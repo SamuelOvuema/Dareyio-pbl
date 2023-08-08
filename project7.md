@@ -6,7 +6,7 @@
 
 2. Based on your LVM experience from Project 6, Configure LVM on the Server.
 
-Instead of formating the disks as ext4 you will have to format them as xfs
+Instead of formating the disks as ext4, you will have to format them as xfs
 
 Ensure there are 3 Logical Volumes. lv-opt lv-apps, and lv-logs
 
@@ -119,7 +119,7 @@ add following line
 
 <NFS-Server-Private-IP-Address>:/mnt/apps /var/www nfs defaults 0 0
 
-
+![sudo vi etc fstab pr7](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/bc6eddf5-4649-4cdc-8bea-f8af4b69402b)
 Install Remi’s repository, Apache and PHP
 
 
