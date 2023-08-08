@@ -70,6 +70,8 @@ sudo vi /etc/exports
 
 Esc + :wq!
 
+![sudo systemctl status nfs server service](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/a47de0f5-0819-44a0-bbc0-afcaac1146be)
+
 sudo exportfs -arv
 
 6. Check which port is used by NFS and open it using Security Groups (add new Inbound Rule)
