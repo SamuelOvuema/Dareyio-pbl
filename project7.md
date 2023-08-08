@@ -89,7 +89,7 @@ By now you should know how to install and configure a MySQL DBMS to work with re
 
 Install MySQL server
 
-
+![sudo apt install mysql](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/326a3059-1b19-4986-9b95-4718ee0a4c80)
 
 Create a database and name it tooling
 
