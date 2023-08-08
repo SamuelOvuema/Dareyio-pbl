@@ -29,6 +29,7 @@ Mount lv-opt on /mnt/opt – To be used by Jenkins server in Project 8
 
 ![sudo vgdisplay VGPVLV](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/abd6dc66-e139-45af-b379-b64bc0816c7b)
 
+![sudo mkfs xfs](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/ae18e370-0c31-4333-9fdc-e46bd414b816)
 
 
 3. Install NFS server, configure it to start on reboot and make sure it is u and running
@@ -87,6 +88,8 @@ STEP 2 — CONFIGURE THE DATABASE SERVER
 By now you should know how to install and configure a MySQL DBMS to work with remote Web Server
 
 Install MySQL server
+
+
 
 Create a database and name it tooling
 
