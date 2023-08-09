@@ -164,12 +164,17 @@ sudo systemctl enable php-fpm
 setsebool -P httpd_execmem 1
 Repeat steps 1-5 for another 2 Web Servers.
 
-Verify that Apache files and directories are available on the Web Server in /var/www and also on the NFS server in /mnt/apps. If you see the same files – it means NFS is mounted correctly. You can try to create a new file touch test.txt from one server and check if the same file is accessible from other Web Servers.
-Locate the log folder for Apache on the Web Server and mount it to NFS server’s export for logs. Repeat step №4 to make sure the mount point will persist after reboot.
+6. Verify that Apache files and directories are available on the Web Server in /var/www and also on the NFS server in /mnt/apps. If you see the same files – it means NFS is mounted correctly. You can try to create a new file touch test.txt from one server and check if the same file is accessible from other Web Servers.
 
-Fork the tooling source code from Darey.io Github Account to your Github account. (Learn how to fork a repo here)
-Deploy the tooling website’s code to the Webserver. 
+7. Locate the log folder for Apache on the Web Server and mount it to NFS server’s export for logs. Repeat step №4 to make sure the mount point will persist after reboot.
 
+
+
+8. Fork the tooling source code from Darey.io Github Account to your Github account. (Learn how to fork a repo here)
+ 
+9 . Deploy the tooling website’s code to the Webserver. 
+
+![Darey fork tooling](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/a5b28d37-c867-48ee-8483-4d874c06bfda)
 
 Ensure that the html folder from the repository is deployed to /var/www/html
 Note 1: Do not forget to open TCP port 80 on the Web Server.
