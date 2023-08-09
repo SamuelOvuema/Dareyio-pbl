@@ -203,7 +203,7 @@ Open the website in your browser http://<Web-Server-Public-IP-Address-or-Public-
 
 and make sure you can login into the website with myuser user.
 
-
+![admin home page](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/d8eda78f-41b5-4516-8099-28169903afbf)
 
 
 
