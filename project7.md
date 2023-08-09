@@ -168,7 +168,10 @@ Verify that Apache files and directories are available on the Web Server in /var
 Locate the log folder for Apache on the Web Server and mount it to NFS server’s export for logs. Repeat step №4 to make sure the mount point will persist after reboot.
 
 Fork the tooling source code from Darey.io Github Account to your Github account. (Learn how to fork a repo here)
-Deploy the tooling website’s code to the Webserver. Ensure that the html folder from the repository is deployed to /var/www/html
+Deploy the tooling website’s code to the Webserver. 
+
+
+Ensure that the html folder from the repository is deployed to /var/www/html
 Note 1: Do not forget to open TCP port 80 on the Web Server.
 
 
