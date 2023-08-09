@@ -171,7 +171,7 @@ Repeat steps 1-5 for another 2 Web Servers.
 ![sudo vi etc fstab apps and logs](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/23f88b65-d251-49c5-8b77-f7ca59261c6e)
 
 
-8. Fork the tooling source code from Darey.io Github Account to your Github account. (Learn how to fork a repo here)
+8. Fork the tooling source code from [Darey.io Github Account](https://github.com/darey-io/tooling.git) to your Github account. (Learn how to fork a repo [here](https://youtu.be/f5grYMXbAV0))
  
 9 . Deploy the tooling website’s code to the Webserver. 
 
@@ -205,7 +205,7 @@ and make sure you can login into the website with myuser user.
 
 ![admin home page](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/d8eda78f-41b5-4516-8099-28169903afbf)
 
-
+We have just implemented a web solution for a DevOps team using a LAMP stack with a remote Database and NFS servers.
 
 
 
