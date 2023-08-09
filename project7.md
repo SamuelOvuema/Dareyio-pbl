@@ -180,6 +180,7 @@ Repeat steps 1-5 for another 2 Web Servers.
 Ensure that the html folder from the repository is deployed to /var/www/html
 Note 1: Do not forget to open TCP port 80 on the Web Server.
 
+![port80 inbound 4 web1](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/ba9fbc60-d994-4ef9-a366-9166aeac8376)
 
 Note 2: If you encounter 403 Error – check permissions to your /var/www/html folder and also disable SELinux sudo setenforce 0
 
