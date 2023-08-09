@@ -185,10 +185,17 @@ Note 2: If you encounter 403 Error – check permissions to your /var/www/html f
 
 To make this change permanent – open following config file sudo vi /etc/sysconfig/selinux and set SELINUX=disabledthen restrt httpd.
 
+![disabled Selinux](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/8fd840eb-8ee8-4601-bd86-973975c63a94)
 
 
+Update the website’s configuration to connect to the database (in /var/www/html/functions.php file). Apply tooling-db.sql script to your database using this command mysql -h <databse-private-ip> -u <db-username> -p <db-pasword> < tooling-db.sql
 
+Create in MySQL a new admin user with username: myuser and password: password:
 
+INSERT INTO ‘users’ (‘id’, ‘username’, ‘password’, ’email’, ‘user_type’, ‘status’) VALUES
+-> (1, ‘myuser’, ‘5f4dcc3b5aa765d61d8327deb882cf99’, ‘user@mail.com’, ‘admin’, ‘1’);
+
+Open the website in your browser http://<Web-Server-Public-IP-Address-or-Public-DNS-Name>/index.php and make sure you can login into the website with myuser user.
 
 
 
