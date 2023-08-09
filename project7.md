@@ -196,7 +196,12 @@ Create in MySQL a new admin user with username: myuser and password: password:
 INSERT INTO ‘users’ (‘id’, ‘username’, ‘password’, ’email’, ‘user_type’, ‘status’) VALUES
 -> (1, ‘myuser’, ‘5f4dcc3b5aa765d61d8327deb882cf99’, ‘user@mail.com’, ‘admin’, ‘1’);
 ![show database for username](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/b9bb9266-e1f0-4f0a-a4a4-502f510ab185)
-Open the website in your browser http://<Web-Server-Public-IP-Address-or-Public-DNS-Name>/index.php and make sure you can login into the website with myuser user.
+Open the website in your browser http://<Web-Server-Public-IP-Address-or-Public-DNS-Name>/index.php 
+
+![login page](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/a1f3de8c-4b75-4209-96d2-e18f6bbba204)
+
+
+and make sure you can login into the website with myuser user.
 
 
 
