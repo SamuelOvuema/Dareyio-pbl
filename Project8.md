@@ -111,7 +111,7 @@ Now you can update your LB config file with those names instead of IP addresses.
 BalancerMember http://Web1:80 loadfactor=5 timeout=1
 BalancerMember http://Web2:80 loadfactor=5 timeout=1
 
-
+![reconfig LB](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/4ec032d7-f621-4eac-be6a-7ee5b338f3c2)
 
 You can try to curl your Web Servers from LB locally curl http://Web1 or curl http://Web2 – it shall work.
 
