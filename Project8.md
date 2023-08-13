@@ -82,6 +82,8 @@ Try to refresh your browser page http://<Load-Balancer-Public-IP-Address-or-Publ
 
 If you have configured everything correctly – your users will not even notice that their requests are served by more than one server.
 
+![sudo tail varloghttpd](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/fa62822f-3576-4f28-9010-77b7de777741)
+
 **Side Self Study:**
 
 Read more about different configuration aspects of [Apache mod_proxy_balancer module](https://httpd.apache.org/docs/2.4/mod/mod_proxy_balancer.html). Understand what sticky session means and when it is used.
