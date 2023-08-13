@@ -8,6 +8,7 @@
 
 2. Open TCP port 80 on Project-8-apache-lb by creating an Inbound Rule in the Security Group.
 
+![LB port 80 inbound rule](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/fceb7c43-64b8-4d73-99e9-8a04ee023a4b)
 
 3. Install Apache Load Balancer on Project-8-apache-lb server and configure it to point traffic coming to LB to both Web Servers:
 
