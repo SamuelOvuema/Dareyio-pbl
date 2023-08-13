@@ -42,6 +42,8 @@ Make sure apache2 is up and running
 sudo systemctl status apache2
 ```
 
+
+
 Configure load balancing
 ```bash
 sudo vi /etc/apache2/sites-available/000-default.conf
