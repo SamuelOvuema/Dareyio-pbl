@@ -97,7 +97,7 @@ What we can do, is configure local domain name resolution. The easiest way is to
 ```bash
 sudo vi /etc/hosts
 ```
-
+![LB EC2 instance](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/06f96a43-a595-4e79-acd1-9d0ffdd2cd9e)
 #Add 2 records into this file with the Local IP address and arbitrary name for both of your Web Servers
 ```bash
 <WebServer1-Private-IP-Address> Web1
