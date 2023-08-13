@@ -50,20 +50,11 @@ sudo vi /etc/apache2/sites-available/000-default.conf
 ```
 #Add this configuration into this section <VirtualHost *:80>  </VirtualHost>
 
-```bash
-<Proxy "balancer://mycluster">
-               BalancerMember http://<WebServer1-Private-IP-Address>:80 loadfactor=5 timeout=1
-               BalancerMember http://<WebServer2-Private-IP-Address>:80 loadfactor=5 timeout=1
-               ProxySet lbmethod=bytraffic
-               # ProxySet lbmethod=byrequests
-        </Proxy>
+![configured load balancer](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/b9baf8e3-c7e4-4d42-acc9-846c571c8b56)
 
-        ProxyPreserveHost On
-        ProxyPass / balancer://mycluster/
-        ProxyPassReverse / balancer://mycluster/
-```
 
 #Restart Apache server
+
 ```bash
 sudo systemctl restart apache2
 ```
@@ -72,9 +63,13 @@ sudo systemctl restart apache2
 
 You can also study and try other methods, like: [bybusyness](https://httpd.apache.org/docs/2.4/mod/mod_lbmethod_bybusyness.html), [byrequests](https://httpd.apache.org/docs/2.4/mod/mod_lbmethod_byrequests.html), [heartbeat](https://httpd.apache.org/docs/2.4/mod/mod_lbmethod_heartbeat.html)
 
-Verify that our configuration works – try to access your LB’s public IP address or Public DNS name from your browser:
+4. Verify that our configuration works – try to access your LB’s public IP address or Public DNS name from your browser:
+
+
 
 http://<Load-Balancer-Public-IP-Address-or-Public-DNS-Name>/index.php
+
+
 
 Note: If in Project-7 you mounted /var/log/httpd/ from your Web Servers to the NFS server – unmount them and make sure that each Web Server has its own log directory.
 
