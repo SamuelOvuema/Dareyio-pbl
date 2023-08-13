@@ -42,7 +42,7 @@ Make sure apache2 is up and running
 sudo systemctl status apache2
 ```
 
-
+![sudo systemctl status apache2](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/b1a22e18-85b6-45cd-9743-c201c304c0f0)
 
 Configure load balancing
 ```bash
