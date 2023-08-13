@@ -115,6 +115,8 @@ BalancerMember http://Web2:80 loadfactor=5 timeout=1
 
 You can try to curl your Web Servers from LB locally curl http://Web1 or curl http://Web2 – it shall work.
 
+![curl web1](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/22a939f3-fc48-4a7a-aef4-77a4db32635f)
+
 Remember, this is only internal configuration and it is also local to your LB server, these names will neither be ‘resolvable’ from other servers internally nor from the Internet.
 
 Targeted Architecture
