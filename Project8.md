@@ -104,6 +104,8 @@ sudo vi /etc/hosts
 <WebServer2-Private-IP-Address> Web2
 ```
 
+
+
 Now you can update your LB config file with those names instead of IP addresses.
 
 BalancerMember http://Web1:80 loadfactor=5 timeout=1
