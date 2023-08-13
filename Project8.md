@@ -65,7 +65,7 @@ You can also study and try other methods, like: [bybusyness](https://httpd.apach
 
 4. Verify that our configuration works – try to access your LB’s public IP address or Public DNS name from your browser:
 
-
+![lb tooling page](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/2012fd60-d168-4ca0-8a7a-70c32761ad49)
 
 http://<Load-Balancer-Public-IP-Address-or-Public-DNS-Name>/index.php
 
