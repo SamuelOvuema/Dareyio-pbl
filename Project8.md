@@ -18,7 +18,7 @@ sudo apt update
 sudo apt install apache2 -y
 sudo apt-get install libxml2-dev
 ```
-
+![Apache2 status](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/b30999c0-5e88-4196-92e4-53d07c395b39)
 
 
 #Enable the following modules:
