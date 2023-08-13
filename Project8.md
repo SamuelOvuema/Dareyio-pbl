@@ -122,9 +122,11 @@ Remember, this is only internal configuration and it is also local to your LB se
 Targeted Architecture
 Now your set-up looks like this:
 
+![Architechture](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/40752085-9f0a-488d-9903-9d0a16a692cd)
 
+We have just implemented a Load balancing Web Solution for our DevOps team.
 
-
+Thank You!
 
 
 
