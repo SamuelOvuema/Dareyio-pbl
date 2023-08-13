@@ -4,7 +4,7 @@
 
 1. Create an Ubuntu Server 20.04 EC2 instance and name it Project-8-apache-lb, so your EC2 list will look like this:
 
-
+![LB EC2 instance](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/2bceae4f-ea75-4d07-9ad2-1db22ab426b0)
 
 2. Open TCP port 80 on Project-8-apache-lb by creating an Inbound Rule in the Security Group.
 
