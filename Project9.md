@@ -156,6 +156,8 @@ cat /mnt/apps/README.md
 
 If you see the changes you had previously made in your GitHub – the job works as expected.
 
+
+
 Congratulations!
 You have just implemented your first Continuous Integration solution using Jenkins CI. Watch out for advanced CI configurations in upcoming projects.
 
