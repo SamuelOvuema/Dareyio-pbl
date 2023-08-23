@@ -143,6 +143,8 @@ Configure it to send all files produced by the build into our previously define 
 
 If you want to apply some particular pattern to define which files to send – use this syntax.
 
+![send build artifact](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/0eaef9f3-35f2-4357-aacf-49e8ed7bf722)
+
 Save this configuration and go ahead and change something in README.MD file in your GitHub Tooling repository.
 
 Webhook will trigger a new job and in the “Console Output” of the job you will find something like this:
