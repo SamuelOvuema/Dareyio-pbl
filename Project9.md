@@ -134,7 +134,7 @@ Scroll down to Publish over the SSH plugin configuration section and configure i
 
 Test the configuration and make sure the connection returns Success. Remember, that TCP port 22 on the NFS server must be open to receive SSH connections.
 
-
+![successful config publish](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/02da38cf-900e-4846-a024-3424413c0f72)
 
 Save the configuration, open your Jenkins job/project configuration page and add another one “Post-build Action”
 
