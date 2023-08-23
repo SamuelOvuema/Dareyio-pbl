@@ -102,26 +102,27 @@ ls /var/lib/jenkins/jobs/tooling_github/builds/<build_number>/archive/
 
 ## CONFIGURE JENKINS TO COPY FILES TO NFS SERVER VIA SSH
 
-**Step 3 – Configure Jenkins to copy files to NFS server via SSH**
+**Step 3 – Configure Jenkins to copy files to the NFS server via SSH**
 
 Now we have our artifacts saved locally on the Jenkins server, the next step is to copy them to our NFS server to /mnt/apps directory.
 
-Jenkins is a highly extendable application and there are 1400+ plugins available. We will need a plugin that is called “Publish Over SSH”.
+Jenkins is a highly extendable application and there are 1400+ plugins available. We will need a plugin that is called [“Publish Over SSH”](https://plugins.jenkins.io/publish-over-ssh/).
 
-1. Install “Publish Over SSH” plugin.
+1. Install the “Publish Over SSH” plugin.
 
-On main dashboard select “Manage Jenkins” and choose “Manage Plugins” menu item.
+On the main dashboard select “Manage Jenkins” and choose the “Manage Plugins” menu item.
 
-On “Available” tab search for “Publish Over SSH” plugin and install it 
+On the “Available” tab search for the “Publish Over SSH” plugin and install it 
 
 
 
-2. Configure the job/project to copy artifacts over to NFS server.
-On main dashboard select “Manage Jenkins” and choose “Configure System” menu item.
+2. Configure the job/project to copy artifacts over to the NFS server.
 
-Scroll down to Publish over SSH plugin configuration section and configure it to be able to connect to your NFS server:
+On the main dashboard select “Manage Jenkins” and choose the “Configure System” menu item.
 
-1. Provide a private key (the content of .pem file that you use to connect to the NFS server via SSH/Putty)
+Scroll down to Publish over the SSH plugin configuration section and configure it to be able to connect to your NFS server:
+
+1. Provide a private key (the content of the .pem file that you use to connect to the NFS server via SSH/Putty)
 
 2. Arbitrary name
 
@@ -142,7 +143,7 @@ Configure it to send all files produced by the build into our previously define 
 
 If you want to apply some particular pattern to define which files to send – use this syntax.
 
-Save this configuration and go ahead, change something in README.MD file in your GitHub Tooling repository.
+Save this configuration and go ahead and change something in README.MD file in your GitHub Tooling repository.
 
 Webhook will trigger a new job and in the “Console Output” of the job you will find something like this:
 
@@ -156,10 +157,9 @@ cat /mnt/apps/README.md
 
 If you see the changes you had previously made in your GitHub – the job works as expected.
 
+![BUILD 6 github change](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/69482cf4-5793-49a7-9673-fc5d9fd05cc2)
 
-
-Congratulations!
-You have just implemented your first Continuous Integration solution using Jenkins CI. Watch out for advanced CI configurations in upcoming projects.
+We have just implemented your first Continuous Integration solution using Jenkins CI. Watch out for advanced CI configurations in upcoming projects.
 
 
 
