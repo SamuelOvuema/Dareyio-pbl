@@ -147,8 +147,8 @@ Save this configuration and go ahead and change something in README.MD file in y
 
 Webhook will trigger a new job and in the “Console Output” of the job you will find something like this:
 
-SSH: Transferred 25 file(s)
-Finished: SUCCESS
+![config publishoverssh](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/dcdf2568-30e9-4ff7-97a1-215bd4eddbb0)
+
 To make sure that the files in /mnt/apps have been updated – connect via SSH/Putty to your NFS server and check README.MD file
 
 cat /mnt/apps/README.md
