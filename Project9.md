@@ -97,7 +97,7 @@ By default, the artifacts are stored on the Jenkins server locally
 ls /var/lib/jenkins/jobs/tooling_github/builds/<build_number>/archive/
 
 
-
+![built artifacts outcome](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/d3f74148-18a0-4619-b73f-47509da9ecf0)
 
 
 
