@@ -114,7 +114,7 @@ On the main dashboard select “Manage Jenkins” and choose the “Manage Plugi
 
 On the “Available” tab search for the “Publish Over SSH” plugin and install it 
 
-
+![publish over ssh](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/0e226d49-039a-4540-a683-6d8cdc207deb)
 
 2. Configure the job/project to copy artifacts over to the NFS server.
 
