@@ -151,6 +151,9 @@ Finished: SUCCESS
 To make sure that the files in /mnt/apps have been updated – connect via SSH/Putty to your NFS server and check README.MD file
 
 cat /mnt/apps/README.md
+
+![cat README](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/9e9e1aa2-fda8-4bd4-9775-ed13f93bdfba)
+
 If you see the changes you had previously made in your GitHub – the job works as expected.
 
 Congratulations!
