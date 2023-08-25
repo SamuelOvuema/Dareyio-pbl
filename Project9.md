@@ -49,6 +49,7 @@ Once plugins installation is done – create an admin user and you will get your
 
 The installation is completed!
 
+![jenkins is ready page](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/be604093-9ff6-4c9e-88a1-20e20bb0b4ff)
 
 **Step 2 – Configure Jenkins to retrieve source codes from GitHub using Webhooks**
 
