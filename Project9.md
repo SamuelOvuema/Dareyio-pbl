@@ -83,8 +83,9 @@ If so – congratulations! You have just made your very first Jenkins build!
 
 But this build does not produce anything and it runs only when we trigger it manually. Let us fix it.
 
-Click “Configure” your job/project and add these two configurations
+3. Click “Configure” your job/project and add these two configurations
 Configure triggering the job from the GitHub webhook:
+
 
 
 Configure “Post-build Actions” to archive all the files – files resulting from a build are called “artefacts”.
