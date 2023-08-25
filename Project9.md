@@ -69,7 +69,7 @@ To connect your GitHub repository, you will need to provide its URL, you can cop
 
 In the configuration of your Jenkins freestyle project choose the Git repository and provide there the link to your Tooling GitHub repository and credentials (user/password) so Jenkins could access files in the repository.
 
-
+![source code management](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/8463b711-7da0-4ead-b440-39196d875d5e)
 
 Save the configuration and let us try to run the build. For now, we can only do it manually.
 
