@@ -61,6 +61,7 @@ In this part, you will learn how to configure a simple Jenkins job/project (thes
 
 2. Go to Jenkins web console, click “New Item” and create a “Freestyle project”
 
+![New item config](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/43b805b5-af7e-4c05-883e-af71d45b754f)
 
 To connect your GitHub repository, you will need to provide its URL, you can copy from the repository itself
 
