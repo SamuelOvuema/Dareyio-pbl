@@ -96,16 +96,14 @@ Now, go ahead and make some changes in any file in your GitHub repository (e.g. 
 
 You will see that a new build has been launched automatically (by webhook) and you can see its results – artifacts, saved on the Jenkins server.
 
-
+![build 2](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/7e5509d7-931f-4227-9ab4-cf958c279910)
 
 You have now configured an automated Jenkins job that receives files from GitHub by webhook trigger (this method is considered as ‘push’ because the changes are being ‘pushed’ and files transfer is initiated by GitHub). There are also other methods: trigger one job (downstream) from another (upstream), poll GitHub periodically and others.
 
 By default, the artifacts are stored on the Jenkins server locally
-
+```bash
 ls /var/lib/jenkins/jobs/tooling_github/builds/<build_number>/archive/
-
-
-![built artifacts outcome](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/d3f74148-18a0-4619-b73f-47509da9ecf0)
+```
 
 
 ## CONFIGURE JENKINS TO COPY FILES TO NFS SERVER VIA SSH
