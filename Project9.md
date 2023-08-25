@@ -49,7 +49,7 @@ Once plugins installation is done – create an admin user and you will get your
 The installation is completed!
 
 
-Step 2 – Configure Jenkins to retrieve source codes from GitHub using Webhooks
+**Step 2 – Configure Jenkins to retrieve source codes from GitHub using Webhooks**
 
 In this part, you will learn how to configure a simple Jenkins job/project (these terms can be used interchangeably). GitHub webhooks will trigger this job and execute a ‘build’ task to retrieve codes from GitHub and store them locally on the Jenkins server.
 
