@@ -43,6 +43,7 @@ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 ```
 Then you will be asked which plugins to install – choose suggested plugins.
 
+![customize jenkins](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/692d91a6-dfca-41cc-b577-006daf989743)
 
 Once plugins installation is done – create an admin user and you will get your Jenkins server address.
 
