@@ -75,6 +75,7 @@ Save the configuration and let us try to run the build. For now, we can only do 
 
 Click “Build Now” button, if you have configured everything correctly, the build will be successful and you will see it under #1
 
+![built1](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/d539a863-bcd7-4467-b7a3-0538b2ae5f65)
 
 You can open the build and check in “Console Output” if it has run successfully.
 
