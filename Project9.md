@@ -55,9 +55,11 @@ The installation is completed!
 
 In this part, you will learn how to configure a simple Jenkins job/project (these terms can be used interchangeably). GitHub webhooks will trigger this job and execute a ‘build’ task to retrieve codes from GitHub and store them locally on the Jenkins server.
 
+1. Enable webhooks in your GitHub repository settings
 
 
-Go to Jenkins web console, click “New Item” and create a “Freestyle project”
+
+2. Go to Jenkins web console, click “New Item” and create a “Freestyle project”
 
 
 To connect your GitHub repository, you will need to provide its URL, you can copy from the repository itself
