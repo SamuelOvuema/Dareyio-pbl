@@ -57,7 +57,7 @@ In this part, you will learn how to configure a simple Jenkins job/project (thes
 
 1. Enable webhooks in your GitHub repository settings
 
-
+![webhook config2](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/6d8ab2b2-12b0-49e3-b20a-73858301a5d5)
 
 2. Go to Jenkins web console, click “New Item” and create a “Freestyle project”
 
