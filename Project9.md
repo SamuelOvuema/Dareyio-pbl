@@ -65,7 +65,7 @@ In this part, you will learn how to configure a simple Jenkins job/project (thes
 
 To connect your GitHub repository, you will need to provide its URL, you can copy from the repository itself
 
-
+![github url](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/9d3e750c-e963-46c8-a26e-e3e01ab3a9e9)
 
 In the configuration of your Jenkins freestyle project choose the Git repository and provide there the link to your Tooling GitHub repository and credentials (user/password) so Jenkins could access files in the repository.
 
