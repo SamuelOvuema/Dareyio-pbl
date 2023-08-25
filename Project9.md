@@ -35,7 +35,7 @@ From your browser access http://<Jenkins-Server-Public-IP-Address-or-Public-DNS-
 
 You will be prompted to provide a default admin password
 
-
+![jenkins starting page](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/3144c4a1-d1e5-4809-a51e-5dcf9e74b948)
 
 Retrieve it from your server:
 
