@@ -90,7 +90,7 @@ Configure triggering the job from the GitHub webhook:
 
 Configure “Post-build Actions” to archive all the files – files resulting from a build are called “artefacts”.
 
-
+![post build action](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/9f63e890-f359-4dfd-b93d-2b2b7dc729b3)
 
 Now, go ahead and make some changes in any file in your GitHub repository (e.g. README.MD file) and push the changes to the master branch.
 
