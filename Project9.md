@@ -38,9 +38,9 @@ You will be prompted to provide a default admin password
 ![jenkins starting page](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/3144c4a1-d1e5-4809-a51e-5dcf9e74b948)
 
 Retrieve it from your server:
-
+```bash
 sudo cat /var/lib/jenkins/secrets/initialAdminPassword
-
+```
 Then you will be asked which plugins to install – choose suggested plugins.
 
 
