@@ -19,6 +19,8 @@ Update the instance and Install Nginx
 sudo apt update
 sudo apt install nginx
 ```
+
+
 Configure Nginx LB using Web Servers’ names defined in /etc/hosts
 
 Hint: Read this [blog](https://linuxize.com/post/how-to-edit-your-hosts-file/) to read about /etc/host
