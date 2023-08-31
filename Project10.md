@@ -2,9 +2,11 @@
 
 ## CONFIGURE NGINX AS A LOAD BALANCER
 
-You can either uninstall Apache from the existing Load Balancer server, or create a fresh installation of Linux for Nginx.
+You can either uninstall Apache from the existing Load Balancer server or create a fresh installation of Linux for Nginx.
 
 1. Create an EC2 VM based on Ubuntu Server 20.04 LTS and name it Nginx LB (do not forget to open TCP port 80 for HTTP connections, also open TCP port 443 – this port is used for secured HTTPS connections)
+
+![inbound rules for NginxLB](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/91099286-175d-44b0-8021-d7484cf37bfd)
 
 2. Update /etc/hosts file for local DNS with Web Servers’ names (e.g. Web1 and Web2) and their local IP addresses
 
