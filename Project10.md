@@ -29,32 +29,20 @@ Open the default nginx configuration file
 ```bash
 sudo vi /etc/nginx/nginx.conf
 ```
-```bash
+
 #insert following configuration into http section
 
- upstream myproject {
-    server Web1 weight=5;
-    server Web2 weight=5;
-  }
+![sudo vi conf etcnginx png 2](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/0e9a3e19-c0db-4cc7-ad6a-9a51dfcd0175)
 
-server {
-    listen 80;
-    server_name www.domain.com;
-    location / {
-      proxy_pass http://myproject;
-    }
-  }
-
-#comment out this line
-#       include /etc/nginx/sites-enabled/*;
-```
-
+ 
 Restart Nginx and make sure the service is up and running
 
 ```bash
 sudo systemctl restart nginx
 sudo systemctl status nginx
 ```
+
+
 
 Side Self Study: Read more about HTTP load balancing methods and features supported by Nginx [on this page](https://docs.nginx.com/nginx/admin-guide/load-balancer/http-load-balancer/)
 
