@@ -41,7 +41,7 @@ Restart Nginx and make sure the service is up and running
 sudo systemctl restart nginx
 sudo systemctl status nginx
 ```
-
+![status nginx 2](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/736fead6-7294-4303-a86d-1681b143d44b)
 
 
 Side Self Study: Read more about HTTP load balancing methods and features supported by Nginx [on this page](https://docs.nginx.com/nginx/admin-guide/load-balancer/http-load-balancer/)
