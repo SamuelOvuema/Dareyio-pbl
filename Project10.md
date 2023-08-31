@@ -10,6 +10,8 @@ You can either uninstall Apache from the existing Load Balancer server or create
 
 2. Update /etc/hosts file for local DNS with Web Servers’ names (e.g. Web1 and Web2) and their local IP addresses
 
+![update etchost web servers](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/dfd582b6-56a5-4fbf-898a-1f0f3866c248)
+
 3. Install and configure Nginx as a load balancer to point traffic to the resolvable DNS names of the webservers
 
 Update the instance and Install Nginx
