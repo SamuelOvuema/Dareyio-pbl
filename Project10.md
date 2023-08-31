@@ -55,6 +55,9 @@ In order to get a valid SSL certificate – you need to register a new domain na
 
 1. Register a new domain name with any registrar of your choice in any domain zone (e.g. .com, .net, .org, .edu, .info, .xyz or any other)
 
+![registered domain](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/170125d8-3d8a-4c3f-912c-87c30233a0ac)
+
+
 2. Assign an Elastic IP to your Nginx LB server and associate your domain name with this Elastic IP
 
 You might have noticed, that every time you restart or stop/start your EC2 instance – you get a new public IP address. When you want to associate your domain name – it is better to have a static IP address that does not change after reboot. Elastic IP is the solution for this problem, learn how to allocate an Elastic IP and associate it with an EC2 server [on this page](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html).
