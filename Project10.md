@@ -19,7 +19,7 @@ Update the instance and Install Nginx
 sudo apt update
 sudo apt install nginx
 ```
-
+![Restart Nginx](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/2ccdd05f-f1a9-4599-8296-d767281c6a96)
 
 Configure Nginx LB using Web Servers’ names defined in /etc/hosts
 
