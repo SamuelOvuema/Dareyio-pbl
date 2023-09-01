@@ -124,6 +124,8 @@ Add the following line:
 * */12 * * *   root /usr/bin/certbot renew > /dev/null 2>&1
 ```
 
+![crontab e](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/b4128ddc-97dd-412f-ba8c-ac69c5f4a6a2)
+
 You can always change the interval of this cronjob if twice a day is too often by adjusting the schedule expression.
 
 **Side Self Study:** Refresh your cron configuration knowledge by watching [this video](https://youtu.be/4g1i0ylvx3A).
