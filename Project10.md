@@ -62,7 +62,7 @@ In order to get a valid SSL certificate – you need to register a new domain na
 
 You might have noticed, that every time you restart or stop/start your EC2 instance – you get a new public IP address. When you want to associate your domain name – it is better to have a static IP address that does not change after reboot. Elastic IP is the solution for this problem, learn how to allocate an Elastic IP and associate it with an EC2 server [on this page](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html).
 
-Update [A record](https://www.cloudflare.com/learning/dns/dns-records/dns-a-record/) in your registrar to point to Nginx LB using Elastic IP address. However, in this documentation, I did not assign an Elastic IP, instead, I used the public IP to configure "A Record" in Route 53.
+3. Update [A record](https://www.cloudflare.com/learning/dns/dns-records/dns-a-record/) in your registrar to point to Nginx LB using Elastic IP address. However, in this documentation, I did not assign an Elastic IP, instead, I used the public IP to configure "A Record" in Route 53.
 
 ![A record in Route 53](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/0979680f-e8f6-499b-a085-7b1c0bead7ff)
 
@@ -75,6 +75,8 @@ Check that your Web Servers can be reached from your browser using new domain na
 4. Configure Nginx to recognize your new domain name
 
 Update your nginx.conf with server_name www.<your-domain-name.com> instead of server_name www.domain.com
+
+![nginx config domain name](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/1de8f32a-8d0e-4d3c-ad0f-423ef27ba898)
 
 5. Install [certbot](https://certbot.eff.org/) and request for an SSL/TLS certificate
 
