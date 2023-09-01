@@ -93,6 +93,9 @@ Request your certificate (just follow the certbot instructions – you will need
 sudo ln -s /snap/bin/certbot /usr/bin/certbot
 sudo certbot --nginx
 ```
+
+![sudo certbot nginx ovuema](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/76dd6b73-cd03-4403-8a66-05692f62f359)
+
 Test secured access to your Web Solution by trying to reach https://<your-domain-name.com>
 
 You shall be able to access your website by using HTTPS protocol (that uses TCP port 443) and see a padlock pictogram in your browser’s search string.
