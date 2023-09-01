@@ -103,6 +103,8 @@ Click on the padlock icon and you can see the details of the certificate issued 
 
 ![secured domain ip](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/5b12aac6-07f2-4df0-b9e1-442c4d544400)
 
+
+
 6. Set up the periodical renewal of your SSL/TLS certificate
 
 By default, LetsEncrypt certificate is valid for 90 days, so it is recommended to renew it at least every 60 days or more frequently.
