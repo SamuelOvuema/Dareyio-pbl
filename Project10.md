@@ -103,7 +103,7 @@ Click on the padlock icon and you can see the details of the certificate issued 
 
 ![secured domain ip](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/5b12aac6-07f2-4df0-b9e1-442c4d544400)
 
-
+![domain certicate](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/d5d43f0b-ccd0-4805-ac93-3bc29021a621)
 
 6. Set up the periodical renewal of your SSL/TLS certificate
 
