@@ -32,7 +32,7 @@ sudo vi /etc/nginx/nginx.conf
 
 #insert following configuration into http section
 
-![sudo vi conf etcnginx png 2](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/0e9a3e19-c0db-4cc7-ad6a-9a51dfcd0175)
+![sudo vi conf etcnginx](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/6f363bca-3a70-4185-95d6-87f13ead3ba4)
 
  
 Restart Nginx and make sure the service is up and running
