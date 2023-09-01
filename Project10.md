@@ -101,6 +101,7 @@ Test secured access to your Web Solution by trying to reach https://<your-domain
 You shall be able to access your website by using HTTPS protocol (that uses TCP port 443) and see a padlock pictogram in your browser’s search string.
 Click on the padlock icon and you can see the details of the certificate issued for your website.     
 
+![secured domain ip](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/5b12aac6-07f2-4df0-b9e1-442c4d544400)
 
 6. Set up the periodical renewal of your SSL/TLS certificate
 
