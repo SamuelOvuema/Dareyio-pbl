@@ -13,8 +13,9 @@
 sudo apt update
 sudo apt install ansible
 ```
-Check your Ansible version by running Ansible --version
+Check your Ansible version by running the Ansible --version
 
+![ansible version](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/7d752310-9eff-4aa2-b185-2b6daf60ece4)
 
 
 
