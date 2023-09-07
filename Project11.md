@@ -29,7 +29,7 @@ Configure a Post-build job to save all (**) files, like you did it in Project 9.
 
 5. Test your setup by making some changes in README.MD file in the master branch and make sure that builds start automatically and Jenkins saves the files (build artifacts) in the following folder
 
-
+![cat README md](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/cad41c3b-fb93-407b-9ddb-5bc8cb93dede)
 
 ls /var/lib/jenkins/jobs/ansible/builds/<build_number>/archive/
 
