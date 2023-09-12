@@ -21,6 +21,8 @@ Check your Ansible version by running the Ansible --version
 
 Create a new Freestyle project ansible in Jenkins and point it to your ‘ansible-config-mgt’ repository.
 
+![create ansible freestyle pro](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/44a95c61-5e7f-4f6e-94b2-4089cf2fc981)
+
 Configure Webhook in GitHub and set Webhook to trigger ansible build.
 
 ![add webhook](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/b3827548-32f4-40fb-9718-7694321cbf92)
