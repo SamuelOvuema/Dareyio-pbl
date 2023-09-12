@@ -27,7 +27,9 @@ Configure Webhook in GitHub and set Webhook to trigger ansible build.
 
 ![add webhook](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/b3827548-32f4-40fb-9718-7694321cbf92)
 
-Configure a Post-build job to save all (**) files, like you did in Project 9.
+Configure a Post-build job to save all (**) files, as you did in Project 9.
+
+![post build artifacts](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/464f5960-70ae-4523-b55b-13fccc43bfe1)
 
 5. Test your setup by making some changes in README.MD file in the master branch and make sure that builds start automatically and Jenkins saves the files (build artifacts) in the following folder
 
