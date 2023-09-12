@@ -39,6 +39,7 @@ ls /var/lib/jenkins/jobs/ansible/builds/<build_number>/archive/
 
 Note: Trigger Jenkins project execution only for /main (master) branch.
 
+Now your setup will look like this:
 
 
 
