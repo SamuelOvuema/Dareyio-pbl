@@ -41,7 +41,7 @@ Note: Trigger Jenkins project execution only for /main (master) branch.
 
 Now your setup will look like this:
 
-
+![set up](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/1fc818f3-bd62-4a95-a6d8-9a4ef86a0d39)
 
 
 
