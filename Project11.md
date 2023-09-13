@@ -102,7 +102,14 @@ Update your inventory/dev.yml file with this snippet of code:
 
 ![inventory host](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/2006fd99-6620-4f47-a067-fed99c19ba15)
 
+## CREATE A COMMON PLAYBOOK
 
+**Step 5 – Create a Common Playbook**
+It is time to start giving Ansible the instructions on what you needs to be performed on all servers listed in inventory/dev.
+
+In common.yml playbook you will write configuration for repeatable, re-usable, and multi-machine tasks that is common to systems within the infrastructure.
+
+Update your playbooks/common.yml file with following code:
 
 
 
