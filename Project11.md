@@ -61,6 +61,8 @@ git clone <ansible-config-mgt repo link>
 1. In your ansible-config-mgt GitHub repository, create a new branch that will be used for the development of a new feature.
 **Tip:** Give your branches descriptive and comprehensive names, For example, if you use [Jira](https://www.atlassian.com/software/jira) or [Trello](https://trello.com/) as a project management tool – include the ticket number (e.g. PRJ-11) in the name of your branch and add a topic and a brief description of what this branch is about – a bugfix, hotfix, feature, release (e.g. feature/prj-11-lvm)
 
+![git checkout prj11](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/2e5118e8-53aa-43a4-8437-29961d7d9fb2)
+
 2. Checkout the newly created feature branch to your local machine and start building your code and directory structure
 3. Create a directory and name it playbooks – it will be used to store all your playbook files.
 4. Create a directory and name it inventory – it will be used to keep your hosts organised.
