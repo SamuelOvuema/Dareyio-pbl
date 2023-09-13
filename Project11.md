@@ -156,12 +156,15 @@ Once your code changes appear in master branch – Jenkins will do its job and s
 RUN FIRST ANSIBLE TEST
 Step 7 – Run first Ansible test
 Now, it is time to execute ansible-playbook command and verify if your playbook actually works:
-
+```bash
 cd ansible-config-mgt
+```
+```bash
 ansible-playbook -i inventory/dev.yml playbooks/common.yml
+```
 You can go to each of the servers and check if wireshark has been installed by running which wireshark or wireshark --version
 
-
+![wireshark version](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/e67244b2-9241-47e0-b4ab-e13315aaf63c)
 
 
 
