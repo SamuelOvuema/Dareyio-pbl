@@ -70,7 +70,7 @@ git clone <ansible-config-mgt repo link>
 5. Within the *playbooks* folder, create your first playbook, and name it common.yml
 5. Within the *inventory* folder, create an inventory file (.yml) for each environment (Development, Staging Testing and Production) dev, staging, UAT, and prod respectively.
 
-
+![create dir and yml files](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/f78e5ba9-a456-4925-bfe9-06214c5e8af3)
 
 **Step 4 – Set up an Ansible Inventory**
 
