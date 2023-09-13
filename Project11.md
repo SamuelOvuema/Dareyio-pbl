@@ -141,7 +141,15 @@ git add <selected files>
 git commit -m "commit message"
 ```
 
+2. Create a Pull request (PR)
 
+2. Wear a hat of another developer for a second, and act as a reviewer.
+
+3. If the reviewer is happy with your new feature development, merge the code to the master branch.
+
+4. Head back on your terminal, checkout from the feature branch into the master, and pull down the latest changes.
+
+Once your code changes appear in master branch – Jenkins will do its job and save all the files (build artifacts) to /var/lib/jenkins/jobs/ansible/builds/<build_number>/archive/ directory on Jenkins-Ansible server.
 
 
 
