@@ -111,7 +111,7 @@ In common.yml playbook you will write configuration for repeatable, re-usable, a
 
 Update your playbooks/common.yml file with following code:
 
-
+![commonyml playbook](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/9ba174d0-a969-45ee-815c-181d5a08bb45)
 
 
 
