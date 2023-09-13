@@ -59,6 +59,7 @@ git clone <ansible-config-mgt repo link>
 ## BEGIN ANSIBLE DEVELOPMENT
 
 1. In your ansible-config-mgt GitHub repository, create a new branch that will be used for the development of a new feature.
+
 **Tip:** Give your branches descriptive and comprehensive names, For example, if you use [Jira](https://www.atlassian.com/software/jira) or [Trello](https://trello.com/) as a project management tool – include the ticket number (e.g. PRJ-11) in the name of your branch and add a topic and a brief description of what this branch is about – a bugfix, hotfix, feature, release (e.g. feature/prj-11-lvm)
 
 2. Checkout the newly created feature branch to your local machine and start building your code and directory structure
@@ -68,7 +69,7 @@ git clone <ansible-config-mgt repo link>
 3. Create a directory and name it playbooks – it will be used to store all your playbook files.
 4. Create a directory and name it inventory – it will be used to keep your hosts organised.
 5. Within the *playbooks* folder, create your first playbook, and name it common.yml
-5. Within the *inventory* folder, create an inventory file (.yml) for each environment (Development, Staging Testing and Production) dev, staging, UAT, and prod respectively.
+6. Within the *inventory* folder, create an inventory file (.yml) for each environment (Development, Staging Testing and Production) dev, staging, UAT, and prod respectively.
 
 ![create dir and yml files](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/f78e5ba9-a456-4925-bfe9-06214c5e8af3)
 
@@ -153,9 +154,12 @@ git commit -m "commit message"
 
 Once your code changes appear in master branch – Jenkins will do its job and save all the files (build artifacts) to /var/lib/jenkins/jobs/ansible/builds/<build_number>/archive/ directory on Jenkins-Ansible server.
 
-RUN FIRST ANSIBLE TEST
+## RUN FIRST ANSIBLE TEST
+
 Step 7 – Run first Ansible test
+
 Now, it is time to execute ansible-playbook command and verify if your playbook actually works:
+
 ```bash
 cd ansible-config-mgt
 ```
