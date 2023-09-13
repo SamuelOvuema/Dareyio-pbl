@@ -70,6 +70,8 @@ git clone <ansible-config-mgt repo link>
 5. Within the *playbooks* folder, create your first playbook, and name it common.yml
 5. Within the *inventory* folder, create an inventory file (.yml) for each environment (Development, Staging Testing and Production) dev, staging, UAT, and prod respectively.
 
+
+
 **Step 4 – Set up an Ansible Inventory**
 
 An Ansible inventory file defines the hosts and groups of hosts upon which commands, modules, and tasks in a playbook operate. Since our intention is to execute Linux commands on remote hosts, and ensure that it is the intended configuration on a particular server that occurs. It is important to have a way to organize our hosts in such an Inventory.
