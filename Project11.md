@@ -149,6 +149,8 @@ git commit -m "commit message"
 
 4. Head back on your terminal, checkout from the feature branch into the master, and pull down the latest changes.
 
+![git pull](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/f652fc38-3e1d-40b3-83f0-15625e6dc63f)
+
 Once your code changes appear in master branch – Jenkins will do its job and save all the files (build artifacts) to /var/lib/jenkins/jobs/ansible/builds/<build_number>/archive/ directory on Jenkins-Ansible server.
 
 
