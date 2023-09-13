@@ -43,9 +43,57 @@ Now your setup will look like this:
 
 ![set up](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/1fc818f3-bd62-4a95-a6d8-9a4ef86a0d39)
 
+**Tip** Every time you stop/start your Jenkins-Ansible server – you have to reconfigure the GitHub webhook to a new IP address, In order to avoid it, it makes sense to allocate an [Elastic IP](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html) to your Jenkins-Ansible server (you have done it before to your LB server in [Project 10](https://professional-pbl.darey.io/en/latest/project10.html)). Note that Elastic IP is free only when it is being allocated to an EC2 Instance, so do not forget to release Elastic IP once you terminate your EC2 Instance.
 
+### Step 2 – Prepare your development environment using Visual Studio Code
 
+1. The first part of ‘DevOps’ is ‘Dev’, which means you will be required to write some codes and you shall have proper tools that will make your coding and debugging comfortable – you need an [Integrated development environment (IDE)](https://en.wikipedia.org/wiki/Integrated_development_environment) or [Source-code Editor](https://en.wikipedia.org/wiki/Source-code_editor). There is a plethora of different IDEs and Source-code Editors for different languages with their own advantages and drawbacks, You can choose whichever you are comfortable with, but we recommend one free and universal editor that will fully satisfy your needs – [Visual Studio Code (VSC)](https://en.wikipedia.org/wiki/Visual_Studio_Code), you can get it [here](https://code.visualstudio.com/download).
 
+2. After you have successfully installed VSC, configure it to connect to your newly created GitHub repository.
+
+3. Clone down your ansible-config-mgt repo to your Jenkins-Ansible instance
+```bash
+git clone <ansible-config-mgt repo link>
+```
+
+## BEGIN ANSIBLE DEVELOPMENT
+
+1. In your ansible-config-mgt GitHub repository, create a new branch that will be used for the development of a new feature.
+**Tip:** Give your branches descriptive and comprehensive names, For example, if you use [Jira](https://www.atlassian.com/software/jira) or [Trello](https://trello.com/) as a project management tool – include the ticket number (e.g. PRJ-11) in the name of your branch and add a topic and a brief description of what this branch is about – a bugfix, hotfix, feature, release (e.g. feature/prj-11-lvm)
+
+2. Checkout the newly created feature branch to your local machine and start building your code and directory structure
+3. Create a directory and name it playbooks – it will be used to store all your playbook files.
+4. Create a directory and name it inventory – it will be used to keep your hosts organised.
+5. Within the *playbooks* folder, create your first playbook, and name it common.yml
+5. Within the *inventory* folder, create an inventory file (.yml) for each environment (Development, Staging Testing and Production) dev, staging, UAT, and prod respectively.
+
+**Step 4 – Set up an Ansible Inventory**
+
+An Ansible inventory file defines the hosts and groups of hosts upon which commands, modules, and tasks in a playbook operate. Since our intention is to execute Linux commands on remote hosts, and ensure that it is the intended configuration on a particular server that occurs. It is important to have a way to organize our hosts in such an Inventory.
+
+Save below inventory structure in the inventory/dev file to start configuring your *development* servers. Ensure to replace the IP addresses according to your own setup.
+
+**Note:** Ansible uses TCP port 22 by default, which means it needs to ssh into target servers from Jenkins-Ansible host – for this you can implement the concept of ssh-agent. Now you need to import your key into ssh-agent:
+
+To learn how to setup SSH agent and connect VS Code to your Jenkins-Ansible instance, please see this video:
+
+For Windows users – ssh-agent on windows
+For Linux users – ssh-agent on Linux
+```bash
+eval `ssh-agent -s`
+ssh-add <path-to-private-key>
+```
+Confirm the key has been added with the command below, you should see the name of your key
+```bash
+ssh-add -l
+```
+Now, ssh into your Jenkins-Ansible server using ssh-agent
+```bash
+ssh -A ubuntu@public-ip
+```
+Also notice, that your Load Balancer user is ubuntu and user for RHEL-based servers is ec2-user.
+
+Update your inventory/dev.yml file with this snippet of code:
 
 
 
