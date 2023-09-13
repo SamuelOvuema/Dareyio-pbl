@@ -166,7 +166,7 @@ You can go to each of the servers and check if wireshark has been installed by r
 
 ![wireshark version](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/e67244b2-9241-47e0-b4ab-e13315aaf63c)
 
-
+Your updated with Ansible architecture now looks like this:
 
 
 
