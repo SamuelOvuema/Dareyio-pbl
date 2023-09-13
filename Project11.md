@@ -100,7 +100,7 @@ Also notice, that your Load Balancer user is ubuntu and user for RHEL-based serv
 
 Update your inventory/dev.yml file with this snippet of code:
 
-
+![inventory host](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/2006fd99-6620-4f47-a067-fed99c19ba15)
 
 
 
