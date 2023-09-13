@@ -113,10 +113,33 @@ Update your playbooks/common.yml file with following code:
 
 ![commonyml playbook](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/9ba174d0-a969-45ee-815c-181d5a08bb45)
 
+Examine the code above and try to make sense out of it. This playbook is divided into two parts, each of them is intended to perform the same task: install [wireshark](https://en.wikipedia.org/wiki/Wireshark) utility (or make sure it is updated to the latest version) on your RHEL 8 and Ubuntu servers. It uses root user to perform this task and respective package manager: yum for RHEL 8 and apt for Ubuntu.
 
+Feel free to update this playbook with following tasks:
 
+Create a directory and a file inside it
+Change timezone on all servers
+Run some shell script
+…
+For a better understanding of Ansible playbooks – [watch this video from RedHat](https://youtu.be/ZAdJ7CdN7DY) and [read this article](https://www.redhat.com/en/topics/automation/what-is-an-ansible-playbook).
 
+**Step 6 – Update GIT with the latest code**
+Now all of your directories and files live on your machine and you need to push changes made locally to GitHub.
 
+In the real world, you will be working within a team of other DevOps engineers and developers. It is important to learn how to collaborate with help of GIT. In many organisations there is a development rule that do not allow to deploy any code before it has been reviewed by an extra pair of eyes – it is also called "Four eyes principle".
+
+Now you have a separate branch, you will need to know how to raise a [Pull Request (PR)](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests), get your branch peer reviewed and merged to the master branch.
+
+Commit your code into GitHub:
+
+1. use git commands to add, commit and push your branch to GitHub.
+```bash
+git status
+
+git add <selected files>
+
+git commit -m "commit message"
+```
 
 
 
