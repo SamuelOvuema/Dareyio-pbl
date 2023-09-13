@@ -168,9 +168,13 @@ You can go to each of the servers and check if wireshark has been installed by r
 
 Your updated with Ansible architecture now looks like this:
 
+![Ansible architecture](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/bb4248f1-37d4-4361-825b-dc22ea107c93)
 
+#### Optional step – Repeat once again
+Update your ansible playbook with some new Ansible tasks and go through the full checkout -> change codes -> commit -> PR -> merge -> build -> ansible-playbook cycle again to see how easily you can manage a server fleet of any size with just one command!
 
-
+Congratulations
+We have just automated your routine tasks by implementing your first Ansible project! There are more exciting projects ahead, so let's keep it moving!
 
 
 
