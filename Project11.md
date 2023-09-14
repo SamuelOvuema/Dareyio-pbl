@@ -166,6 +166,8 @@ cd ansible-config-mgt
 ```bash
 ansible-playbook -i inventory/dev.yml playbooks/common.yml
 ```
+![ansible_playbook inventory](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/30e50957-ce8a-4249-833d-532beeaeb708)
+
 You can go to each of the servers and check if wireshark has been installed by running which wireshark or wireshark --version
 
 ![wireshark version](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/e67244b2-9241-47e0-b4ab-e13315aaf63c)
