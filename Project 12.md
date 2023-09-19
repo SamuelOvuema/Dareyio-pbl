@@ -33,6 +33,8 @@ Note: You can configure number of builds to keep in order to save space on the s
 
 7. Test your set up by making some change in README.MD file inside your ansible-config-mgt repository (right inside master branch).
 
+![git hub main readme changes](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/f220838c-608f-4978-b8a7-87aabd601e1b)
+
 If both Jenkins jobs have completed one after another – you shall see your files inside /home/ubuntu/ansible-config-artifact directory and it will be updated with every commit to your master branch.
 
 Now your Jenkins pipeline is more neat and clean.
