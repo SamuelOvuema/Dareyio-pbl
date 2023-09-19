@@ -21,7 +21,7 @@ sudo mkdir /home/ubuntu/ansible-config-artifact
 
 5. This project will be triggered by completion of your existing ansible project. Configure it accordingly:
 
-
+![General config](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/860b2843-cf8e-460f-b858-2781d88a67f3)
 
 
 
