@@ -23,7 +23,7 @@ sudo mkdir /home/ubuntu/ansible-config-artifact
 
 ![General config](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/860b2843-cf8e-460f-b858-2781d88a67f3)
 
-
+![sourcecode mgt](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/1019adad-f913-42f1-ba33-22f8819ced10)
 
 
 
