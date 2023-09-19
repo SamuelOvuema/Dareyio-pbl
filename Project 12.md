@@ -15,7 +15,7 @@ sudo mkdir /home/ubuntu/ansible-config-artifact
 
 ![copy artifact plugins](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/9d097100-b866-4fc7-b875-ef282abc2cf0)
 
-4. Create a new Freestyle project (you have done it in Project 9) and name it save_artifacts.
+4. Create a new Freestyle project (you have done it in [Project 9)](https://professional-pbl.darey.io/en/latest/project9.html) and name it save_artifacts.
 
 ![saveartifacts freestyle project](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/56dc83bf-2706-4f0d-98fe-1aa0209f6a66)
 
