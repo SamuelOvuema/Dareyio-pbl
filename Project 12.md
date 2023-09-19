@@ -14,3 +14,18 @@ sudo mkdir /home/ubuntu/ansible-config-artifact
 3. Go to Jenkins web console -> Manage Jenkins -> Manage Plugins -> on Available tab search for Copy Artifact and install this plugin without restarting Jenkins
 
 ![copy artifact plugins](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/9d097100-b866-4fc7-b875-ef282abc2cf0)
+
+4. Create a new Freestyle project (you have done it in Project 9) and name it save_artifacts.
+
+
+
+5. This project will be triggered by completion of your existing ansible project. Configure it accordingly:
+
+
+
+
+
+
+
+
+
