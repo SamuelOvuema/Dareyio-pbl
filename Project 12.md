@@ -7,7 +7,7 @@ Go to your Jenkins-Ansible server and create a new directory called ansible-conf
 ```bash
 sudo mkdir /home/ubuntu/ansible-config-artifact
 ```
-
+![ansibleconfigartifact directory](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/78122aa5-4bda-400f-b4de-dd80cc7f189f)
 
 Change permissions to this directory, so Jenkins could save files there – chmod -R 0777 /home/ubuntu/ansible-config-artifact
 
