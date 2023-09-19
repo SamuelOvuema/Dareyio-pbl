@@ -17,7 +17,7 @@ sudo mkdir /home/ubuntu/ansible-config-artifact
 
 4. Create a new Freestyle project (you have done it in Project 9) and name it save_artifacts.
 
-
+![saveartifacts freestyle project](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/56dc83bf-2706-4f0d-98fe-1aa0209f6a66)
 
 5. This project will be triggered by completion of your existing ansible project. Configure it accordingly:
 
