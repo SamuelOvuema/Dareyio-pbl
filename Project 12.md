@@ -74,6 +74,8 @@ Let see code re-use in action by importing other playbooks.
 3. Move the common.yml file into the newly created static-assignments folder.
 
 4. Inside site.yml file, import common.yml playbook.
+
+
 ```bash
 ---
 - hosts: all
