@@ -95,6 +95,8 @@ Your folder structure should look like this;
 
 5. Run ansible-playbook command against the dev environment
 
+![ansible playbooks common](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/073313e9-e5cc-4a41-85e2-887d6c6b7846)
+
 Since you need to apply some tasks to your dev servers and wireshark is already installed – you can go ahead and create another playbook under static-assignments and name it common-del.yml. In this playbook, configure deletion of wireshark utility.
 
 
