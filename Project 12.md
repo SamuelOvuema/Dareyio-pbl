@@ -109,9 +109,11 @@ cd /home/ubuntu/ansible-config-mgt/
 ansible-playbook -i inventory/dev.yml playbooks/site.yaml
 ```
 
+
+
 Make sure that wireshark is deleted on all the servers by running wireshark --version
 
-
+![wiershark version deleted](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/45b88d11-b424-483a-8545-20c17196bacb)
 
 Now you have learned how to use import_playbooks module and you have a ready solution to install/delete packages on multiple servers with just one command.
 
