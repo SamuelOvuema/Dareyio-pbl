@@ -75,12 +75,8 @@ Let see code re-use in action by importing other playbooks.
 
 4. Inside site.yml file, import common.yml playbook.
 
+![site](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/1eb3bca1-83b3-40d1-a4d5-ac8ddbf9ada9)
 
-```bash
----
-- hosts: all
-- import_playbook: ../static-assignments/common.yml
-```
 
 The code above uses built-in [import_playbook](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/import_playbook_module.html) Ansible module.
 
@@ -100,6 +96,8 @@ Your folder structure should look like this;
 5. Run ansible-playbook command against the dev environment
 
 Since you need to apply some tasks to your dev servers and wireshark is already installed – you can go ahead and create another playbook under static-assignments and name it common-del.yml. In this playbook, configure deletion of wireshark utility.
+
+
 
 ```bash
 ---
