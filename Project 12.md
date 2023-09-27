@@ -109,7 +109,7 @@ cd /home/ubuntu/ansible-config-mgt/
 ansible-playbook -i inventory/dev.yml playbooks/site.yaml
 ```
 
-
+![ansible playbook site](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/aa240cfb-4520-407b-8e28-26fa6f2740cb)
 
 Make sure that wireshark is deleted on all the servers by running wireshark --version
 
