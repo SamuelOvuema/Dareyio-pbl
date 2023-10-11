@@ -165,25 +165,29 @@ After removing unnecessary directories and files, the roles structure should loo
 
   ![roles structure](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/215a5073-32a9-4c4d-9f1d-59b4d81fb998)  
 
-Update your inventory ansible-config-mgt/inventory/uat.yml file with IP addresses of your 2 UAT Web servers
+3. Update your inventory ansible-config-mgt/inventory/uat.yml file with IP addresses of your 2 UAT Web servers
 NOTE: Ensure you are using ssh-agent to ssh into the Jenkins-Ansible instance just as you have done in project 11;
 
 To learn how to setup SSH agent and connect VS Code to your Jenkins-Ansible instance, please see this video:
 
 For Windows users – ssh-agent on windows
 For Linux users – ssh-agent on linux
+```bash
 [uat-webservers]
 <Web1-UAT-Server-Private-IP-Address> ansible_ssh_user='ec2-user' 
 
-<Web2-UAT-Server-Private-IP-Address> ansible_ssh_user='ec2-user' 
-In /etc/ansible/ansible.cfg file uncomment roles_path string and provide a full path to your roles directory roles_path    = /home/ubuntu/ansible-config-mgt/roles, so Ansible could know where to find configured roles.
+<Web2-UAT-Server-Private-IP-Address> ansible_ssh_user='ec2-user'
+```
 
-It is time to start adding some logic to the webserver role. Go into tasks directory, and within the main.yml file, start writing configuration tasks to do the following:
+4. In /etc/ansible/ansible.cfg file uncomment roles_path string and provide a full path to your roles directory roles_path    = /home/ubuntu/ansible-config-mgt/roles, so Ansible could know where to find configured roles.
 
-Install and configure Apache (httpd service)
-Clone Tooling website from GitHub https://github.com/<your-name>/tooling.git.
-Ensure the tooling website code is deployed to /var/www/html on each of 2 UAT Web servers.
-Make sure httpd service is started
+5. It is time to start adding some logic to the webserver role. Go into tasks directory, and within the main.yml file, start writing configuration tasks to do the following:
+
+- Install and configure Apache (httpd service)
+- Clone Tooling website from GitHub https://github.com/<your-name>/tooling.git.
+- Ensure the tooling website code is deployed to /var/www/html on each of 2 UAT Web servers.
+- Make sure httpd service is started
+
 Your main.yml may consist of following tasks:
 
 
