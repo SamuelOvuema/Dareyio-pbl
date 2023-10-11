@@ -17,25 +17,8 @@ For this reason, we will now create a folder to keep each environment’s variab
 
 Your layout should now look like this.
 
-```bash
-├── dynamic-assignments
-│   └── env-vars.yml
-├── env-vars
-    └── dev.yml
-    └── stage.yml
-    └── uat.yml
-    └── prod.yml
-├── inventory
-    └── dev
-    └── stage
-    └── uat
-    └── prod
-├── playbooks
-    └── site.yml
-└── static-assignments
-    └── common.yml
-    └── webservers.yml
-```
+![envvars folder](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/299a64af-6694-4e10-ad92-8997cde35dc4)
+
 Now paste the instruction below into the env-vars.yml file.
 ```bash
 ---
