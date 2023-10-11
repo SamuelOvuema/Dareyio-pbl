@@ -11,7 +11,6 @@ Your GitHub shall have the following structure by now.
 
 ![dynamic assignments dropdown](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/4abd1c77-a0ef-46e9-837a-3166419c1fce)
 
-
 Since we will be using the same Ansible to configure multiple environments, and each of these environments will have certain unique attributes, such as server name, ip-address etc., we will need a way to set values to variables per specific environment.
 
 For this reason, we will now create a folder to keep each environment’s variables file. Therefore, create a new folder env-vars, then for each environment, create new **YAML** files which we will use to set variables.
