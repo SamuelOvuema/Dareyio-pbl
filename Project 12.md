@@ -207,6 +207,7 @@ Remember that the entry point to our ansible configuration is the site.yml file.
 
 So, we should have this in site.yml
 
+![siteyml](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/3ce027ff-ee7b-4e27-b717-8d04c00229eb)
 
 ### Step 5 – Commit & Test
 
