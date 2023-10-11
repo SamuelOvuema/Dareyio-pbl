@@ -202,6 +202,7 @@ Your main.yml may consist of following tasks:
 Within the static-assignments folder, create a new assignment for**uat-webservers** uat-webservers.yml. This is where you will reference the role.
 
 
+
 Remember that the entry point to our ansible configuration is the site.yml file. Therefore, you need to refer to your uat-webservers.yml role inside site.yml.
 
 So, we should have this in site.yml
