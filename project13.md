@@ -9,6 +9,9 @@ Your GitHub shall have the following structure by now.
 
 **Note:** Depending on what method you used in the previous project you may have or not have roles folder in your GitHub repository – if you used ansible-galaxy, then roles directory was only created on your Jenkins-Ansible server locally. It is recommended to have all the codes managed and tracked in GitHub, so you might want to recreate this structure manually in this case – it is up to you.
 ```bash
+
+![dynamic assignments dropdown](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/5a8f676f-f07c-4c50-aaeb-e3c71eb8d2d2)
+
 ├── dynamic-assignments
 │   └── env-vars.yml
 ├── inventory
