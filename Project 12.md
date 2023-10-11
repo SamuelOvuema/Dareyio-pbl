@@ -233,7 +233,10 @@ Your Ansible architecture now looks like this:
 ![ansible architecture](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/c2f44ddd-5f28-4392-8ea8-17775fb2d968)
 
 
+In Project 13, we will see the difference between Static and Dynamic assignments.
 
+Congratulations!
+We have learned how to deploy and configure UAT Web Servers using Ansible imports and role
 
 
 
