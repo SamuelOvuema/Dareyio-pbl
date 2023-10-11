@@ -1,13 +1,13 @@
 # Ansible Refactoring, Assignments & Imports
 
-In this project you will continue working with ansible-config-mgt repository and make some improvements of your code. Now you need to refactor your Ansible code, create assignments, and learn how to use the imports functionality. Imports allow to effectively re-use previously created playbooks in a new playbook – it allows you to organize your tasks and reuse them when needed.
+In this project, you will continue working with ansible-config-mgt repository and make some improvements to your code. Now you need to refactor your Ansible code, create assignments, and learn how to use the imports functionality. Imports allow you to effectively re-use previously created playbooks in a new playbook – organising your tasks and reusing them when needed.
 
-Side Self Study: For better understanding or Ansible artifacts re-use – [read this article](https://docs.ansible.com/ansible/latest/user_guide/playbooks_reuse.html).
+Side Self Study: For a better understanding of Ansible artifacts re-use – [read this article](https://docs.ansible.com/ansible/latest/user_guide/playbooks_reuse.html).
 
 Code Refactoring
 [Refactoring](https://en.wikipedia.org/wiki/Code_refactoring) is a general term in computer programming. It means making changes to the source code without changing the expected behaviour of the software. The main idea of refactoring is to enhance code readability, increase maintainability and extensibility, reduce complexity and add proper comments without affecting the logic.
 
-In your case, you will move things around a little bit in the code, but the overal state of the infrastructure remains the same.
+In your case, you will move things around a little bit in the code, but the overall state of the infrastructure remains the same.
 
 Let us see how you can improve your Ansible code!
 
@@ -20,7 +20,7 @@ sudo mkdir /home/ubuntu/ansible-config-artifact
 ```
 ![ansibleconfigartifact directory](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/78122aa5-4bda-400f-b4de-dd80cc7f189f)
 
-2. Change permissions to this directory, so Jenkins could save files there – chmod -R 0777 /home/ubuntu/ansible-config-artifact
+2. Change permissions to this directory, so Jenkins can save files there – chmod -R 0777 /home/ubuntu/ansible-config-artifact
 
 3. Go to Jenkins web console -> Manage Jenkins -> Manage Plugins -> on Available tab search for Copy Artifact and install this plugin without restarting Jenkins
 
@@ -30,19 +30,19 @@ sudo mkdir /home/ubuntu/ansible-config-artifact
 
 ![saveartifacts freestyle project](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/56dc83bf-2706-4f0d-98fe-1aa0209f6a66)
 
-5. This project will be triggered by completion of your existing ansible project. Configure it accordingly:
+5. This project will be triggered by the completion of your existing ansible project. Configure it accordingly:
 
 ![General config](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/860b2843-cf8e-460f-b858-2781d88a67f3)
 
 ![sourcecode mgt](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/1019adad-f913-42f1-ba33-22f8819ced10)
 
-Note: You can configure number of builds to keep in order to save space on the server, for example, you might want to keep only last 2 or 5 build results. You can also make this change to your ansible job.
+Note: You can configure a number of builds to keep in order to save space on the server, for example, you might want to keep only the last 2 or 5 build results. You can also make this change to your ansible job.
 
-6. The main idea of save_artifacts project is to save artifacts into /home/ubuntu/ansible-config-artifact directory. To achieve this, create a Build step and choose Copy artifacts from other project, specify ansible as a source project and /home/ubuntu/ansible-config-artifact as a target directory.
+6. The main idea of the save_artifacts project is to save artifacts into the /home/ubuntu/ansible-config-artifact directory. To achieve this, create a Build step and choose Copy artifacts from another project, specify ansible as a source project and /home/ubuntu/ansible-config-artifact as a target directory.
 
 ![build steps](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/7d26ef8f-f932-4439-bc35-d81507cdbf73)
 
-7. Test your set up by making some change in README.MD file inside your ansible-config-mgt repository (right inside master branch).
+7. Test your set-up by making some changes in README.MD file inside your ansible-config-mgt repository (right inside the master branch).
 
 ![git hub main readme changes](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/f220838c-608f-4978-b8a7-87aabd601e1b)
 
@@ -61,11 +61,11 @@ Before starting to refactor the codes, ensure that you have pulled down the late
 
 DevOps philosophy implies constant iterative improvement for better efficiency – refactoring is one of the techniques that can be used, but you always have an answer to question "why?". Why do we need to change something if it works well?
 
-In [Project 11](https://www.dareyio.com/docs/ansible-configuration-management-automate-project-7-to-10/) you wrote all tasks in a single playbook common.yml, now it is pretty simple set of instructions for only 2 types of OS, but imagine you have many more tasks and you need to apply this playbook to other servers with different requirements. In this case, you will have to read through the whole playbook to check if all tasks written there are applicable and is there anything that you need to add for certain server/OS families. Very fast it will become a tedious exercise and your playbook will become messy with many commented parts. Your DevOps colleagues will not appreciate such organization of your codes and it will be difficult for them to use your playbook.
+In [Project 11](https://www.dareyio.com/docs/ansible-configuration-management-automate-project-7-to-10/) you wrote all tasks in a single playbook common.yml, now it is a pretty simple set of instructions for only 2 types of OS, but imagine you have many more tasks and you need to apply this playbook to other servers with different requirements. In this case, you will have to read through the whole playbook to check if all tasks written there are applicable and if there is anything that you need to add for certain server/OS families. Very fast it will become a tedious exercise and your playbook will become messy with many commented parts. Your DevOps colleagues will not appreciate such organization of your codes and it will be difficult for them to use your playbook.
 
 Most Ansible users learn the one-file approach first. However, breaking tasks up into different files is an excellent way to organize complex sets of tasks and reuse them.
 
-Let see code re-use in action by importing other playbooks.
+Let's see code reuse in action by importing other playbooks.
 
 1. Within playbooks folder, create a new file and name it site.yml – This file will now be considered as an entry point into the entire infrastructure configuration. Other playbooks will be included here as a reference. In other words, site.yml will become a parent to all other playbooks that will be developed. Including common.yml that you created previously. Dont worry, you will understand more what this means shortly.
 
@@ -189,10 +189,10 @@ To learn how to setup SSH agent and connect VS Code to your Jenkins-Ansible inst
 
 - Install and configure Apache (httpd service)
 - Clone **Tooling website** from GitHub https://github.com/<your-name>/tooling.git.
-- Ensure the tooling website code is deployed to /var/www/html on each of 2 UAT Web servers.
+- Ensure the tooling website code is deployed to /var/www/html on each of the 2 UAT Web servers.
 - Make sure httpd service is started
 
-Your main.yml may consist of following tasks:
+Your main.yml may consist of the following tasks:
 
 ![mainyml edit tooling](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/76854ae7-b2ce-4db4-a3f2-1bc3b8491a77)
 
