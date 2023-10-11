@@ -125,20 +125,22 @@ Now you have learned how to use import_playbooks module and you have a ready sol
 
 We have our nice and clean dev environment, so let us put it aside and configure 2 new Web Servers as uat. We could write tasks to configure Web Servers in the same playbook, but it would be too messy, instead, we will use a dedicated [role](https://docs.ansible.com/ansible/latest/user_guide/playbooks_reuse_roles.html) to make our configuration reusable.
 
-Launch 2 fresh EC2 instances using RHEL 8 image, we will use them as our uat servers, so give them names accordingly – Web1-UAT and Web2-UAT.
-Tip: Do not forget to stop EC2 instances that you are not using at the moment to avoid paying extra. For now, you only need 2 new RHEL 8 servers as Web Servers and 1 existing Jenkins-Ansible server up and running.
+1. Launch 2 fresh EC2 instances using RHEL 8 image, we will use them as our uat servers, so give them names accordingly – Web1-UAT and Web2-UAT.
 
-To create a role, you must create a directory called roles/, relative to the playbook file or in /etc/ansible/ directory.
+**Tip:** Do not forget to stop EC2 instances that you are not using at the moment to avoid paying extra. For now, you only need 2 new RHEL 8 servers as Web Servers and 1 existing Jenkins-Ansible server up and running.
+
+2. To create a role, you must create a directory called roles/, relative to the playbook file or in /etc/ansible/ directory.
 There are two ways how you can create this folder structure:
 
-Use an Ansible utility called ansible-galaxy inside ansible-config-mgt/roles directory (you need to create roles directory upfront)
+- Use an Ansible utility called ansible-galaxy inside ansible-config-mgt/roles directory (you need to create roles directory upfront)
 ```bash
 mkdir roles
 cd roles
 ansible-galaxy init webserver
 ```
-Create the directory/files structure manually
-Note: You can choose either way, but since you store all your codes in GitHub, it is recommended to create folders and files there rather than locally on Jenkins-Ansible server.
+
+- Create the directory/files structure manually
+**Note:** You can choose either way, but since you store all your codes in GitHub, it is recommended to create folders and files there rather than locally on Jenkins-Ansible server.
 
 The entire folder structure should look like below, but if you create it manually – you can skip creating tests, files, and vars or remove them if you used ansible-galaxy
 
@@ -166,12 +168,14 @@ After removing unnecessary directories and files, the roles structure should loo
   ![roles structure](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/215a5073-32a9-4c4d-9f1d-59b4d81fb998)  
 
 3. Update your inventory ansible-config-mgt/inventory/uat.yml file with IP addresses of your 2 UAT Web servers
-NOTE: Ensure you are using ssh-agent to ssh into the Jenkins-Ansible instance just as you have done in project 11;
+
+**NOTE:** Ensure you are using ssh-agent to ssh into the Jenkins-Ansible instance just as you have done in project 11;
 
 To learn how to setup SSH agent and connect VS Code to your Jenkins-Ansible instance, please see this video:
 
-For Windows users – ssh-agent on windows
-For Linux users – ssh-agent on linux
+- For Windows users – [ssh-agent on windowshttps://youtu.be/OplGrY74qog]()
+- For Linux users – [ssh-agent on linux](https://youtu.be/OplGrY74qog)
+
 ```bash
 [uat-webservers]
 <Web1-UAT-Server-Private-IP-Address> ansible_ssh_user='ec2-user' 
@@ -184,7 +188,7 @@ For Linux users – ssh-agent on linux
 5. It is time to start adding some logic to the webserver role. Go into tasks directory, and within the main.yml file, start writing configuration tasks to do the following:
 
 - Install and configure Apache (httpd service)
-- Clone Tooling website from GitHub https://github.com/<your-name>/tooling.git.
+- Clone **Tooling website** from GitHub https://github.com/<your-name>/tooling.git.
 - Ensure the tooling website code is deployed to /var/www/html on each of 2 UAT Web servers.
 - Make sure httpd service is started
 
