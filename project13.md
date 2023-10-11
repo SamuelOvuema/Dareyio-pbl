@@ -20,24 +20,8 @@ Your layout should now look like this.
 ![envvars folder](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/299a64af-6694-4e10-ad92-8997cde35dc4)
 
 Now paste the instruction below into the env-vars.yml file.
-```bash
----
-- name: collate variables from env specific file, if it exists
-  hosts: all
-  tasks:
-    - name: looping through list of available files
-      include_vars: "{{ item }}"
-      with_first_found:
-        - files:
-            - dev.yml
-            - stage.yml
-            - prod.yml
-            - uat.yml
-          paths:
-            - "{{ playbook_dir }}/../env-vars"
-      tags:
-        - always
-```
+
+![envvars file](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/5087a357-39d0-4687-b639-53f247695d6f)
 
 Notice 3 things to notice here:
 
