@@ -46,6 +46,7 @@ Update site.yml file to make use of the dynamic assignment. (At this point, we c
 
 site.yml should now look like this.
 
+![update siteyml](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/b88fac6a-0b16-4aae-97ce-fcc34e920679)
 
 Community Roles
 Now it is time to create a role for MySQL database – it should install the MySQL package, create a database and configure users. But why should we re-invent the wheel? There are tons of roles that have already been developed by other open source engineers out there. These roles are actually production ready, and dynamic to accomodate most of Linux flavours. With Ansible Galaxy again, we can simply download a ready to use ansible role, and keep going.
