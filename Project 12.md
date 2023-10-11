@@ -173,7 +173,7 @@ After removing unnecessary directories and files, the roles structure should loo
 
 To learn how to setup SSH agent and connect VS Code to your Jenkins-Ansible instance, please see this video:
 
-- For Windows users – [ssh-agent on windowshttps://youtu.be/OplGrY74qog]()
+- For Windows users – [ssh-agent on windows](https://youtu.be/OplGrY74qog)
 - For Linux users – [ssh-agent on linux](https://youtu.be/OplGrY74qog)
 
 ```bash
