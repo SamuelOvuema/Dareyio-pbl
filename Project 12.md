@@ -227,7 +227,7 @@ http://<Web1-UAT-Server-Public-IP-or-Public-DNS-Name>/index.php
 Your Ansible architecture now looks like this:
 
 
-
+![ansible architecture](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/c2f44ddd-5f28-4392-8ea8-17775fb2d968)
 
 
 
