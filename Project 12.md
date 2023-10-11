@@ -142,6 +142,7 @@ Note: You can choose either way, but since you store all your codes in GitHub, i
 
 The entire folder structure should look like below, but if you create it manually – you can skip creating tests, files, and vars or remove them if you used ansible-galaxy
 
+```bash
 └── webserver
     ├── README.md
     ├── defaults
@@ -159,19 +160,9 @@ The entire folder structure should look like below, but if you create it manuall
     │   └── test.yml
     └── vars
         └── main.yml
+```
 After removing unnecessary directories and files, the roles structure should look like this
 
-└── webserver
-    ├── README.md
-    ├── defaults
-    │   └── main.yml
-    ├── handlers
-    │   └── main.yml
-    ├── meta
-    │   └── main.yml
-    ├── tasks
-    │   └── main.yml
-    └── templates
     
 
 Update your inventory ansible-config-mgt/inventory/uat.yml file with IP addresses of your 2 UAT Web servers
