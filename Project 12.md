@@ -163,7 +163,7 @@ The entire folder structure should look like below, but if you create it manuall
 ```
 After removing unnecessary directories and files, the roles structure should look like this
 
-    
+  ![roles structure](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/215a5073-32a9-4c4d-9f1d-59b4d81fb998)  
 
 Update your inventory ansible-config-mgt/inventory/uat.yml file with IP addresses of your 2 UAT Web servers
 NOTE: Ensure you are using ssh-agent to ssh into the Jenkins-Ansible instance just as you have done in project 11;
