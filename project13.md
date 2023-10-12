@@ -102,27 +102,33 @@ _*Important Hints*_:
 - Declare another variable in both roles load_balancer_is_required and set its value to false as well
 - Update both assignment and site.yml files respectively
 
-\*loadbalancers.yml file
+loadbalancers.yml file
 
+```bash
 - hosts: lb
   roles:
     - { role: nginx, when: enable_nginx_lb and load_balancer_is_required }
     - { role: apache, when: enable_apache_lb and load_balancer_is_required }
+```
 site.yml file
 
+```bash
      - name: Loadbalancers assignment
        hosts: lb
          - import_playbook: ../static-assignments/loadbalancers.yml
-        when: load_balancer_is_required 
-Now you can make use of env-vars\uat.yml file to define which loadbalancer to use in UAT environment by setting respective environmental variable to true.
+        when: load_balancer_is_required
+```
+Now you can make use of env-vars\uat.yml file to define which load-balancer to use in the UAT environment by setting the respective environmental variable to true.
 
 You will activate load balancer, and enable nginx by setting these in the respective environment’s env-vars file.
-
+```bash
 enable_nginx_lb: true
 load_balancer_is_required: true
-The same must work with apache LB, so you can switch it by setting respective environmental variable to true and other to false.
+```
 
-To test this, you can update inventory for each environment and run Ansible against each environment.
+The same must work with apache LB, so you can switch it by setting respective environmental variable to true and others to false.
+
+To test this, you can update the inventory for each environment and run Ansible against each environment.
 
 Congratulations!
-You have learned and practiced how to use Ansible configuration management tool to prepare UAT environment for Tooling web solution.
+You have learned and practiced how to use the Ansible configuration management tool to prepare the UAT environment for the Tooling web solution.
