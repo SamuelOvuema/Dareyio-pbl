@@ -58,7 +58,7 @@ You can browse available community roles [here](https://galaxy.ansible.com/home)
 
 We will be using a [MySQL role developed by geerlingguy](https://galaxy.ansible.com/geerlingguy/mysql).
 
-**Hint**: To preserve your GitHub in its actual state after you install a new role – make a commit and push to master your ‘ansible-config-mgt’ directory. Of course, you must have git installed and configured on Jenkins-Ansible server and, for more convenient work with codes, you can configure Visual Studio Code to work with this directory. In this case, you will no longer need webhook and Jenkins jobs to update your codes on the Jenkins-Ansible server, so you can disable it – we will be using Jenkins later for a better purpose.
+**Hint**: To preserve your GitHub in its actual state after you install a new role – make a commit and push to master your ‘ansible-config-mgt’ directory. Of course, you must have git installed and configured on the Jenkins-Ansible server and, for more convenient work with codes, you can configure Visual Studio Code to work with this directory. In this case, you will no longer need webhook and Jenkins jobs to update your codes on the Jenkins-Ansible server, so you can disable it – we will be using Jenkins later for a better purpose.
 
 On the Jenkins-Ansible server make sure that git is installed with the git --version, then go to the ‘ansible-config-mgt’ directory and run
 ```bash
@@ -72,7 +72,7 @@ Inside the roles directory create your new MySQL role with ansible-galaxy instal
 ```bash
 mv geerlingguy.mysql/ MySQL
 ```
-Read README.md file, and edit roles configuration to use correct credentials for MySQL required for the tooling website.
+Read the README.md file, and edit the roles configuration to use the correct credentials for MySQL required for the tooling website.
 
 Now it is time to upload the changes into your GitHub:
 ```bash
@@ -80,7 +80,7 @@ git add .
 git commit -m "Commit new role files into GitHub"
 git push --set-upstream origin roles-feature
 ```
-Now, if you are satisfied with your codes, you can create a Pull Request and merge it to main branch on GitHub.
+Now, if you are satisfied with your codes, you can create a Pull Request and merge it to the main branch on GitHub.
 
 ## Load Balancer roles
 
@@ -92,12 +92,12 @@ We want to be able to choose which Load Balancer to use, Nginx or Apache, so we 
 With your experience on Ansible so far you can:
 
 - Decide if you want to develop your own roles, or find available ones from the community
-- Update both static-assignment and site.yml files to refer the roles
+- Update both static-assignment and site.yml files to refer to the roles
 
-_*Important Hints*_:
+***Important Hints***:
 
 - Since you cannot use both Nginx and Apache load balancer, you need to add a condition to enable either one – this is where you can make use of variables.
-- Declare a variable in defaults/main.yml file inside the Nginx and Apache roles. Name each variables enable_nginx_lb and enable_apache_lb respectively.
+- Declare a variable in defaults/main.yml file inside the Nginx and Apache roles. Name each variable enable_nginx_lb and enable_apache_lb respectively.
 - Set both values to false like this enable_nginx_lb: false and enable_apache_lb: false.
 - Declare another variable in both roles load_balancer_is_required and set its value to false as well
 - Update both assignment and site.yml files respectively
@@ -126,9 +126,9 @@ enable_nginx_lb: true
 load_balancer_is_required: true
 ```
 
-The same must work with apache LB, so you can switch it by setting respective environmental variable to true and others to false.
+The same must work with apache LB, so you can switch it by setting respective environmental variables to true and others to false.
 
 To test this, you can update the inventory for each environment and run Ansible against each environment.
 
 Congratulations!
-You have learned and practiced how to use the Ansible configuration management tool to prepare the UAT environment for the Tooling web solution.
+You have learned and practised how to use the Ansible configuration management tool to prepare the UAT environment for the Tooling web solution.
