@@ -119,6 +119,8 @@ You will activate load balancer, and enable nginx by setting these in the respec
 ![envvars devyml file](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/f471f0b2-5e15-49d0-9431-bb19a80a98b3)
 
 The same must work with apache LB, so you can switch it by setting respective environmental variables to true and others to false.
+run ansible
+
 
 To test this, you can update the inventory for each environment and run Ansible against each environment.
 
