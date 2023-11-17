@@ -124,6 +124,8 @@ site.yml file
 Now you can make use of env-vars\uat.yml file to define which load-balancer to use in the UAT environment by setting the respective environmental variable to true.
 
 You will activate load balancer, and enable nginx by setting these in the respective environment’s env-vars file.
+![envvars devyml file](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/f471f0b2-5e15-49d0-9431-bb19a80a98b3)
+
 ```bash
 enable_nginx_lb: true
 load_balancer_is_required: true
