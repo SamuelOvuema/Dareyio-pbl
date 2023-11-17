@@ -113,6 +113,7 @@ loadbalancers.yml file
     - { role: apache, when: enable_apache_lb and load_balancer_is_required }
 ```
 site.yml file
+![siteyml4nginxlb](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/9ae54686-6b2d-4674-8461-e91890ffb5f8)
 
 ```bash
      - name: Loadbalancers assignment
