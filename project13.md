@@ -104,32 +104,18 @@ With your experience on Ansible so far you can:
 - Update both assignment and site.yml files respectively
 
 loadbalancers.yml file
+
 ![loadbalanceryml](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/55691c85-4f79-4d5b-9a9b-cb7f370a6636)
 
-```bash
-- hosts: lb
-  roles:
-    - { role: nginx, when: enable_nginx_lb and load_balancer_is_required }
-    - { role: apache, when: enable_apache_lb and load_balancer_is_required }
-```
 site.yml file
+
 ![siteyml4nginxlb](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/9ae54686-6b2d-4674-8461-e91890ffb5f8)
 
-```bash
-     - name: Loadbalancers assignment
-       hosts: lb
-         - import_playbook: ../static-assignments/loadbalancers.yml
-        when: load_balancer_is_required
-```
 Now you can make use of env-vars\uat.yml file to define which load-balancer to use in the UAT environment by setting the respective environmental variable to true.
 
 You will activate load balancer, and enable nginx by setting these in the respective environment’s env-vars file.
-![envvars devyml file](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/f471f0b2-5e15-49d0-9431-bb19a80a98b3)
 
-```bash
-enable_nginx_lb: true
-load_balancer_is_required: true
-```
+![envvars devyml file](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/f471f0b2-5e15-49d0-9431-bb19a80a98b3)
 
 The same must work with apache LB, so you can switch it by setting respective environmental variables to true and others to false.
 
