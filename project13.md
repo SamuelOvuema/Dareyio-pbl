@@ -104,6 +104,7 @@ With your experience on Ansible so far you can:
 - Update both assignment and site.yml files respectively
 
 loadbalancers.yml file
+![loadbalanceryml](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/55691c85-4f79-4d5b-9a9b-cb7f370a6636)
 
 ```bash
 - hosts: lb
