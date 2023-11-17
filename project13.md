@@ -121,5 +121,7 @@ The same must work with apache LB, so you can switch it by setting respective en
 
 To test this, you can update the inventory for each environment and run Ansible against each environment.
 
+![sudo systemctl status nginx](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/7f7d005f-2d50-4e76-afeb-512241afb631)
+
 Congratulations!
 You have learned and practised how to use the Ansible configuration management tool to prepare the UAT environment for the Tooling web solution.
