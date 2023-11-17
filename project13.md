@@ -121,6 +121,9 @@ You will activate load balancer, and enable nginx by setting these in the respec
 The same must work with apache LB, so you can switch it by setting respective environmental variables to true and others to false.
 run ansible
 
+![run ansible 4 nginx1](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/4a2b809f-6dda-444f-a94f-6a6a83bb7028)
+![run ansible 4 nginx2](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/98759cd1-fa58-4cb4-ad6a-7813ca0fa388)
+![run ansible 4 nginx3](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/8eaefd41-6b4b-4fd7-b1ae-cb9629ff2f05)
 
 To test this, you can update the inventory for each environment and run Ansible against each environment.
 
