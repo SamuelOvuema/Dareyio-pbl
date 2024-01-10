@@ -53,7 +53,7 @@ sudo vi /etc/apache2/sites-available/000-default.conf
 ![configured load balancer](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/b9baf8e3-c7e4-4d42-acc9-846c571c8b56)
 
 
-#Restart Apache server
+#Restart the Apache server
 
 ```bash
 sudo systemctl restart apache2
@@ -91,7 +91,7 @@ Read more about different configuration aspects of [Apache mod_proxy_balancer mo
 ## Optional Step – Configure Local DNS Names Resolution
 
 Sometimes it is tedious to remember and switch between IP addresses, especially if you have a lot of servers under your management.
-What we can do, is configure local domain name resolution. The easiest way is to use /etc/hosts file, although this approach is not very scalable, it is very easy to configure and shows the concept well. So let us configure IP address to domain name mapping for our LB.
+What we can do, is configure local domain name resolution. The easiest way is to use the/etc/hosts file, although this approach is not very scalable, it is very easy to configure and shows the concept well. So let us configure the IP address to domain name mapping for our LB.
 
 #Open this file on your LB server
 ```bash
@@ -117,7 +117,7 @@ You can try to curl your Web Servers from LB locally curl http://Web1 or curl ht
 
 ![curl web1](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/22a939f3-fc48-4a7a-aef4-77a4db32635f)
 
-Remember, this is only internal configuration and it is also local to your LB server, these names will neither be ‘resolvable’ from other servers internally nor from the Internet.
+Remember, this is only internal configuration and it is also local to your LB server, these names will neither be ‘resolvable’ from other servers internally nor the Internet.
 
 Targeted Architecture
 Now your set-up looks like this:
@@ -129,9 +129,7 @@ We have just implemented a Load balancing Web Solution for our DevOps team.
 Thank You!
 
 
-[Samuelovuema](https://youtu.be/R-qcpehB5HY)
 
-[magalene](https://starter-pbl.darey.io/en/latest/submission.html)
 
 
 
