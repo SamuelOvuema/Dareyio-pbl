@@ -130,8 +130,6 @@ Thank You!
 
 
 
-![2build test](https://github.com/SamuelOvuema/Dareyio-pbl/assets/132525203/e2aafd2d-32f2-4e10-95bb-345083973214)
-
 
 
 
